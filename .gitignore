@@ -1,0 +1,7 @@
+**.DS_Store
+**.nbgrader.log
+**.ipynb_checkpoints
+_build
+lectures/code/__pycache__
+*.jupyter/
+_site/

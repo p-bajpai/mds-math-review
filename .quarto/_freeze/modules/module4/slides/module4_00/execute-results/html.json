@@ -1,0 +1,12 @@
+{
+  "hash": "2babf101aa463d6a79baa3a1fe33573e",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nformat: revealjs\ntitle: Module Learning Outcomes\ntitle-slide-attributes:\n  data-notes: |\n    This module will introduce you to 𝑘-nearest neighbours and SVM's with an RBF kernel and how to calculate the Euclidean distance between points.\n\n---\n\n\n\n## Module Learning Outcomes\n\nBy the end of the module, students are expected to:\n\n- Explain the notion of similarity-based algorithms.\n- Broadly describe how 𝑘-NNs use distances.\n- Describe the effect of using a small/large value of the hyperparameter 𝑘 when using the 𝑘-NN algorithm.\n- Explain the problem of curse of dimensionality.\n- Explain the general idea of SVMs with RBF kernel.\n- Compare and contrast 𝑘-NNs and SVM RBFs.\n- Broadly describe the relation of `gamma` and `C` hyperparameters with the fundamental tradeoff.\n\n\n# Let's start!\n\n",
+    "supporting": [
+      "module4_00_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

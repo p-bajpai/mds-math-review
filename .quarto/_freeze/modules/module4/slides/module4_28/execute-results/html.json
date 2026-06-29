@@ -1,0 +1,12 @@
+{
+  "hash": "5e319d70d17ef51f0b269a4fe283de41",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nformat: revealjs\ntitle: What Did we Learn and What to Expect in Assignment 4\n\ntitle-slide-attributes:\n  data-notes: |\n---\n\n\n\n## Module Learning Outcomes\n\nBy the end of the module, students are expected to:\n\n- Explain the notion of similarity-based algorithms.\n- Broadly describe how 𝑘-NNs use distances.\n- Describe the effect of using a small/large value of the hyperparameter 𝑘 when using the 𝑘-NN algorithm.\n- Explain the problem of curse of dimensionality.\n- Explain the general idea of SVMs with RBF kernel.\n- Compare and contrast 𝑘-NNs and SVM RBFs.\n- Broadly describe the relation of `gamma` and `C` hyperparameters with the fundamental tradeoff.\n\n:::{.notes}\nThe assignment will concentrate on the learning objectives as well as building knowledge on existing concepts. \n:::\n\n\n# On to Assignment 4!\n\n",
+    "supporting": [
+      "module4_28_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

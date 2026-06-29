@@ -1,0 +1,49 @@
+---
+format:
+  html:
+    page-layout: full
+---
+
+# 1. Understanding the Derivative
+
+::: {.panel-tabset .nav-pills}
+
+## Intro
+
+I can say a few things. But can I
+
+#### What is a mathematical function?
+
+Black box, inputs and outputs. Give some unusual examples. Make pictures.
+
+#### Inputs, Outputs and Sensitivity
+
+Is a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.
+
+#### The "Calculus" of Derivatives
+
+We all know the rules. But what are they good for? Remember the goal is not to know the rules, the rules just help us calculate.
+
+## Video 1
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/UcWsDwg1XwM&t=13s" 
+    title="Big Picture of Calculus - Gilbert Strang"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Video 2
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/T_I-CUOc_bk" 
+    title="Big Picture: Derivatives - Gilbert Strang"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+:::

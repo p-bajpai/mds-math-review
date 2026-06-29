@@ -1,0 +1,12 @@
+{
+  "hash": "a01e1b6f4175773476d799312b31f02c",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nformat: revealjs\ntitle: Module Learning Outcomes\ntitle-slide-attributes:\n  data-notes: |\n    This module will introduce why and how we split our data into a training and a test test and how cross validation works on our training data. We will also explain the fundamental trade off as well as the golden rule of machine learning.\n\n---\n\n\n\n## Module Learning Outcomes\n\nBy the end of the module, students are expected to:\n\n- Split a dataset into train and test sets using `train_test_split` function.\n- Explain the difference between train, validation, test, and \"deployment\" data.\n- Identify the difference between training error, validation error, and test error.\n- Explain cross-validation and use `cross_val_score()` and `cross_validate()` to calculate cross-validation error.\n- Explain overfitting, underfitting, and the fundamental tradeoff.\n- State the golden rule and identify the scenarios when it's violated.\n\n\n# Let's start!\n\n",
+    "supporting": [
+      "module3_00_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

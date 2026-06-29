@@ -1,0 +1,62 @@
+---
+format:
+  html:
+    page-layout: full
+---
+
+# 2. Derivatives of Common Functions
+
+::: {.panel-tabset .nav-pills}
+
+## Intro
+
+Describe why it helps to remember a few common functions. Maybe just copy content from CLP?
+
+#### Polynomials
+
+Black box, inputs and outputs. Give some unusual examples. Make pictures.
+
+#### Trigonometric Functions
+
+Is a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.
+
+#### Exponentials and Logarithms
+
+We all know the rules. But what are they good for? Remember the goal is not to know the rules, the rules just help us calculate.
+
+#### Sum, Product and Difference of Functions
+
+## Video 1
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/S0_qX4VJhMQ" 
+    title="Derivative formulas through geometry - 3Blue1Brown"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Video 2
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/FtQl1gAo12E" 
+    title="Derivative of sin x and cos x - Gilbert Strang"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Video 3
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/5ZpqI8zz1HM" 
+    title="Product Rule and Quotient Rule - Gilbert Strang"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+:::

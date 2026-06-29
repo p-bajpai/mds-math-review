@@ -1,0 +1,12 @@
+{
+  "hash": "7d29f1252b398b308d034574f26cd397",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nformat: revealjs\ntitle: Module Learning Outcomes\ntitle-slide-attributes:\n  data-notes: |\n---\n\n\n\n## Module Learning Outcomes\n\nBy the end of the module, students are expected to:\n\n- Explain `handle_unknown=\"ignore\"` hyperparameter of `scikit-learn`'s `OneHotEncoder`.\n- Identify when it's appropriate to apply ordinal encoding vs one-hot encoding.\n- Explain strategies to deal with categorical variables with too many categories.\n- Explain why text data needs a different treatment than categorical variables.\n- Use `scikit-learn`'s `CountVectorizer` to encode text data.\n- Explain different hyperparameters of `CountVectorizer`.\n- Use `ColumnTransformer` to build all our transformations together into one object and use it with `scikit-learn` pipelines.\n\n\n\n# Let's start!\n\n",
+    "supporting": [
+      "module6_00_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

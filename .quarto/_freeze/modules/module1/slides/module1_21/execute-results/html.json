@@ -1,0 +1,12 @@
+{
+  "hash": "695f9bc07655f1e0fe211111467134fa",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nformat: revealjs\ntitle: \"What Did we Learn and What to Expect in Assignment 1\"\ntitle-slide-attributes:\n  data-notes: |\n\n---\n\n\n\n## Module Learning Outcomes\n\nBy the end of the module, students are expected to:\n\n- Explain motivation to study machine learning.\n- Differentiate between supervised and unsupervised learning.\n- Differentiate between classification and regression problems.\n- Explain machine learning terminology such as features, targets, training, and error.\n- Use DummyClassifier/ Dummy Regressor as a baseline for machine learning problems.\n- Explain the `.fit()` and `.predict()` paradigm and use `.score()` method of ML models.\n\n\n:::{.notes}\nThe assignment will concentrate on the learning objectives as well as building knowledge on existing concepts. \n:::\n\n\n# On to Assignment 1!\n\n",
+    "supporting": [
+      "module1_21_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

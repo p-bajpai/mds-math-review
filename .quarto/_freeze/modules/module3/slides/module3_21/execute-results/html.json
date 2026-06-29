@@ -1,0 +1,12 @@
+{
+  "hash": "bdefb16b63353a5132bbb8f6b3716374",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nformat: revealjs\ntitle: What Did we Learn and What to Expect in Assignment 3\ntitle-slide-attributes:\n  data-notes: |\n---\n\n\n\n## Module Learning Outcomes\n\nBy the end of the module, students are expected to:\n\n- Split a dataset into train and test sets using `train_test_split` function.\n- Explain the difference between train, validation, test, and \"deployment\" data.\n- Identify the difference between training error, validation error, and test error.\n- Explain cross-validation and use `cross_val_score()` and `cross_validate()` to calculate cross-validation error.\n- Explain overfitting, underfitting, and the fundamental tradeoff.\n- State the golden rule and identify the scenarios when it's violated.\n\n:::{.notes}\nThe assignment will concentrate on the learning objectives as well as building knowledge on existing concepts. \n:::\n\n\n# On to Assignment 3!\n\n",
+    "supporting": [
+      "module3_21_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -1,0 +1,89 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>  
+
+# 1.2. Exercises
+
+## Derivatives of Common Functions
+
+
+<div id="mcq1"></div> 
+<script> 
+generateQuiz( 
+    "mcq1", 
+    "Increasing or Decreasing?", 
+    `
+    Is the function cos(&pi; - x) increasing or decreasing at x = &pi;/2?<br><br> In other words, if the current input is &pi;/2, should we increase or decrease the input slightly if we want the output to increase?
+    `,
+    {
+        "Increase the input slightly": "",
+        "Decrease the input slightly": "Try again! What is the derivative here? Can you draw a picture?", 
+        "The function is flat at x = &pi;/2": "Try again! What is the derivative here? Can you draw a picture?", 
+        "Cannot determine from the information given": "Try again! What is the derivative here? Can you draw a picture?" }, 
+        "Increase the input slightly" 
+    );
+</script>
+
+<div id="mcq2"></div> 
+<script> 
+generateQuiz( 
+    "mcq2", 
+    "Where is the function not differentiable?", 
+    `
+    List all points where the functions |x| and |x|&sup2 are not differentiable.
+    `,
+    {
+        "Both functions are differentiable everywhere": "Can you plot the functions? What happens near zero?",
+        "|x| is not differentiable at zero, but |x|&sup2 is differentiable everywhere": "", 
+        "|x|&sup2 is not differentiable at zero, but |x| is differentiable everywhere": "Can you plot the functions? What happens near zero?", 
+        "Neither function is differentiable at zero": "Can you plot the functions? What happens near zero?" }, 
+        "|x| is not differentiable at zero, but |x|&sup2 is differentiable everywhere" 
+    );
+</script>
+
+The following exercises are adapted from the [CLP-1 Problem Book](https://personal.math.ubc.ca/~CLP/CLP1/)
+
+<div id='mcq3'></div>
+<script>
+generateMultiQuiz(
+    'mcq3',
+    'Identifying linear functions',
+    `Which of the following functions describe a straight line? Select all correct options.`,
+    {
+        'y = e<sup>3 log x</sup> + 1': `Not quite a line. Can you use some rules of exponentiation to figure out why?`,
+        
+        '2y + 5 = e<sup>3 + log x</sup>': `Yep, that's a line!`,
+        
+        'y = e<sup>2x</sup> + 4': `Not quite. How does this look compared to e<sup>x</sup>?`,
+        
+        'y = e<sup>log x</sup> · 3<sup>e</sup> + log 2': `Yep, that's a line!`
+    },
+    [
+        '2y + 5 = e<sup>3 + log x</sup>',
+        'y = e<sup>log x</sup> · 3<sup>e</sup> + log 2'
+    ]
+);
+</script>
+
+<div id='mcq4'></div>
+<script>
+generateMultiQuiz(
+    'mcq4',
+    'Sine and cosine',
+    `Graph sine and cosine on the same axes from x = -2π to x = 2π. At which points does sin(x) have a tangent line with maximum positive slope, and what do these points correspond to on the graph of cosine?`,
+    {
+        'All multiples of π/2': 'Does this include points where sin(x) is flat?',
+        
+        'All multiples of π': 'Is sin(x) increasing or decreasing at π?',
+        
+        'All multiples of 2π': `That's right! What is the value of cos(x) here?`,
+        
+        'All points where sin(x) = 1': `Since sin(x) attains its maximum value here, what must be its derivative?`
+    },
+    [
+        'Multiples of 2π'
+    ]
+);
+</script>

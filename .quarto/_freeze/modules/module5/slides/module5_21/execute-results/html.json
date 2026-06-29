@@ -1,0 +1,12 @@
+{
+  "hash": "c5719db3347bfa74f4075d63fede044e",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nformat: revealjs\ntitle: What Did we Learn and What to Expect in Assignment 5\ntitle-slide-attributes:\n  data-notes: |\n---\n\n\n\n## Module Learning Outcomes\n\nBy the end of the module, students are expected to:\n\n- Identify when to implement feature transformations such as imputation and scaling.\n- Apply `sklearn.pipeline.Pipeline` to build a machine learning pipeline.\n- Use `sklearn` for applying numerical feature transformations on the data.\n- Discuss the golden rule in the context of feature transformations.\n- Carry out hyperparameter optimization using `sklearn`'s `GridSearchCV` and `RandomizedSearchCV`.\n- Explain overfitting on the validation set.\n\n\n:::{.notes}\nThe assignment will concentrate on the learning objectives as well as building knowledge on existing concepts. \n:::\n\n\n# On to Assignment 5!\n\n",
+    "supporting": [
+      "module5_21_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

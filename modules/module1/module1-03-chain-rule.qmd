@@ -1,0 +1,48 @@
+---
+format:
+  html:
+    page-layout: full
+---
+
+# 3. The Chain Rule
+
+::: {.panel-tabset .nav-pills}
+
+## Composing functions
+
+Describe why it helps to remember a few common functions. Maybe just copy content from CLP?
+
+#### The Chain Rule
+
+Black box, inputs and outputs. Give some unusual examples. Make pictures.
+
+#### Chains of arbitrary length
+
+Is a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.
+
+
+
+## Video 1
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/QrKXo89nHA" 
+    title="Chains f(g(x)) and the Chain Rule - Gilbert Strang"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Video 2
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/wl1myxrtQHQ" 
+    title="The Chain Rule, Clearly Explained!!! - Josh Starmer"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+
+:::
