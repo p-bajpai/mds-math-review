@@ -5,3 +5,4 @@ _build
 lectures/code/__pycache__
 *.jupyter/
 _site/
+/.quarto/

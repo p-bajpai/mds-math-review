@@ -46,6 +46,9 @@ website:
           - href: modules/module1/module1-02-derivatives-common-functions.qmd
           - text: '&nbsp;&nbsp; 1.2. Exercises'
             href: modules/module1/module1-ex1_2.qmd
+          - href: modules/module1/module1-03-chain-rule.qmd
+          - text: '&nbsp;&nbsp; 1.3. Exercises'
+            href: modules/module1/module1-ex1_3.qmd
           # - href: modules/module1/module1-05-classification_vs_regression.qmd
           # - text: '&nbsp;&nbsp; 3.1. Exercises'
           #   href: modules/module1/module1-06-classification_vs_regression.qmd

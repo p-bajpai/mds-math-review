@@ -532,5 +532,11 @@
   },
   "modules/module1/module1-ex1_2.qmd": {
     "module1-ex1_2.html": "d8136357"
+  },
+  "modules/module1/module1-03-chain-rule.qmd": {
+    "module1-03-chain-rule.html": "d224ac4f"
+  },
+  "modules/module1/module1-ex1_3.qmd": {
+    "module1-ex1_3.html": "06fdf3a0"
   }
 }

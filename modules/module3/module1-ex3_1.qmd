@@ -4,69 +4,132 @@ format: html
 
 <script src='../../src/quiz.js'></script>  
 
-# 1.1. Exercises
+# 1.3. Exercises
 
-## Understanding the Derivative
+## Chain Rule
 
-The following exercises are adapted from the [CLP-1 Problem Book](https://personal.math.ubc.ca/~CLP/CLP1/)
+In the following question, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.
 
-<div id='mcq1'></div> 
+The function in question is K(x) = (((x<sup>2</sup> + 1)<sup>2</sup> + 2)<sup>2</sup> + 3)<sup>2</sup> + 4
+
+<div id='mcq_chain1'></div>
 <script>
-    generateQuiz(
-        'mcq1', 
-        'Select the correct option', 
-        `The function f(x) is graphed below. <br><br>
-
-        <img src="../../static/module1/func1.png" width="500">
-
-        <br><br>
-        Select the option below that describes its derivative. <br>
-        `, 
-        { 
-        'Constant, Always Negative': 'What is the slope of the graph?',
-        'Constant, Always Positive': '',
-        'Increasing, Always Positive': 'What is the slope of the graph?',
-        'Decreasing, Always Negative': 'What is the slope of the graph?',
-        'Sometimes Positive, Sometimes Negative': 'What is the slope of the graph?'
-        },
-        'Constant, Always Positive',
-    );
+generateQuiz(
+    'mcq_chain1',
+    'Chain rule step 1',
+    `What is the derivative of f(x) = x<sup>2</sup> + 1 with respect to x?`,
+    {
+        '2x': 'Correct. The derivative of x² is 2x, and the derivative of 1 is 0.',
+        'x': 'You forgot the power rule.',
+        '2': 'The derivative is not constant.',
+        'x<sup>2</sup>': 'This is the original function, not its derivative.'
+    },
+    '2x'
+);
 </script>
 
-<div id='mcq2'></div> 
+<div id='mcq_chain2'></div>
 <script>
-    generateQuiz(
-        'mcq2',
-        'Select the correct option', 
-        `The function f(x) is graphed below. <br><br>
-
-        <img src="../../static/module1/func2.png" width="500">
-
-        <br><br>
-        Select the option below that describes its derivative. <br>
-        `, 
-        { 
-        'Constant': 'Try again!',
-        'Increasing, always negative': 'Would increasing a negative derivative make the slope steeper or shallower?',
-        'Sometimes increasing, sometimes decreasing, always negative': '',
-        'Decreasing, always negative': 'Would decreasing a negative derivative make the slope steeper or shallowe?',
-        'Sometimes positive, sometimes negative': 'What does a positive derivative imply?'
-        },
-        'Sometimes increasing, sometimes decreasing, always negative',
-    );
+generateQuiz(
+    'mcq_chain2',
+    'Chain rule step 2',
+    `Which of the following correctly describes K(x)?`,
+    {
+        'K(x) = f(g(h(k(x))))': 'This reverses the order of composition.',
+        'K(x) = k(h(g(f(x))))': 'Correct. Apply f first, then g, then h, then k.',
+        'K(x) = k(g(h(f(x))))': 'The middle functions are in the wrong order.',
+        'K(x) = h(k(g(f(x))))': 'This composition order is incorrect.'
+    },
+    'K(x) = k(h(g(f(x))))'
+);
 </script>
 
-<div id='mcq3'></div> 
+<div id='mcq_chain3'></div>
 <script>
-    generateQuiz(
-        'mcq3',
-        'Interpreting the derivative',
-        `T(d) gives the temperature in Celsius of ocean water at a particular location d metres below the
-        surface. Would you expect the derivative T'(d) to be positive or negative?`,
-        {
-        'Positive': 'Would the ocean get colder or hotter as you went deeper?',
-        'Negative': ''
-        },
-        'Negative',
-    );
+generateQuiz(
+    'mcq_chain3',
+    'Chain rule step 3',
+    `Let G(x) = g(f(x)). Which expression correctly gives G'(x)?`,
+    {
+        'G\'(x) = g\'(x)f\'(x)': 'Be careful: g\' must be evaluated at f(x), not x.',
+        'G\'(x) = g\'(f(x)) · f\'(x)': 'Correct. This is the chain rule.',
+        'G\'(x) = g(f(x))': 'This is just the original function.',
+        'G\'(x) = g\'(f(x)) + f\'(x)': 'Chain rule uses multiplication, not addition.'
+    },
+    'G\'(x) = g\'(f(x)) · f\'(x)'
+);
+</script>
+
+<div id='mcq_chain4'></div>
+<script>
+generateQuiz(
+    'mcq_chain4',
+    'Chain rule step 4',
+    `Let H(x) = h(G(x)). Which expression correctly gives H'(x)?`,
+    {
+        'H\'(x) = h\'(x)G\'(x)': 'h\' must be evaluated at G(x).',
+        'H\'(x) = h\'(G(x)) · G\'(x)': 'Correct. Apply the chain rule again.',
+        'H\'(x) = h(G(x))': 'This is not the derivative.',
+        'H\'(x) = h\'(G(x)) + G\'(x)': 'Chain rule requires multiplication.'
+    },
+    'H\'(x) = h\'(G(x)) · G\'(x)'
+);
+</script>
+
+<div id='mcq_chain5'></div>
+<script>
+generateQuiz(
+    'mcq_chain5',
+    'Chain rule step 5',
+    `Which expression correctly gives K'(x)?`,
+    {
+        'K\'(x) = k\'(x)H\'(x)': 'k\' must be evaluated at H(x).',
+        'K\'(x) = k\'(H(x)) · H\'(x)': 'Correct. One final application of the chain rule.',
+        'K\'(x) = k(H(x))': 'This is K(x), not K\'(x).',
+        'K\'(x) = k\'(H(x)) + H\'(x)': 'Chain rule uses multiplication.'
+    },
+    'K\'(x) = k\'(H(x)) · H\'(x)'
+);
+</script>
+
+<div id='mcq_chain_derivative'></div>
+<script>
+generateQuiz(
+    'mcq_chain_derivative',
+    'Derivative of K(x)',
+    `Which of the following is the correct expression for K'(x)?`,
+    {
+        '16x<sup>15</sup> + 112x<sup>13</sup> + 432x<sup>11</sup> + 1040x<sup>9</sup> + 1760x<sup>7</sup> + 2016x<sup>5</sup> + 1536x<sup>3</sup> + 576x':
+            '',
+
+        '16x<sup>15</sup> + 112x<sup>13</sup> + 432x<sup>11</sup> + 1040x<sup>9</sup> + 1760x<sup>7</sup> + 2016x<sup>5</sup> + 1536x<sup>3</sup>':
+            'Close, but you are missing one term.',
+
+        '15x<sup>16</sup> + 13x<sup>14</sup> + 11x<sup>12</sup> + 9x<sup>10</sup> + 7x<sup>8</sup> + 5x<sup>6</sup> + 3x<sup>4</sup> + x<sup>2</sup>':
+            'The powers don't look right.',
+
+        '8x<sup>15</sup> + 56x<sup>13</sup> + 216x<sup>11</sup> + 520x<sup>9</sup> + 880x<sup>7</sup> + 1008x<sup>5</sup> + 768x<sup>3</sup> + 288x':
+            'These coefficients are all exactly half of the correct values. Did you miss something?',
+
+        '16x<sup>14</sup> + 112x<sup>12</sup> + 432x<sup>10</sup> + 1040x<sup>8</sup> + 1760x<sup>6</sup> + 2016x<sup>4</sup> + 1536x<sup>2</sup> + 576':
+            'The powers don't look right.'
+    },
+    '16x<sup>15</sup> + 112x<sup>13</sup> + 432x<sup>11</sup> + 1040x<sup>9</sup> + 1760x<sup>7</sup> + 2016x<sup>5</sup> + 1536x<sup>3</sup> + 576x'
+);
+</script>
+
+<div id='mcq_chain7'></div>
+<script>
+generateQuiz(
+    'mcq_chain6',
+    'Chain rule step 7',
+    `What is the value of K'(-1)?`,
+    {
+        '-7488': 'Correct! Multiplying all chain-rule factors gives -7488.',
+        '7488': 'Close, but you missed the negative sign from f\'(-1) = -2.',
+        '-3744': 'Check your multiplication.',
+        '0': 'None of the derivative factors are zero.'
+    },
+    '-7488'
+);
 </script>
