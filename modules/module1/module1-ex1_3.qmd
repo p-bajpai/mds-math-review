@@ -10,7 +10,7 @@ format: html
 
 In the following question, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.
 
-The function in question is K(x) = (((x<sup>2</sup> + 1)<sup>2</sup> + 2)<sup>2</sup> + 3)<sup>2</sup> + 4
+The function in question is K(x) = (((x<sup>2</sup> + 1)<sup>2</sup> + 2)<sup>2</sup> + 3)<sup>2</sup> + 4 and we want to know its derivative at x = -1.
 
 <div id='mcq_chain1'></div>
 <script>
@@ -19,7 +19,7 @@ generateQuiz(
     'Chain rule step 1',
     `What is the derivative of f(x) = x<sup>2</sup> + 1 with respect to x?`,
     {
-        '2x': 'Correct. The derivative of x² is 2x, and the derivative of 1 is 0.',
+        '2x': '',
         'x': 'You forgot the power rule.',
         '2': 'The derivative is not constant.',
         'x<sup>2</sup>': 'This is the original function, not its derivative.'
@@ -36,7 +36,7 @@ generateQuiz(
     `Which of the following correctly describes K(x)?`,
     {
         'K(x) = f(g(h(k(x))))': 'This reverses the order of composition.',
-        'K(x) = k(h(g(f(x))))': 'Correct. Apply f first, then g, then h, then k.',
+        'K(x) = k(h(g(f(x))))': '',
         'K(x) = k(g(h(f(x))))': 'The middle functions are in the wrong order.',
         'K(x) = h(k(g(f(x))))': 'This composition order is incorrect.'
     },
@@ -52,7 +52,7 @@ generateQuiz(
     `Let G(x) = g(f(x)). Which expression correctly gives G'(x)?`,
     {
         'G\'(x) = g\'(x)f\'(x)': 'Be careful: g\' must be evaluated at f(x), not x.',
-        'G\'(x) = g\'(f(x)) · f\'(x)': 'Correct. This is the chain rule.',
+        'G\'(x) = g\'(f(x)) · f\'(x)': '',
         'G\'(x) = g(f(x))': 'This is just the original function.',
         'G\'(x) = g\'(f(x)) + f\'(x)': 'Chain rule uses multiplication, not addition.'
     },
@@ -68,7 +68,7 @@ generateQuiz(
     `Let H(x) = h(G(x)). Which expression correctly gives H'(x)?`,
     {
         'H\'(x) = h\'(x)G\'(x)': 'h\' must be evaluated at G(x).',
-        'H\'(x) = h\'(G(x)) · G\'(x)': 'Correct. Apply the chain rule again.',
+        'H\'(x) = h\'(G(x)) · G\'(x)': '',
         'H\'(x) = h(G(x))': 'This is not the derivative.',
         'H\'(x) = h\'(G(x)) + G\'(x)': 'Chain rule requires multiplication.'
     },
@@ -84,9 +84,9 @@ generateQuiz(
     `Which expression correctly gives K'(x)?`,
     {
         'K\'(x) = k\'(x)H\'(x)': 'k\' must be evaluated at H(x).',
-        'K\'(x) = k\'(H(x)) · H\'(x)': 'Correct. One final application of the chain rule.',
         'K\'(x) = k(H(x))': 'This is K(x), not K\'(x).',
-        'K\'(x) = k\'(H(x)) + H\'(x)': 'Chain rule uses multiplication.'
+        'K\'(x) = k\'(H(x)) + H\'(x)': 'Chain rule uses multiplication.',
+        'K\'(x) = k\'(H(x)) · H\'(x)': ''
     },
     'K\'(x) = k\'(H(x)) · H\'(x)'
 );
@@ -135,7 +135,7 @@ generateQuiz(
 </script>
 
 <b>
-Phew, that was a lot of work! And the final expression was quite long, even when we just chained four simple functions together, and we only have one variable at play. Thankfully, if we only care about the value of the derivative at a point, there is a better way.
+Phew, that was a lot of work! And the explicit formula in terms of x was quite long, even when we just chained four simple functions together. Thankfully, if we only care about the value of the derivative at a point, there is a better way.
 </b>
 <br><br>
 
@@ -177,7 +177,7 @@ generateQuiz(
 
     <br><br>
 
-    What value do I get if I multiply all the numbers in this second image?
+    Finally, multiply all the numbers you filled in for this second image. <br><br>
     `,
     {
         '3744': 'Try again.',
