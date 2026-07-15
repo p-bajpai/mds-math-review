@@ -33,7 +33,7 @@ Since the "sensitivity" of a function can change over its various possible input
 
 The term "calculus" is related to the word "calculate". In calculus class, we learn rules for calculating the derivatives of many simple mathematical functions. These functions are commonly used to describe real-world phenomena, and so rules for finding their derivatives help us easily investigate phenomena in any scientific field where calculus is applied. Still, we should remember that the "rules" are not all we are interested in. The real goal is to investigate the behaviour of various mathematical functions, and the world around us wherever they appear.
 
-Use the tabs at the top of this section to view the two supplemental videos-- they will guide you through developing some of this intuition for derivatives. Once you are ready, click "Continue" below to test your understanding with some short exercises.
+Use the tabs at the top of this page to view the two supplemental videos-- they will guide you through developing some of this intuition for derivatives. Once you are ready, click the button on the bottom right below to test your understanding with some short exercises.
 
 ## Video 1
 
