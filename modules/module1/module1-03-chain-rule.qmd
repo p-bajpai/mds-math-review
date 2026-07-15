@@ -8,7 +8,9 @@ format:
 
 ::: {.panel-tabset .nav-pills}
 
-## Composing functions
+## Intro
+
+### Composing functions
 
 Describe why it helps to remember a few common functions. Maybe just copy content from CLP?
 

@@ -10,7 +10,7 @@ format: html
 
 In the following question, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.
 
-The function in question is K(x) = (((x<sup>2</sup> + 1)<sup>2</sup> + 2)<sup>2</sup> + 3)<sup>2</sup> + 4 and we want to know its derivative at x = -1.
+The function in question is <b>K(x) = (((x<sup>2</sup> + 1)<sup>2</sup> + 2)<sup>2</sup> + 3)<sup>2</sup> + 4</b> and we want to know its derivative at <b>x = -1</b>.
 
 <div id='mcq_chain1'></div>
 <script>
@@ -27,6 +27,15 @@ generateQuiz(
     '2x'
 );
 </script>
+
+Now define the following additional functions:<br><br>
+<ul>
+<li>g(x) = x<sup>2</sup> + 2</li>
+<li>h(x) = x<sup>2</sup> + 3</li>
+<li>k(x) = x<sup>2</sup> + 4</li>
+</ul>
+
+Make a note to yourself about their respective derivatives&mdash; we will make use of them later.
 
 <div id='mcq_chain2'></div>
 <script>
@@ -81,7 +90,7 @@ generateQuiz(
 generateQuiz(
     'mcq_chain5',
     'Chain rule step 5',
-    `Which expression correctly gives K'(x)?`,
+    `Now we return to the function K(x) from before. Which expression correctly gives K'(x)?`,
     {
         'K\'(x) = k\'(x)H\'(x)': 'k\' must be evaluated at H(x).',
         'K\'(x) = k(H(x))': 'This is K(x), not K\'(x).',
@@ -139,7 +148,7 @@ Phew, that was a lot of work! And the explicit formula in terms of x was quite l
 </b>
 <br><br>
 
-Let f,g,h,k and K be as before and remember f'(x) = g'(x) = h'(x) = k'(x) = 2x.
+Let f,g,h,k and K be as before and remember f'(z) = g'(z) = h'(z) = k'(z) = 2z.
 
 <div id='fwd'></div>
 <script>

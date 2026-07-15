@@ -10,19 +10,30 @@ format:
 
 ## Intro
 
-I can say a few things. But can I
+Differential calculus is a subject in mathematics that aims to understand mathematical functions by studying their "derivatives". There are many interpretations of the derivative, and the study of derivatives finds many applications in the physical sciences, engineering, economics, and several other fields-- including (of course) data science and machine learning.
 
 #### What is a mathematical function?
 
-Black box, inputs and outputs. Give some unusual examples. Make pictures.
+The word "function" has many uses in colloquial English. In day-to-day use, it might mean the purpose or use-case for an object. In computer science, it refers to a reusable block of code that performs a specific action. The word "function" when used in math class might bring to mind sines, cosines, logarithms or polynomials. We might also think of graphs of functions, x and y axes, and various formulas we have learned to write down. But how exactly do we define a mathematical function?
+
+It turns out that the formal definition is very broad-- a mathematical function is just a box that takes some possible inputs, and for each input it spits out an output. Any black box will do, as long as giving the same input twice will always result in the same output (in other words, no "randomness"). For example, we could have a function that takes in English words as input and returns their first letter as output ("apple" --> "a"), or a function that takes a location on the surface of the Earth as input and returns the current surface temperature at that point.
+
+Formulas like sin(x), e<sup>x</sup> and x<sup>2</sup>+1 are recipes for constructing functions. They tell you what happens inside the black box. For example, if I write f(x) = x<sup>2</sup>+1, that defines a function that takes real numbers as input, and for any input returns the "square plus one" (another real number) as output. Some functions have nice recipes (like x<sup>2</sup>+1), while others (like surface temperature on Earth) may not have any such recipe, and we may not know how to calculate it! An ML engineer working on autonomous driving might be interested in the function that takes an image of a road as input and decides whether or not a person is standing in the middle of it. This function probably also doesn't have an exact formula, so we try to approximate it with whatever ingredients we can find.
+
 
 #### Inputs, Outputs and Sensitivity
 
-Is a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.
+As we mentioned before, there are many ways to interpret the derivative (for some examples, see pages 3 and 4 of <a href=https://www.math.toronto.edu/mccann/199/thurston.pdf>this</a> writeup). Each interpretation gives different insight, even if they are all formally equivalent in the end.
+
+Most commonly, the derivative of a function at a point is described as the "instantaneous rate of change" of the function at that point. Stated another way, it measures the "sensitivity" of the function to its input. If I wiggle the input knob on my black box, how rapidly does the output needle swing? If the derivative is large, my function is like a bike in high gear-- even a slight push on the pedals (input) gives a large rotation of the wheel (output). A derivative like 0.00001 suggests that increasing the input would only increase the output a little. A negative derivative means increasing the input will decrease the output, at least in the neighbourhood of the point we are interested in.
+
+Since the "sensitivity" of a function can change over its various possible inputs, we generally talk about the derivative of a function <i>at a point</i>. When we say "the derivative of sine is cosine", we mean that if our original function is given by the recipe "f(x) = sin(x)", then there is also a nice recipe that tells us the derivative at each possible input, namely the recipe "f'(x) = cos(x)". So if we want to know the inputs where sin(x) is increasing, we can look for the points where cos(x) is positive.
 
 #### The "Calculus" of Derivatives
 
-We all know the rules. But what are they good for? Remember the goal is not to know the rules, the rules just help us calculate.
+The term "calculus" is related to the word "calculate". In calculus class, we learn rules for calculating the derivatives of many simple mathematical functions. These functions are commonly used to describe real-world phenomena, and so rules for finding their derivatives help us easily investigate phenomena in any scientific field where calculus is applied. Still, we should remember that the "rules" are not all we are interested in. The real goal is to investigate the behaviour of various mathematical functions, and the world around us wherever they appear.
+
+Use the tabs at the top of this section to view the two supplemental videos-- they will guide you through developing some of this intuition for derivatives. Once you are ready, click "Continue" below to test your understanding with some short exercises.
 
 ## Video 1
 
