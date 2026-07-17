@@ -5,8 +5,8 @@ pagetitle: Home
 
 # Math Review for MDS
 
-This course contains review content on calculus and linear algebra relevant to the Master of Data Science program at UBC. It is not meant to teach you either topic. The goal is rather to
- - provide you a chance to refresh your memory, and 
- - to reframe your understanding in the context of data science and machine learning.
+Welcome to MDS! We hope this math review will help you refresh your memory on core concepts from calculus and linear algebra, and prepare you to apply these concepts in the context of data science and machine learning.
 
- Within each section you will find two types of questions. The first are short "quiz-style" exercises, where you can test (for example) whether you remember how to multiply a vector by a matrix, or how to apply the chain rule for derivatives. The second type of question is meant to guide reflection and exploration. Such questions may be open-ended, test your conceptual understanding or require several steps of careful reasoning. It is ok if you cannot answer them at this time, but try to spend some time thinking through them.
+This website is not intended as a standalone textbook or course. Mostly it just links to existing free and open source materials that cover useful mathematical background. The "modules" organize these materials for ease-of-use: under each you will find a brief conceptual introduction, links to selected videos and some exercises. The "Reference Material" section contains a more detailed list of resources. You can access this section using the navigation pane on the left, or by clicking the arrow at the bottom right of the current page.
+
+We hope you find this website useful, and encourage you to return to it throughout the program as needed to reinforce your understanding.

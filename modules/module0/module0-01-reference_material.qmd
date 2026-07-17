@@ -12,22 +12,22 @@ There are many free resources available online for learning calculus and linear 
 
 Joel Feldman, Andrew Rechnitzer and Elyse Yeager (who are all mathematics faculty at UBC) have written several free textbooks on undergraduate calculus content. The textbooks cover material on single variable and multivariable differential and integeral calculus. See the link below:
 
- - [CLP Textbooks](https://personal.math.ubc.ca/~CLP/) by Feldman, Rechnitzer and Yeager
+ - [CLP Textbooks](https://personal.math.ubc.ca/~CLP/) by Feldman, Rechnitzer and Yeager.
 
 A short, interactive introduction to matrix operations and the geometry of solutions to linear equations is available here:
 
- - [Interactive Linear Algebra](https://personal.math.ubc.ca/~tbjw/ila/index.html) by Margarit, Rabinoff and Williams
+ - [Interactive Linear Algebra](https://personal.math.ubc.ca/~tbjw/ila/index.html) by Margarit, Rabinoff and Williams.
 
 There are many perspectives through which to understand calculus and linear algebra, and any single resource can only cover so much. We also recommend the following textbooks on linear algebra. You may be able to access them through the UBC library:
 
- - [Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/) by Gilbert Strang 
- - [Linear Algebra and Learning from Data](https://math.mit.edu/~gs/learningfromdata/) by Gilbert Strang 
+ - [Introduction to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/) by Gilbert Strang.
+ - [Linear Algebra and Learning from Data](https://math.mit.edu/~gs/learningfromdata/) by Gilbert Strang. 
 
  The second textbook in particular introduces the subject of linear algebra in the context of its application to data science and machine learning.
 
 ### Videos
 
-There are also several videos and recorded lectures available online on this material. One popular resource is the 3blue1brown YouTube channel, which offers many helpful visualisations. See below.
+There are also several videos and recorded lectures available online on this material. One popular resource is the 3blue1brown YouTube channel, which offers many helpful visualisations:
 
  - [Essence of Calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
  - [Essence of Linear Algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)

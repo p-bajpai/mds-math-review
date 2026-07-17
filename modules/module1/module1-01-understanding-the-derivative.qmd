@@ -53,7 +53,7 @@ A function with a large and negative derivative at the current input.
 <br><br>
 We are used to calculating formulas for derivatives, and making statements like "the derivative of sine is cosine" or "the derivative of $x^2$ is $2x$". How do these formulas relate to this notion of sensitivity? At what "point" does this formula give the derivative?
 
-When we say "the derivative of sine is cosine", what is really meant is that if our original function is given by the recipe "$f(x) = \sin(x)$", then there is also a nice recipe that tells us the derivative at *each* possible input, namely the recipe "$f'(x) = \cos(x)$". So if we want to know the inputs where $\sin(x)$ is increasing, we can look for the points where $\cos(x)$ is positive. Many common mathematical expressions have simple recipes for their derivatives, some of which you may have memorized before.
+When we say "the derivative of sine is cosine", what is really meant is that if our original function is given by the recipe $f(x) = \sin(x)$, then there is also a nice recipe that tells us the derivative at *each* possible input, namely the recipe $f'(x) = \cos(x)$. So if we want to know the inputs where $\sin(x)$ is increasing, we can look for the points where $\cos(x)$ is positive. Many common mathematical expressions have simple recipes for their derivatives, some of which you may have memorized before.
 
 
 #### Your next task
