@@ -12,7 +12,7 @@ format:
 
 #### What is a mathematical function?
 
-The word "function" has many uses in colloquial English. In day-to-day use, it might mean the purpose or individual role of an object; in computer science, it refers to a reusable block of code that performs a specific action. The word "function" when used in math class might bring to mind sines, cosines, logarithms or polynomials. We might also think of graphs of functions, x and y axes, and various formulas we have learned to write down. But how exactly do we define a mathematical function?
+The word "function" has many uses in colloquial English. In day-to-day use, it might mean the purpose or individual role of an object; in computer science, it refers to a reusable block of code that performs a specific action. The word "function" when used in math class might bring to mind sines, cosines, logarithms or polynomials. We might also think of graphs of functions, $x$ and $y$ axes, and various formulas we have learned to write down. But how exactly do we define a mathematical function?
 
 It turns out that the formal definition is very broad-- a mathematical function is just a box that takes some possible inputs, and for each input it spits out an output. Any black box will do, as long as giving the same input many times will always result in the same output (in other words, no "randomness"). For example, we could have a function that takes in English words as input and returns their first letter as output ("apple" --> "a"), or a function that takes a location on the surface of the Earth as input and returns as output the mean surface temperature at that location on May 15, 1985.
 <br><br>
