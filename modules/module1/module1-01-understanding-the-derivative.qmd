@@ -26,12 +26,12 @@ A black box
 :::
 </center>
 <br><br>
-Formulas like sin(x), e<sup>x</sup> and x<sup>2</sup>+1 are recipes for constructing functions. They tell you what happens inside the black box. For example, if I write f(x) = x<sup>2</sup>+1, that defines a function that takes real numbers as input, and for any input returns the "square plus one" (another real number) as output. Some functions have nice recipes (like x<sup>2</sup>+1), while others (like surface temperature on Earth) may not have any such recipe, and we may not know how to calculate them! An ML engineer working on autonomous driving might be interested in the function that takes an image of a road as input and outputs whether or not a person is visible standing in the middle of it. This function probably also doesn't have an exact formula, so the engineer will try to approximate it with whatever ingredients they can find.
+Formulas like $\sin(x)$, $e^x$ and $x^2+1$ are recipes for constructing functions. They tell you what happens inside the black box. For example, if I write $f(x) = x^2+1$, that defines a function that takes real numbers as input, and for any input squares it and adds 1 and returns the result (another real number) as output. Some functions have nice recipes (like $x^2+1$), while others (like surface temperature on Earth) may not have any such recipe, and we may not know how to calculate them. An ML engineer working on autonomous driving might be interested in the function that takes an image of a road as input and outputs whether or not a person is visible standing in the middle of it. This function probably also doesn't have an exact formula, so the engineer will try to approximate it with whatever ingredients they can find.
 
 
 #### Inputs, Outputs and Sensitivity
 
-As we mentioned before, there are many ways to interpret the derivative (for some examples, see pages 3 and 4 of <a href=https://www.math.toronto.edu/mccann/199/thurston.pdf>this</a> writeup). Each interpretation gives different insight, even if they are all formally equivalent in the end.
+As we mentioned before, there are many ways to interpret the derivative (for some examples, see pages 3 and 4 of [this](https://www.math.toronto.edu/mccann/199/thurston.pdf) essay). Each interpretation gives different insight, even if they are all formally equivalent in the end.
 
 Most commonly, the derivative of a function at a point is described as the "instantaneous rate of change" of the function at that point. Stated another way, it measures the "sensitivity" of the function to its input. If I wiggle the input knob on my black box, how rapidly does the output needle swing? If the derivative is large, my function is like a bike in high gear-- even a slight push on the pedals (input) gives a large rotation of the wheel (output).
 <br><br>
@@ -53,7 +53,7 @@ A function with a large and negative derivative
 :::
 </center>
 <br><br>
-Since the "sensitivity" of a function can change over its various possible inputs, we generally talk about the derivative of a function <i>at a point</i>. When we say "the derivative of sine is cosine", we mean that if our original function is given by the recipe "f(x) = sin(x)", then there is also a nice recipe that tells us the derivative at each possible input, namely the recipe "f'(x) = cos(x)". So if we want to know the inputs where sin(x) is increasing, we can look for the points where cos(x) is positive.
+Since the "sensitivity" of a function can change over its various possible inputs, we generally talk about the derivative of a function <i>at a point</i>. When we say "the derivative of sine is cosine", we mean that if our original function is given by the recipe "$f(x) = \sin(x)$", then there is also a nice recipe that tells us the derivative at each possible input, namely the recipe "$f'(x) = \cos(x)$". So if we want to know the inputs where $\sin(x)$ is increasing, we can look for the points where $\cos(x)$ is positive.
 
 
 #### Your next task
