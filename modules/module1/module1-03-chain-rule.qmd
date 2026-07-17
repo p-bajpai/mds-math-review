@@ -14,6 +14,16 @@ format:
 
 Describe why it helps to remember a few common functions. Maybe just copy content from CLP?
 
+<br><br>
+<center>
+::: {#fig-chain}
+![](../../static/module1/chain.png){width="80%"}
+
+A chain of functions
+:::
+</center>
+<br><br>
+
 #### The Chain Rule
 
 Black box, inputs and outputs. Give some unusual examples. Make pictures.

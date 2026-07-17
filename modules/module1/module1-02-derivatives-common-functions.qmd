@@ -10,21 +10,67 @@ format:
 
 ## Intro
 
-Describe why it helps to remember a few common functions. Maybe just copy content from CLP?
+#### The Calculus of Derivatives
+
+The term "calculus" is related to the word "calculate". In calculus class, we learn rules for calculating the derivatives of many simple mathematical functions. These functions are commonly used to describe real-world phenomena, and so rules for finding their derivatives help us easily investigate phenomena in any scientific field where calculus is applied. Still, we should remember that the "rules" are not all we are interested in. The real goal is to investigate the behaviour of various mathematical functions, and the world around us wherever they appear.
+
+Generally, these rules allow us to take a starting function $f(x)$, and produce a new function $f'(x)$, i.e. a new black box. This new function $f'$ takes the same inputs as $f$, and for any provided input $x$, returns the value of the *derivative* of $f$ at the point $x$. Conceptually we can still understand the derivative $f'$ as "pointwise" information-- it is still giving us the sensitivity of $f$ at various points we could choose. It just so happpens that when the original function $f$ has a simple recipe (i.e. formula), then $f'$ often does as well.
+
+#### Sum, Product and Difference of Functions
+
+The first step in building rules for calculating derivatives is to consider the sums, products and quotients of functions. Here are the (appropriately named) sum, product and quotient rules for derivatives. For the rules below, $f$ and $g$ are functions that take real number inputs and produce real number outputs.
+
+*Note: Refer to the CLP 1 textbook for more details*
+
+**Sum Rule:** The derivative of the function $f(x) + g(x)$ with respect to $x$ is $$f'(x) + g'(x).$$
+
+**Product Rule:** The derivative of $f(x) \cdot g(x)$ with respect to $x$ is $$f'(x)\cdot g(x) + g'(x)\cdot f(x).$$
+
+**Quotient Rule:** The derivative of $\frac{f(x)}{g(x)}$ with respect to $x$ is $$\frac{f'(x)g(x) - g'(x)f(x)}{g(x)^2}.$$
 
 #### Polynomials
 
-Black box, inputs and outputs. Give some unusual examples. Make pictures.
+Iteratively applying the product rule to the product $$x^n = \underbrace{x + x + \cdots + x}_{n \text{ times}}$$ tells us that the derivative of $f(x) = x^n$ with respect to $x$ is $n\cdot x^{n-1}$.
+
+Remember, again, this formula is just a recipe for calculating the value of the derivative at various possible inputs. The recipe is telling us (for example) that the "sensitivity" of the function $x^5$ to its input at $x=3$ is $4*3^4 = 324$. In other words, at $x=3$ the function $x^5$ is extremely sensitive to small changes in input! If we wiggle the input a little, the output of the function will react by changing more than 300 times as much.
+
+For an arbitrayy polynomial, we now apply the sum rule to calculate its derivative. So for example if $f(x) = x^3 + 3x^2 + 7x + 1$ we get
+
+$$f'(x) = 3x^2 + 3\cdot2\cdot x + 7 = 3x^2 + 6x + 7.$$
 
 #### Trigonometric Functions
 
-Is a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.
+The key rules to remember for trigonometric functions are:
+
+- If $f(x) = \sin x$, then $f'(x) = \cos(x)$.
+- If $f(x) = \cos x$, then $f'(x) = -\sin(x)$.
+
+For the remaining trigonometric functions, we can use these two rules in conjunction with the quotient rule from before.
+
+In the design of neural networks we sometimes also encounter the *hyperbolic functions*, namely
+$$
+\begin{aligned}
+\sinh(x) &= \frac{e^x - e^{-x}}{2} = -i\sin(ix)\\
+\cosh(x) &= \frac{e^x + e^{-x}}{2} = \cos(ix)\\
+\tanh(x) &= \frac{e^x - e^{-x}}{e^x + e^{-x}} = \frac{\sinh(x)}{\cosh(x)}
+\end{aligned}
+$$
+where $i$ is the imaginary unit with $i^2=-1$. In this case:
+
+- If $f(x) = \sinh x$, then $f'(x) = \cosh(x)$.
+- If $f(x) = \cosh x$, then $f'(x) = \sinh(x)$.
+
+Notice there is no negative sign in the formula for the derivative for $\cosh(x)$.
 
 #### Exponentials and Logarithms
 
-We all know the rules. But what are they good for? Remember the goal is not to know the rules, the rules just help us calculate.
+Finally, we have:
 
-#### Sum, Product and Difference of Functions
+- If $f(x) = e^x$, then $f'(x) = e^x$, and
+- If $f(x) = \log x$, then $f'(x) = \frac1x$.
+
+Remember that while $e^x$ takes any possible real number as input, it only outputs positive real numbers. In contrast, $\log x$ can only accept positive real numbers as input but its outputs cover all real numbers.
+
 
 ## Video 1
 
