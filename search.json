@@ -1,0 +1,222 @@
+[
+  {
+    "objectID": "modules/module4/module4-01-building_a_picture.html",
+    "href": "modules/module4/module4-01-building_a_picture.html",
+    "title": "4. How to Build a Linear Transformation",
+    "section": "",
+    "text": "4. How to Build a Linear Transformation\n\nIntroVideo 1Video 2\n\n\nI can say a few things. But can I\n\nWhat is a mathematical function?\nBlack box, inputs and outputs. Give some unusual examples. Make pictures.\n\n\nInputs, Outputs and Sensitivity\nIs a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.\n\n\nThe “calculus” of derivatives\nWe all know the rules. But what are they good for? Remember the goal is not to know the rules, the rules just help us calculate.",
+    "crumbs": [
+      "**M4. More with Linear Algebra**",
+      "4. How to Build a Linear Transformation"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module3-01-mat-and-vec.html",
+    "href": "modules/module3/module3-01-mat-and-vec.html",
+    "title": "3. What is a Matrix for?",
+    "section": "",
+    "text": "3. What is a Matrix for?\n\nIntroVideo 1Video 2\n\n\nI can say a few things. But can I\n\nWhat is a mathematical function?\nBlack box, inputs and outputs. Give some unusual examples. Make pictures.\n\n\nInputs, Outputs and Sensitivity\nIs a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.\n\n\nThe “calculus” of derivatives\nWe all know the rules. But what are they good for? Remember the goal is not to know the rules, the rules just help us calculate.",
+    "crumbs": [
+      "**M3. Matrices and Vectors**",
+      "3. What is a Matrix for?"
+    ]
+  },
+  {
+    "objectID": "modules/module2/module2-01-several-variables.html",
+    "href": "modules/module2/module2-01-several-variables.html",
+    "title": "2. Partial Derivatives",
+    "section": "",
+    "text": "2. Partial Derivatives\n\nIntroVideo 1Video 2\n\n\nI can say a few things. But can I\n\nWhat is a mathematical function?\nBlack box, inputs and outputs. Give some unusual examples. Make pictures.\n\n\nInputs, Outputs and Sensitivity\nIs a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.\n\n\nThe “calculus” of derivatives\nWe all know the rules. But what are they good for? Remember the goal is not to know the rules, the rules just help us calculate.",
+    "crumbs": [
+      "**M2. Functions of Several Variables**",
+      "2. Partial Derivatives"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-ex1_3.html",
+    "href": "modules/module1/module1-ex1_3.html",
+    "title": "1.3. Exercises",
+    "section": "",
+    "text": "In the following questions, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.\nThe function in question is K(x) = (((x2 + 1)2 + 2)2 + 3)2 + 4 and we want to know its derivative at x = -1.\n\n\n\n\nNow define the following additional functions:\n\n\ng(x) = x2 + 2\n\n\nh(x) = x2 + 3\n\n\nk(x) = x2 + 4\n\n\nMake a note to yourself about their respective derivatives— we will make use of them later.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Phew, that was a lot of work! And the explicit formula in terms of x was quite long, even when we just chained four simple functions together. Thankfully, if we only care about the value of the derivative at a point, there is a better way.  \nLet f,g,h,k and K be as before and remember f’(z) = g’(z) = h’(z) = k’(z) = 2z.\n\n\n\n\n\n\n\n\nDid we get the same final answer? What was the most complicated symbolic expression you had to write down for the second approach? Which method would you rather use if you had a chain of 100 functions involving sine, cosine, logarithms and exponents?",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "&nbsp;&nbsp; 1.3. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-ex1_3.html#chain-rule",
+    "href": "modules/module1/module1-ex1_3.html#chain-rule",
+    "title": "1.3. Exercises",
+    "section": "",
+    "text": "In the following questions, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.\nThe function in question is K(x) = (((x2 + 1)2 + 2)2 + 3)2 + 4 and we want to know its derivative at x = -1.\n\n\n\n\nNow define the following additional functions:\n\n\ng(x) = x2 + 2\n\n\nh(x) = x2 + 3\n\n\nk(x) = x2 + 4\n\n\nMake a note to yourself about their respective derivatives— we will make use of them later.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Phew, that was a lot of work! And the explicit formula in terms of x was quite long, even when we just chained four simple functions together. Thankfully, if we only care about the value of the derivative at a point, there is a better way.  \nLet f,g,h,k and K be as before and remember f’(z) = g’(z) = h’(z) = k’(z) = 2z.\n\n\n\n\n\n\n\n\nDid we get the same final answer? What was the most complicated symbolic expression you had to write down for the second approach? Which method would you rather use if you had a chain of 100 functions involving sine, cosine, logarithms and exponents?",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "&nbsp;&nbsp; 1.3. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-ex1_1.html",
+    "href": "modules/module1/module1-ex1_1.html",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "The following exercises are adapted from the CLP-1 Problem Book",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "&nbsp;&nbsp; 1.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-ex1_1.html#understanding-the-derivative",
+    "href": "modules/module1/module1-ex1_1.html#understanding-the-derivative",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "The following exercises are adapted from the CLP-1 Problem Book",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "&nbsp;&nbsp; 1.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-02-derivatives-common-functions.html",
+    "href": "modules/module1/module1-02-derivatives-common-functions.html",
+    "title": "2. Derivatives of Common Functions",
+    "section": "",
+    "text": "2. Derivatives of Common Functions\n\nIntroVideo 1Video 2Video 3\n\n\n\nThe Calculus of Derivatives\nThe term “calculus” is related to the word “calculate”. In calculus class, we learn rules for calculating the derivatives of many simple mathematical functions. These functions are commonly used to describe real-world phenomena, and so rules for finding their derivatives help us easily investigate phenomena in any scientific field where calculus is applied. Still, we should remember that the “rules” are not all we are interested in. The real goal is to investigate the behaviour of various mathematical functions, and the world around us wherever they appear.\nGenerally, these rules allow us to take a starting function \\(f(x)\\), and produce a new function \\(f'(x)\\), i.e. a new black box. This new function \\(f'\\) takes the same inputs as \\(f\\), and for any provided input \\(x\\), returns the value of the derivative of \\(f\\) at the point \\(x\\). Conceptually we can still understand the derivative \\(f'\\) as “pointwise” information– it is still giving us the sensitivity of \\(f\\) at various points we could choose. It just so happpens that when the original function \\(f\\) has a simple recipe (i.e. formula), then \\(f'\\) often does as well.\n\n\nSum, Product and Difference of Functions\nThe first step in building rules for calculating derivatives is to consider the sums, products and quotients of functions. Here are the (appropriately named) sum, product and quotient rules for derivatives. For the rules below, \\(f\\) and \\(g\\) are functions that take real number inputs and produce real number outputs.\nNote: Refer to the CLP 1 textbook for more details\nSum Rule: The derivative of the function \\(f(x) + g(x)\\) with respect to \\(x\\) is \\[f'(x) + g'(x).\\]\nProduct Rule: The derivative of \\(f(x) \\cdot g(x)\\) with respect to \\(x\\) is \\[f'(x)\\cdot g(x) + g'(x)\\cdot f(x).\\]\nQuotient Rule: The derivative of \\(\\frac{f(x)}{g(x)}\\) with respect to \\(x\\) is \\[\\frac{f'(x)g(x) - g'(x)f(x)}{g(x)^2}.\\]\n\n\nPolynomials\nIteratively applying the product rule to the product \\[x^n = \\underbrace{x + x + \\cdots + x}_{n \\text{ times}}\\] tells us that the derivative of \\(f(x) = x^n\\) with respect to \\(x\\) is \\(n\\cdot x^{n-1}\\).\nRemember, again, this formula is just a recipe for calculating the value of the derivative at various possible inputs. The recipe is telling us (for example) that the “sensitivity” of the function \\(x^5\\) to its input at \\(x=3\\) is \\(4*3^4 = 324\\). In other words, at \\(x=3\\) the function \\(x^5\\) is extremely sensitive to small changes in input! If we wiggle the input a little, the output of the function will react by changing more than 300 times as much.\nFor an arbitrayy polynomial, we now apply the sum rule to calculate its derivative. So for example if \\(f(x) = x^3 + 3x^2 + 7x + 1\\) we get\n\\[f'(x) = 3x^2 + 3\\cdot2\\cdot x + 7 = 3x^2 + 6x + 7.\\]\n\n\nTrigonometric Functions\nThe key rules to remember for trigonometric functions are:\n\nIf \\(f(x) = \\sin x\\), then \\(f'(x) = \\cos(x)\\).\nIf \\(f(x) = \\cos x\\), then \\(f'(x) = -\\sin(x)\\).\n\nFor the remaining trigonometric functions, we can use these two rules in conjunction with the quotient rule from before.\nIn the design of neural networks we sometimes also encounter the hyperbolic functions, namely \\[\n\\begin{aligned}\n\\sinh(x) &= \\frac{e^x - e^{-x}}{2} = -i\\sin(ix)\\\\\n\\cosh(x) &= \\frac{e^x + e^{-x}}{2} = \\cos(ix)\\\\\n\\tanh(x) &= \\frac{e^x - e^{-x}}{e^x + e^{-x}} = \\frac{\\sinh(x)}{\\cosh(x)}\n\\end{aligned}\n\\] where \\(i\\) is the imaginary unit with \\(i^2=-1\\). In this case:\n\nIf \\(f(x) = \\sinh x\\), then \\(f'(x) = \\cosh(x)\\).\nIf \\(f(x) = \\cosh x\\), then \\(f'(x) = \\sinh(x)\\).\n\nNotice there is no negative sign in the formula for the derivative for \\(\\cosh(x)\\).\n\n\nExponentials and Logarithms\nFinally, we have:\n\nIf \\(f(x) = e^x\\), then \\(f'(x) = e^x\\), and\nIf \\(f(x) = \\log x\\), then \\(f'(x) = \\frac1x\\).\n\nRemember that while \\(e^x\\) takes any possible real number as input, it only outputs positive real numbers. In contrast, \\(\\log x\\) can only accept positive real numbers as input but its outputs cover all real numbers.",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "2. Derivatives of Common Functions"
+    ]
+  },
+  {
+    "objectID": "modules/module0/module0-01-reference_material.html",
+    "href": "modules/module0/module0-01-reference_material.html",
+    "title": "Reference Material",
+    "section": "",
+    "text": "Reference Material\nThere are many free resources available online for learning calculus and linear algebra. We provide some suggestions below.\n\nTextbooks\nJoel Feldman, Andrew Rechnitzer and Elyse Yeager (who are all mathematics faculty at UBC) have written several free textbooks on undergraduate calculus content. The textbooks cover material on single variable and multivariable differential and integeral calculus. See the link below:\n\nCLP Textbooks by Feldman, Rechnitzer and Yeager.\n\nA short, interactive introduction to matrix operations and the geometry of solutions to linear equations is available here:\n\nInteractive Linear Algebra by Margarit, Rabinoff and Williams.\n\nThere are many perspectives through which to understand calculus and linear algebra, and any single resource can only cover so much. We also recommend the following textbooks on linear algebra. You may be able to access them through the UBC library:\n\nIntroduction to Linear Algebra by Gilbert Strang.\nLinear Algebra and Learning from Data by Gilbert Strang.\n\nThe second textbook in particular introduces the subject of linear algebra in the context of its application to data science and machine learning.\n\n\nVideos\nThere are also several videos and recorded lectures available online on this material. One popular resource is the 3blue1brown YouTube channel, which offers many helpful visualisations:\n\nEssence of Calculus\nEssence of Linear Algebra\n\nGilbert Strang, the author of two of the textbooks mentioned above, has also made videos from his MIT courses available for free online.\n\nHighlights of Calculus\nLinear Algebra\n\nWe will link to these resources many times, and highlight relevant sections as we go along.",
+    "crumbs": [
+      "**M0. Welcome**",
+      "Reference Material"
+    ]
+  },
+  {
+    "objectID": "modules/index.html",
+    "href": "modules/index.html",
+    "title": "Math Review for MDS",
+    "section": "",
+    "text": "Math Review for MDS\nWelcome to MDS! We hope this math review will help you refresh your memory on core concepts from calculus and linear algebra, and prepare you to apply these concepts in the context of data science and machine learning.\nThis website is not intended as a standalone textbook or course; mostly it just links to existing free and open source materials. The “modules” organize these materials for ease-of-use: under each you will find a brief conceptual introduction, links to selected videos and some exercises. The “Reference Material” section contains a more detailed list of resources. You can access this section using the navigation pane on the left, or by clicking the arrow at the bottom right of the current page.\nWe hope you find this website useful, and encourage you to return to it throughout the program as needed to reinforce your understanding.",
+    "crumbs": [
+      "**M0. Welcome**",
+      "0. Welcome!"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-01-understanding-the-derivative.html",
+    "href": "modules/module1/module1-01-understanding-the-derivative.html",
+    "title": "1. Understanding the Derivative",
+    "section": "",
+    "text": "1. Understanding the Derivative\n\nIntroVideo 1Video 2\n\n\n\nWhat is a mathematical function?\nThe word “function” has many uses in colloquial English. In day-to-day use, it might mean the purpose or individual role of an object; in computer science, it refers to a reusable block of code that performs a specific action. The word “function” when used in math class might bring to mind sines, cosines, logarithms or polynomials. We might also think of graphs of functions, \\(x\\) and \\(y\\) axes, and various formulas we have learned to write down. But how exactly do we define a mathematical function?\nIt turns out that the formal definition is very broad– a mathematical function is just a box that takes some possible inputs, and for each input it spits out an output. Any black box will do, as long as giving the same input many times will always result in the same output (in other words, no “randomness”). For example, we could have a function that takes in English words as input and returns their first letter as output (“apple” –&gt; “a”), or a function that takes a location on the surface of the Earth as input and returns as output the mean surface temperature at that location on May 15, 1985. \n\n\n\n\n\n\n\nFigure 1: A black box.\n\n\n\n\n Formulas like \\(\\sin(x)\\), \\(e^x\\) and \\(x^2+1\\) are recipes for constructing functions. They tell you what happens inside the black box. For example, if I write \\(f(x) = x^2+1\\), that defines a function that takes real numbers as input, squares it, then adds 1, and returns the result (another real number) as output. Some functions have nice recipes (like \\(x^2+1\\)), while others (like surface temperature on Earth) may not have any such recipe, and we may not know how to calculate them. An ML engineer working on autonomous driving might be interested in the function that takes an image of a road as input and outputs whether or not a person is visible standing in the middle of it. This function probably also doesn’t have an exact formula, so the engineer will try to approximate it with whatever ingredients they can find.\n\n\nInputs, Outputs and Sensitivity\nAs we mentioned before, there are many ways to interpret the derivative (for some examples, see pages 3 and 4 of this essay). Each interpretation gives different insight, even if they are all formally equivalent in the end.\nMost commonly, the derivative of a function at a point is described as the “instantaneous rate of change” of the function at that point. Stated another way, it measures the “sensitivity” of the function to its input. If I wiggle the input knob on my black box, how rapidly does the output needle swing? If the derivative is large, my function is like a bike in high gear– even a slight push on the pedals (input) gives a large rotation of the wheel (output). Alternatively, for a function with a small (but still positive) derivative, a large change in the input may only cause a small change in output. \n\n\n\n\n\n\n\nFigure 2: A function with a small positive derivative.\n\n\n\n\n A constant derivative equal to 2 over the entire domain of the function means any change in input would give twice the size of change in the output. A negative derivative means increasing the input will decrease the output, at least in the immediate neighbourhood of the point we are interested in. Why only in a neighbourhood? Well, the sensitivity of a function may differ at different points, so if we stray too far from the point we started out at, the behaviour of the function may change quite a bit. The derivative at a point gives us a “zoomed-in” picture of the function there, and the information it provides only applies within this zoomed-in field of view. \n\n\n\n\n\n\n\nFigure 3: A function with a large and negative derivative at the current input.\n\n\n\n\n We are used to calculating formulas for derivatives, and making statements like “the derivative of sine is cosine” or “the derivative of \\(x^2\\) is \\(2x\\)”. How do these formulas relate to this notion of sensitivity? At what “point” does this formula give the derivative?\nWhen we say “the derivative of sine is cosine”, what is really meant is that if our original function is given by the recipe \\(f(x) = \\sin(x)\\), then there is also a nice recipe that tells us the derivative at each possible input, namely the recipe \\(f'(x) = \\cos(x)\\). So if we want to know the inputs where \\(\\sin(x)\\) is increasing, we can look for the points where \\(\\cos(x)\\) is positive. Many common mathematical expressions have simple recipes for their derivatives, some of which you may have memorized before.\n\n\nYour next task\nUse the tabs at the top of this page to view the two supplemental videos— they will guide you through developing some of this intuition for derivatives. Once you are ready, click the button on the bottom right below to test your understanding with some short exercises.",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "1. Understanding the Derivative"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-03-chain-rule.html",
+    "href": "modules/module1/module1-03-chain-rule.html",
+    "title": "3. The Chain Rule",
+    "section": "",
+    "text": "3. The Chain Rule\n\nIntroVideo 1Video 2\n\n\n\nComposing functions\nWe have seen how to combine functions by taking sums, products and quotients. One more common method of combining functions is to compose them together, i.e. to take the output of one function and feed it in as input to another. For example, in Figure 1 we see that the output of the first function \\(f\\) becomes the input to the second function \\(g\\). My overall transformation is then represented as \\(g(f(x))\\).\n\n\n\n\n\n\n\n\nFigure 1: A chain of functions\n\n\n\n\n\nWhat is the derivative of this composite function with respect to \\(x\\)? The image in Figure 1 itself suggests the correct answer. If \\(f\\)’s output is changing by a factor of two relative to its input, and \\(g\\)’s output is changing by a factor of four relative to it’s input, then the output \\(g(f(x))\\) must be changing by a factor of eight! In other words, the sensitivity of the overall function \\(g(f(x))\\) to its input is a product of the sensitivities of the component functions \\(f\\) and \\(g\\).\n\nThe Chain Rule\nThe above argument (carried out with a little more mathematical care) leads us to the chain rule for derivatives. The main thing to remember about the chain rule is that the input to my second function is determined by the output of the first— so in Figure 1 for example, we care about the derivative of \\(f\\) at the input \\(x\\), but the derivative of \\(g\\) at it’s input which is \\(f(x)\\). Putting this all together, we get that the derivative of the function \\(g(f(x))\\) with respect to \\(x\\) is\n\\[\ng'(f(x))\\cdot f'(x).\n\\]\nYou may want to think about what this implies if \\(f\\) and \\(g\\) are both decreasing i.e. have negative derivatives. The chain rule tells us that the derivative of the composition must be positive— can you convince yourself this is correct? What happens to the output \\(g(f(x))\\) if we slightly increase the value of \\(x\\) in this situation? Does it increase or decrease?\n\n\nChains of arbitrary length\nThe chain rule is not limited to just two function compositions. The same logic applies if (say) we have a composition \\(f_3(f_2(f_1(x)))\\)— here we have three functions, so we need to take each of their derivatives at their own inputs. Multiplying them together gives the overall derivative \\[\nf_3'(f_2(f_1(x))) \\cdot f_2'(f_1(x)) \\cdot f_1'(x).\n\\]\nYou can think of undoing the chain one step at a time, from outside in. First, take the derivative of \\(f_3\\) at its input \\(f_2(f_1(x))\\). But this “input” is itself the output of a function, so we differentiate again to get \\(f_2'(f_1(x))\\). Finally we differentiate the innermost function to get \\(f_1'(x)\\) and then multiply it all together.\nAs before, the videos linked through the tabs above will provide some more details on how and why the chain rule works, and the exercises will give you some opportunity to practice applying it.",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "3. The Chain Rule"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-ex1_2.html",
+    "href": "modules/module1/module1-ex1_2.html",
+    "title": "1.2. Exercises",
+    "section": "",
+    "text": "The following exercises are adapted from the CLP-1 Problem Book",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "&nbsp;&nbsp; 1.2. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module1/module1-ex1_2.html#derivatives-of-common-functions",
+    "href": "modules/module1/module1-ex1_2.html#derivatives-of-common-functions",
+    "title": "1.2. Exercises",
+    "section": "",
+    "text": "The following exercises are adapted from the CLP-1 Problem Book",
+    "crumbs": [
+      "**M1. Functions of a Single Variable**",
+      "&nbsp;&nbsp; 1.2. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module2/module1-ex2_1.html",
+    "href": "modules/module2/module1-ex2_1.html",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "The following exercises are adapted from the CLP-1 Problem Book",
+    "crumbs": [
+      "**M2. Functions of Several Variables**",
+      "&nbsp;&nbsp; 2.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module2/module1-ex2_1.html#understanding-the-derivative",
+    "href": "modules/module2/module1-ex2_1.html#understanding-the-derivative",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "The following exercises are adapted from the CLP-1 Problem Book",
+    "crumbs": [
+      "**M2. Functions of Several Variables**",
+      "&nbsp;&nbsp; 2.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module1-ex3_1.html",
+    "href": "modules/module3/module1-ex3_1.html",
+    "title": "1.3. Exercises",
+    "section": "",
+    "text": "In the following question, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.\nThe function in question is K(x) = (((x2 + 1)2 + 2)2 + 3)2 + 4",
+    "crumbs": [
+      "**M3. Matrices and Vectors**",
+      "&nbsp;&nbsp; 3.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module3/module1-ex3_1.html#chain-rule",
+    "href": "modules/module3/module1-ex3_1.html#chain-rule",
+    "title": "1.3. Exercises",
+    "section": "",
+    "text": "In the following question, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.\nThe function in question is K(x) = (((x2 + 1)2 + 2)2 + 3)2 + 4",
+    "crumbs": [
+      "**M3. Matrices and Vectors**",
+      "&nbsp;&nbsp; 3.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module4/module1-ex4_1.html",
+    "href": "modules/module4/module1-ex4_1.html",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "The following exercises are adapted from the CLP-1 Problem Book",
+    "crumbs": [
+      "**M4. More with Linear Algebra**",
+      "&nbsp;&nbsp; 4.1. Exercises"
+    ]
+  },
+  {
+    "objectID": "modules/module4/module1-ex4_1.html#understanding-the-derivative",
+    "href": "modules/module4/module1-ex4_1.html#understanding-the-derivative",
+    "title": "1.1. Exercises",
+    "section": "",
+    "text": "The following exercises are adapted from the CLP-1 Problem Book",
+    "crumbs": [
+      "**M4. More with Linear Algebra**",
+      "&nbsp;&nbsp; 4.1. Exercises"
+    ]
+  }
+]
