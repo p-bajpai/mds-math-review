@@ -8,7 +8,42 @@ format: html
 
 ## Chain Rule
 
-In the following question, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.
+<div id='mcq_word1'></div>
+<script>
+generateQuiz(
+    'mcq_word1',
+    'Chain rule inputs',
+    `Suppose two functions $f(x)$ and $g(x)$ are both increasing at $x=1$. Can we say whether $f(g(x))$ is increasing, decreasing or flat at $x=1$??`,
+    {
+        'Increasing': 'What is the input to g?',
+        'Decreasing': 'What is the input to g?',
+        'Flat': 'What is the input to g?',
+        'Cannot tell with the information provided': ''
+    },
+    'Cannot tell with the information provided'
+);
+</script>
+
+<div id='mcq_short1'></div>
+<script>
+generateQuiz(
+    'mcq_short1',
+    'Chain rule practice',
+    `What is the derivative of f(x) = e<sup>sin(4x+&pi;)</sup> with respect to x at x=0?`,
+    {
+        '0': 'Not quite!',
+        'e': 'Check again.',
+        '4': 'At what point are you evaluating your derivatives?',
+        '-4': ''
+        '4e': ''
+    },
+    '-4'
+);
+</script>
+
+### Symbolic and Automatic Differentiation
+
+In the following questions, we are going to find the derivative of a long chain of functions in two ways. First we will differentiate symbolically, to compute an explicit formula, and then plug in our value of interest. Then, we will emualate automatic differentiation; this is the process by which modern machine learning libraries compute derivatives at a given point.
 
 The function in question is <b>K(x) = (((x<sup>2</sup> + 1)<sup>2</sup> + 2)<sup>2</sup> + 3)<sup>2</sup> + 4</b> and we want to know its derivative at <b>x = -1</b>.
 
@@ -16,7 +51,7 @@ The function in question is <b>K(x) = (((x<sup>2</sup> + 1)<sup>2</sup> + 2)<sup
 <script>
 generateQuiz(
     'mcq_chain1',
-    'Chain rule step 1',
+    'Step 1',
     `What is the derivative of f(x) = x<sup>2</sup> + 1 with respect to x?`,
     {
         '2x': '',
@@ -41,7 +76,7 @@ Make a note to yourself about their respective derivatives&mdash; we will make u
 <script>
 generateQuiz(
     'mcq_chain2',
-    'Chain rule step 2',
+    'Step 2',
     `Which of the following correctly describes K(x)?`,
     {
         'K(x) = f(g(h(k(x))))': 'This reverses the order of composition.',
@@ -57,7 +92,7 @@ generateQuiz(
 <script>
 generateQuiz(
     'mcq_chain3',
-    'Chain rule step 3',
+    'Step 3',
     `Let G(x) = g(f(x)). Which expression correctly gives G'(x)?`,
     {
         'G\'(x) = g\'(x)f\'(x)': 'Be careful: g\' must be evaluated at f(x), not x.',
@@ -73,7 +108,7 @@ generateQuiz(
 <script>
 generateQuiz(
     'mcq_chain4',
-    'Chain rule step 4',
+    'Step 4',
     `Let H(x) = h(G(x)). Which expression correctly gives H'(x)?`,
     {
         'H\'(x) = h\'(x)G\'(x)': 'h\' must be evaluated at G(x).',
@@ -89,7 +124,7 @@ generateQuiz(
 <script>
 generateQuiz(
     'mcq_chain5',
-    'Chain rule step 5',
+    'Step 5',
     `Now we return to the function K(x) from before. Which expression correctly gives K'(x)?`,
     {
         'K\'(x) = k\'(x)H\'(x)': 'k\' must be evaluated at H(x).',
@@ -105,7 +140,7 @@ generateQuiz(
 <script>
 generateQuiz(
     'mcq_chain6',
-    'Chain Rule Step 6',
+    'Step 6',
     `Which of the following is the correct expression for K'(x)? Use your responses to the above questions, and write the final answer as an explicit symbolic expression in x.`,
     {
         '16x<sup>15</sup> + 112x<sup>13</sup> + 432x<sup>11</sup> + 1040x<sup>9</sup> + 1760x<sup>7</sup> + 2016x<sup>5</sup> + 1536x<sup>3</sup> + 576x':
@@ -131,7 +166,7 @@ generateQuiz(
 <script>
 generateQuiz(
     'mcq_chain7',
-    'Chain rule step 7',
+    'Step 7',
     `What is the value of K'(-1)?`,
     {
         '-7488': 'Correct! Multiplying all chain-rule factors gives -7488.',
