@@ -13,7 +13,7 @@ format: html
 generateQuiz(
     'mcq_word1',
     'Chain rule inputs',
-    `Suppose two functions $f(x)$ and $g(x)$ are both increasing at $x=1$. Can we say whether $f(g(x))$ is increasing, decreasing or flat at $x=1$??`,
+    `Suppose two functions f(x) and g(x) are both increasing at x=1. Can we say whether f(g(x)) is increasing, decreasing or flat at x=1?`,
     {
         'Increasing': 'What is the input to g?',
         'Decreasing': 'What is the input to g?',
@@ -34,8 +34,8 @@ generateQuiz(
         '0': 'Not quite!',
         'e': 'Check again.',
         '4': 'At what point are you evaluating your derivatives?',
-        '-4': ''
-        '4e': ''
+        '-4': '',
+        '4e': 'Check your calculations.'
     },
     '-4'
 );
