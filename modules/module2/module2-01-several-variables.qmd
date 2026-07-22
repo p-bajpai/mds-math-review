@@ -4,32 +4,30 @@ format:
     page-layout: full
 ---
 
-# 2. Partial Derivatives
+# 1. Partial Derivatives and Gradients
 
 ::: {.panel-tabset .nav-pills}
 
 ## Intro
 
-I can say a few things. But can I
+#### A Function with Many Inputs
 
-#### What is a mathematical function?
+Our black box could accept many inputs. If we have two inputs, then to draw a graph I need to axes for variables, and a third axis for the output. If we want graphs of functions of three or more variables, we are out of luck.
 
-Black box, inputs and outputs. Give some unusual examples. Make pictures.
+#### Partial Derivatives and Tangent Planes
 
-#### Inputs, Outputs and Sensitivity
+Sensitivity to each input. If we have 2 inputs, graph is a surface and so it no longer has just a tangent line, it has a tangent plane. This plane is linear with the same "sensitivity" to x and y as original f.
 
-Is a picture possible here? Talk about sensitivity, negative vs positive derivatives etc.
+#### The Gradient
 
-#### The "calculus" of derivatives
-
-We all know the rules. But what are they good for? Remember the goal is not to know the rules, the rules just help us calculate.
+A vector of partial derivatives. Why does it give direction of steepest increase?
 
 ## Video 1
 
 <iframe
     class="video"
-    src="https://www.youtube.com/embed/UcWsDwg1XwM&t=13s" 
-    title="Big Picture of Calculus - Gilbert Strang"
+    src="https://www.youtube.com/embed/dK3NEf13nPc" 
+    title="Level curves; partial derivatives; tangent plane --- MIT OpenCourseware"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
@@ -39,8 +37,8 @@ We all know the rules. But what are they good for? Remember the goal is not to k
 
 <iframe
     class="video"
-    src="https://www.youtube.com/embed/T_I-CUOc_bk" 
-    title="Big Picture: Derivatives - Gilbert Strang"
+    src="https://www.youtube.com/embed/2XraaWefBd8" 
+    title="Gradient; directional derivative; tangent plane --- MIT OpenCourseWare"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen

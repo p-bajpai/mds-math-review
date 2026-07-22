@@ -1,0 +1,72 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>  
+
+# 1.1. Exercises
+
+## Understanding the Derivative
+
+The following exercises are adapted from the [CLP-1 Problem Book](https://personal.math.ubc.ca/~CLP/CLP1/)
+
+<div id='mcq1'></div> 
+<script>
+    generateQuiz(
+        'mcq1', 
+        'Select the correct option', 
+        `The function f(x) is graphed below. <br><br>
+
+        <img src="../../static/module1/func1.png" width="500">
+
+        <br><br>
+        Select the option below that describes its derivative. <br>
+        `, 
+        { 
+        'Constant, Always Negative': 'What is the slope of the graph?',
+        'Constant, Always Positive': '',
+        'Increasing, Always Positive': 'What is the slope of the graph?',
+        'Decreasing, Always Negative': 'What is the slope of the graph?',
+        'Sometimes Positive, Sometimes Negative': 'What is the slope of the graph?'
+        },
+        'Constant, Always Positive',
+    );
+</script>
+
+<div id='mcq2'></div> 
+<script>
+    generateQuiz(
+        'mcq2',
+        'Select the correct option', 
+        `The function f(x) is graphed below. <br><br>
+
+        <img src="../../static/module1/func2.png" width="500">
+
+        <br><br>
+        Select the option below that describes its derivative. <br>
+        `, 
+        { 
+        'Constant': 'Try again!',
+        'Increasing, always negative': 'Would increasing a negative derivative make the slope steeper or shallower?',
+        'Sometimes increasing, sometimes decreasing, always negative': '',
+        'Decreasing, always negative': 'Would decreasing a negative derivative make the slope steeper or shallowe?',
+        'Sometimes positive, sometimes negative': 'What does a positive derivative imply?'
+        },
+        'Sometimes increasing, sometimes decreasing, always negative',
+    );
+</script>
+
+<div id='mcq3'></div> 
+<script>
+    generateQuiz(
+        'mcq3',
+        'Interpreting the derivative',
+        `T(d) gives the temperature in Celsius of ocean water at a particular location d metres below the
+        surface. Would you expect the derivative T'(d) to be positive or negative?`,
+        {
+        'Positive': 'Would the ocean get colder or hotter as you went deeper?',
+        'Negative': ''
+        },
+        'Negative',
+    );
+</script>
