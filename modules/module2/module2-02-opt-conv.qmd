@@ -44,4 +44,17 @@ We all know the rules. But what are they good for? Remember the goal is not to k
     allowfullscreen
 ></iframe>
 
+## Bonus
+
+The video below introduces the topic of convex optimization, and contains some material you may find interesting. However, most of this material is outside the scope of MDS!
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/oLowhs83aHk" 
+    title="Convex Optimization Basics --- Intelligent Systems Lab"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
 :::
