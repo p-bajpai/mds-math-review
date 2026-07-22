@@ -1,0 +1,25 @@
+---
+format:
+  html:
+    page-layout: full
+---
+
+# 3. Max, Min, Second Derivative
+
+::: {.panel-tabset .nav-pills}
+
+## Video
+
+The video below discusses the basics of using calculus to find maximum and minimum values of one-variable functions. These ideas will be expanded on in the next module, towards optimization for multivariate functions.
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/tBBJ2TSTa1Q" 
+    title="Max and Min and Second Derivative --- Gilbert Strang"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+
+:::
