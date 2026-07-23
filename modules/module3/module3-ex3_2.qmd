@@ -221,3 +221,22 @@ $$
 
 satisfies the requirements of the question, as does any non-zero constant multiple of it (e.g. $0.5A$ or $-A$).
 :::
+
+**Bonus**<br>
+Consider the matrix $A$ and vectors $v$ and $w$ given by
+
+$$
+A = \begin{bmatrix}
+    1 & 0 & 3 \\
+    -0 & -1 & 1 \\
+    -4 & 4 & 2
+\end{bmatrix}\; ,  \qquad 
+v = \begin{bmatrix}
+    0\\1\\-1
+\end{bmatrix}\; , \qquad 
+w = \begin{bmatrix}
+    3\\1\\-4
+\end{bmatrix} \; .
+$$
+
+Show that the dot product of $w$ with $Av$ is the same as the dot product of $A^Tw$ with $v$. Would this observation generalize to other matrices and vectors?
