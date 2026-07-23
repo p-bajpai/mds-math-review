@@ -1,0 +1,72 @@
+---
+format:
+  html:
+    page-layout: full
+---
+
+# 2. What is a Matrix for?
+
+::: {.panel-tabset .nav-pills}
+
+## Intro
+
+I can say a few things. But can I
+
+#### Multiplying a Matrix and a Vector
+
+Give rule for multiplying
+
+#### Matrices as Maps Between Vector Spaces
+
+Show how to get a mathematical function by starting with a matrix
+
+#### Matrices of Data
+
+Initially, just a list of data points. But we can use the theory of linear algebra to understand data by understanding the matrix (find approximations, do least squares etc.)
+
+## Video 1
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/kYB8IZa5AuE" 
+    title="Linear Transformations and matrices"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Video 2
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/uQhTuRlWMxw" 
+    title="Inverse matrices, column space and null space"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Video 3
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/jY-Mu6XQ3NU" 
+    title="The Four Fundamental Subspaces and Least Squares"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+Alternatively, if you want a slightly longer lecture recording on the same topic by the same speaker, you can see this video:
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/nHlE7EgJFds" 
+    title="The Four Fundamental Subspaces"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+
+:::

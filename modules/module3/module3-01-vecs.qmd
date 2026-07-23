@@ -1,0 +1,67 @@
+---
+format:
+  html:
+    page-layout: full
+---
+
+# 1. Points in High-Dimensional Spaces
+
+::: {.panel-tabset .nav-pills}
+
+## Intro
+
+I can say a few things. But can I
+
+#### What is a Vector?
+
+List of numbers, like features for a data point
+
+#### What is a Vector Space?
+
+Set of all possible lists of numbers. All possible feature values (but unconstrained).
+
+#### What is a Subspace?
+
+Maybe our data lies only in a subspace? Some features related to each other?
+
+#### Why do we call it "Linear" Algebra?
+
+Points could lie in a flat hyperplane or curved surface. Linear algebra is only concerned with flat hypersurface.
+
+
+## Video 1
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/fNk_zzaMoSs" 
+    title="Vectors --- 3Blue1Brown"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Video 2
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/k7RM-ot2NWY" 
+    title="Linear combinations, span and basis --- 3Blue1Brown"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+## Video 3
+
+<iframe
+    class="video"
+    src="https://www.youtube.com/embed/QQpvGlF_1Qo" 
+    title="Subspaces of Three Dimensional Spacen"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+></iframe>
+
+
+
+:::

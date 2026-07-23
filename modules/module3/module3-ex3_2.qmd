@@ -1,0 +1,223 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>  
+
+# 3.1. Exercises
+
+## Vectors
+**Q1. A linear combination of vectors**<br>
+Suppose we have the three vectors 
+$$
+v_1 = \begin{bmatrix}2\\3\\-1\end{bmatrix},\; v_2 =\begin{bmatrix}1\\0\\1\end{bmatrix},\; v_3 = \begin{bmatrix}0\\0\\4\end{bmatrix}.
+$$
+
+Calculate the value of the sum $3v_1 - 2v_2 + v_3$.
+
+<div id='vecsum'></div>
+<script>
+generateQuiz(
+    'vecsum',
+    '',
+    `Select the correct option below.`,
+    {
+        '[0,0,0]<sup>T</sup>': 'Not quite.',
+        '[2,3,-1]<sup>T</sup>': 'Try again',
+        '[4,3,7]<sup>T</sup>': 'Try again',
+        '[3,-2,1]<sup>T</sup>': 'Not quite',
+        '[4, 9, -1]<sup>T</sup>': ''
+    },
+    '[4, 9, -1]<sup>T</sup>'
+);
+</script>
+
+**Q2. Matrix Vector Product**<br>
+Now calculate the value of the matrix product
+
+$$
+\begin{bmatrix}
+    2 & 1 & 0 \\
+    3 & 0 & 0 \\
+    -1 & 1 & 4 
+\end{bmatrix} \cdot
+\begin{bmatrix}
+    3\\-2\\1
+\end{bmatrix}
+$$
+
+<div id='matv'></div>
+<script>
+generateQuiz(
+    'matv',
+    '',
+    `Select the correct option below.`,
+    {
+        '[0,0,0]<sup>T</sup>': 'Not quite.',
+        '[2,3,-1]<sup>T</sup>': 'Try again',
+        '[4, 9, -1]<sup>T</sup>': '',
+        '[3,-2,1]<sup>T</sup>': 'Not quite',
+        '[4,3,7]<sup>T</sup>': 'Try again'
+    },
+    '[4, 9, -1]<sup>T</sup>'
+);
+</script>
+
+**Q3. A Linear Combination of Matrix Columns**<br>
+Explain in one or two sentences how your calculation from Q2 relates to the sum from Q1. 
+
+::: {.callout-note collapse="true"}
+## Hint
+
+What do the columns of the matrix above look like? Can you find the vectors from Q1 among them?
+
+:::
+
+::: {.callout-note collapse="true"}
+## Solution
+
+This question is meant to highlight "what is going on" when we take a matrix-vector product, and hopefully clarify *why* the product is defined the way it is.
+
+If $A$ is a matrix and $v$ is a vector, the product $A\cdot v$ always outputs a vector that is a linear combination of the columns of $A$. The coefficient associated with the $j$-th column is precisely the $j$-th element of $v$. This is why the length of the vector $v$ and the number of columns of $A$ must match!
+
+:::
+
+**Q4. Matrix Vector Products Round II**<br>
+\item Find a $5\times 1$ vector $v$ such that for any $5 \times 5$ matrix $A$, the product $Av$ returns the last column of $A$.
+
+::: {.callout-note collapse="true"}
+## Hint 1
+
+Say I have five vectors $v_1, v_2, v_3, v_4, v_5$. Can you find five numbers  $a_1, a_2, a_3, a_4, a_5$ such that
+$$
+a_1v_1 + a_2v_2 + a_3v_3 + a_4v_4 + a_5v_5 = v_5?
+$$
+
+:::
+
+::: {.callout-note collapse="true"}
+## Hint 2
+
+Once you have found the five numbers for Hint 1, return to your observation from Q3. How does a linear combination of vectors relate to a matrix-vector product?
+
+:::
+
+## Solution
+
+The vector $v=[0,0,0,0,1]^T$ accomplishes this (if you don't see why, try multplying it with some $5\times5$ matrix).
+
+:::
+
+**Matrices as Linear Transformations**<br>
+Consider the matrix
+$$
+A = \begin{bmatrix}
+        \frac13 & -4\\
+        2 & \frac12
+\end{bmatrix}
+$$
+and define a function $f$ (with input and output 2-dimensional) using the formula
+$$
+f(x,y) = f\left(\begin{bmatrix}
+    x\\y
+\end{bmatrix}\right) = A\cdot \begin{bmatrix}
+    x\\y
+\end{bmatrix}.
+$$
+
+(a) What is $f\left(\begin{bmatrix}
+        1\\0
+    \end{bmatrix}\right)$?
+<div id='lint1'></div>
+<script>
+generateQuiz(
+    'lint1',
+    '',
+    ``,
+    {
+        '[1/3, 2]<sup>T</sup>': '',
+        '[-4, 1/2]<sup>T</sup>': 'Try again',
+        '[0,0]<sup>T</sup>': 'Not quite.',
+        '[1,1]<sup>T</sup>': 'Not quite',
+        '[1/3,1/2]<sup>T</sup>': 'Try again'
+    },
+    '[1/3, 2]<sup>T</sup>'
+);
+</script>
+
+(b) What is $f\left(\begin{bmatrix}
+        0\\1
+    \end{bmatrix}\right)$?
+<div id='lint'></div>
+<script>
+generateQuiz(
+    'lint',
+    '',
+    ``,
+    {
+        '[1/3, 2]<sup>T</sup>': 'Try again',
+        '[-4, 1/2]<sup>T</sup>': '',
+        '[0,0]<sup>T</sup>': 'Not quite.',
+        '[1,1]<sup>T</sup>': 'Not quite',
+        '[1/3,1/2]<sup>T</sup>': 'Try again'
+    },
+    '[-4, 1/2]<sup>T</sup>'
+);
+</script>
+
+(c) How do these vectors relate to the matrix $A$?
+
+::: {.callout-note collapse="true"}
+## Hint
+
+Can you find the two vectors among the columns of $A$?
+
+:::
+
+::: {.callout-note collapse="true"}
+## Solution
+
+The image of the unit vector along the $x$-axis (which is the vector $[1,0]^T$) appears as the first column of $A$. The image of the unit vector along the $y$-axis (the vector $[0,1]^T$) appears as the second column of $A$.
+
+:::
+
+(c) Can you visualize what the function $f$ is doing in the $xy$ plane by visualizing its action on the coordinate axes? Does it appear to 'stretch' or 'shrink' vectors in the $xy$ plane? Does it rotate them?
+
+::: {.callout-note collapse="true"}
+## Hint
+
+Plot the coordinate vectors in the 2D plane before and after applying this transformation.
+
+:::
+
+::: {.callout-note collapse="true"}
+## Solution
+
+Both coordinate vectors seemed to get stretched out, since they end up longer than they started. There also seems to be a "clockwise" rotation. However, it is important to notice that while the vectors along the $x$ and $y$ axes start out perpendicular to each other, they are no longer perpendicular after being transformed by $f$ (i.e. after multplication by $A$).
+
+:::
+
+**Matrix Vector Products Round III**<br>
+Find a $3\times 3$ matrix $A$ such that for any $3\times 1$ vector $v$, the product $Av$ returns a vector that points along the direction $\begin{bmatrix}1\\1\\1\end{bmatrix}$.
+
+::: {.callout-note collapse="true"}
+## Hint
+
+Use the observation from the last question. Where should the vector $[1,0,0]^T$ end up? How does the image of this vector appear in the matrix $A$?
+
+:::
+
+::: {.callout-note collapse="true"}
+## Solution
+
+The matrix
+$$
+A = \begin{bmatrix}
+1&1&1\\
+1&1&1\\
+1&1&1
+\end{bmatrix}
+$$
+
+satisfies the requirements of the question, as does any non-zero constant multiple of it (e.g. $0.5A$ or $-A$).
+:::

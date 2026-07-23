@@ -4,7 +4,7 @@ format:
     page-layout: full
 ---
 
-# 3. Max, Min, Second Derivative
+# 4. Max, Min, Second Derivative
 
 ::: {.panel-tabset .nav-pills}
 
