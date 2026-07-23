@@ -32,6 +32,8 @@ generateQuiz(
 );
 </script>
 
+<br><br>
+
 **Q2. Matrix Vector Product**<br>
 Now calculate the value of the matrix product
 
@@ -63,6 +65,8 @@ generateQuiz(
 );
 </script>
 
+<br><br>
+
 **Q3. A Linear Combination of Matrix Columns**<br>
 Explain in one or two sentences how your calculation from Q2 relates to the sum from Q1. 
 
@@ -81,6 +85,8 @@ This question is meant to highlight "what is going on" when we take a matrix-vec
 If $A$ is a matrix and $v$ is a vector, the product $A\cdot v$ always outputs a vector that is a linear combination of the columns of $A$. The coefficient associated with the $j$-th column is precisely the $j$-th element of $v$. This is why the length of the vector $v$ and the number of columns of $A$ must match!
 
 :::
+
+<br><br>
 
 **Q4. Matrix Vector Products Round II**<br>
 \item Find a $5\times 1$ vector $v$ such that for any $5 \times 5$ matrix $A$, the product $Av$ returns the last column of $A$.
@@ -102,13 +108,16 @@ Once you have found the five numbers for Hint 1, return to your observation from
 
 :::
 
+::: {.callout-note collapse="true"}
 ## Solution
 
 The vector $v=[0,0,0,0,1]^T$ accomplishes this (if you don't see why, try multplying it with some $5\times5$ matrix).
 
 :::
 
-**Matrices as Linear Transformations**<br>
+<br><br>
+
+**Q5. Matrices as Linear Transformations**<br>
 Consider the matrix
 $$
 A = \begin{bmatrix}
@@ -197,7 +206,9 @@ Both coordinate vectors seemed to get stretched out, since they end up longer th
 
 :::
 
-**Matrix Vector Products Round III**<br>
+<br><br>
+
+**Q6. Matrix Vector Products Round III**<br>
 Find a $3\times 3$ matrix $A$ such that for any $3\times 1$ vector $v$, the product $Av$ returns a vector that points along the direction $\begin{bmatrix}1\\1\\1\end{bmatrix}$.
 
 ::: {.callout-note collapse="true"}
@@ -221,6 +232,8 @@ $$
 
 satisfies the requirements of the question, as does any non-zero constant multiple of it (e.g. $0.5A$ or $-A$).
 :::
+
+<br><br>
 
 **Bonus**<br>
 Consider the matrix $A$ and vectors $v$ and $w$ given by
