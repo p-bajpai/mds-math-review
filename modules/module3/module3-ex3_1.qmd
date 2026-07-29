@@ -25,16 +25,16 @@ generateQuiz(
 );
 </script>
 
-<div id='sub'></div>
+<div id='subsp'></div>
 <script>
-generateQuiz(
-    'sub',
+generateQuiz( 
+    'subsp',
     'Subspace spanned by two vectors',
     `Is the vector [0,1,2] contained in the subspace spanned by the two vectors v<sub>1</sub> = [1,1,0] and v<sub>2</sub> =[1,0,0]?`,
     {
-        'Yes': 'Try again--- what must be the last entry in any sum of v<sub>1</sub> and v<sub>2</sub>?',
-        'No': '',
-        `Can't be sure': 'Try again--- what must be the last entry in any sum of v<sub>1</sub> and v<sub>2</sub>?'
+        'Yes': 'Try again--- what must be the last entry in any sum of v<sub>1</sub> and v<sub>2</sub>',
+        'No': 'There is no way to get a non-zero value for the third entry in a sum of v<sub>1</sub> and v<sub>2</sub>',
+        'Can\'t be sure': 'Try again--- what must be the last entry in any sum of v<sub>1</sub> and v<sub>2</sub>?'
     },
     'No'
 );
@@ -47,9 +47,9 @@ generateQuiz(
     'Subspace spanned by two vectors',
     `Is the vector [0,0,1] contained in the subspace spanned by the three vectors v<sub>1</sub> = [1,1,0], v<sub>2</sub> =[1,0,0] and v<sub>3</sub> =[0,1,2]?`,
     {
-        'Yes': '',
+        'Yes': 'These three vectors are linearly independent, so they span the full three-dimensional space. Every vector in the whole space is part of their span!',
         'No': 'Try again! If you are unsure, see the hint below',
-        `Can't be sure': 'Try again! If you are unsure, see the hint below'
+        'Can\'t be sure': 'Try again! If you are unsure, see the hint below'
     },
     'Yes'
 );
