@@ -12,15 +12,38 @@ format:
 
 #### A Function with Many Inputs
 
-Our black box could accept many inputs. If we have two inputs, then to draw a graph I need to axes for variables, and a third axis for the output. If we want graphs of functions of three or more variables, we are out of luck.
+So far we have discussed functions that accept a single input, and produce a single output. However, one can imagine a black box that accepts more than one input:
+<br><br>
+<center>
+::: {#fig-func-def}
+![](../../static/module2/func2.png){width=600}
+
+A function with two inputs and one output.
+:::
+</center>
+<br><br>
+
+We are accustomed to plotting one-variable functions using 2D plots--- an $x$ axis for input and $y$ axis for output. For a function with two inputs and one output, we now need 3D plots with $x$ and $y$ axes for inputs and (usually) the $z$ axis for the output. If the function is nicely behaved (smooth, continuous, etc) our "graph" will look like a 2D surface sitting in 3D space.
+
+If our function accepts hundreds or thousands of inputs (not uncommon in machine learning) then it is no longer possible to plot a graph of the function! We must use the intuition we build from one- and two-variable examples to try and work out how these more complicated functions might behave.
 
 #### Partial Derivatives and Tangent Planes
 
-Sensitivity to each input. If we have 2 inputs, graph is a surface and so it no longer has just a tangent line, it has a tangent plane. This plane is linear with the same "sensitivity" to x and y as original f.
+Thinking of derivatives as measuring sensitivity, we can see one way to extend the notion to a situation like @fig-func-def. Namely, since there are two input knobs we can simply measure the sensitivity of each. Of course, the sensitivity relative to the top knob may depend on the current value of the bottom one, so we must specify both inputs in order to get a value for the derivative with respect to either input.
+
+In formal mathematical terms, this notion is called the "partial derivative". Say a function $f$ accepts two inputs $x$ and $y$ and produces a real number $f(x,y)$ as output. We define the *partial derivative of* $f$ *with respect to* $x$ *at a point* $(x_0,y_0)$ to be the derivative of the one-variable function $g(x) = f(x,y_0)$ with respect to $x$. This partial derivative is sometimes denoted as $f_x$, and the partial with respect to $y$ as $f_y$.
+
+For one-variable functions, we also saw how the derivative provided us with the slope of the line tangent to the graph of the function at the chosen point. In the two-variable case, our graph looks like a surface, so we instead have a tangent *plane* at each point. The partial derivatives give the slopes in the $x$ and $y$ directions, and from this information we can construct the associated tangent plane. For functions with more than two inputs, we now have tangent hypersurfaces and the situation quickly becomes tricky to visualize. Thankfully, we have the advice of Nobel laureate and Turing award winner Geoff Hinton to help us out:
+
+*"To deal with hyper-planes in a 14-dimensional space, visualize a 3-D space and say 'fourteen' to yourself very loudly. Everyone does it."*
 
 #### The Gradient
 
-A vector of partial derivatives. Why does it give direction of steepest increase?
+Suppose at the input $(1,1)$ our function $f$ has partial derivative with respect to $x$ equalling $4$ and with respect to $y$ equalling $-1$. This means that increasing the value of $x$ while keeping $y$ fixed should increase the value of the output, while increasing the value of $y$ while keeping $x$ fixed should decrease the value of the output. We can write mathematically that
+$$
+f_x(1,1) = 4 \quad f_y(1,1) = -1.
+$$
+The *gradient vector* packages these partial derivatives into a single vector (in this case, the vector $[4,1]$). Consider the function
 
 ## Video 1
 

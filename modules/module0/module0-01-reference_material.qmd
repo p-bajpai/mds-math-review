@@ -14,9 +14,10 @@ Joel Feldman, Andrew Rechnitzer and Elyse Yeager (who are all mathematics facult
 
  - [CLP Textbooks](https://personal.math.ubc.ca/~CLP/) by Feldman, Rechnitzer and Yeager.
 
-A short, interactive introduction to matrix operations and the geometry of solutions to linear equations is available here:
+There are several good texts on linear algebra that can be accessed online. Two short, interactive introductions to the subject are available here:
 
  - [Interactive Linear Algebra](https://personal.math.ubc.ca/~tbjw/ila/index.html) by Margarit, Rabinoff and Williams.
+ - [Understanding Linear Algebra](https://understandinglinearalgebra.org/home.html) by David Austin
 
 There are many perspectives through which to understand calculus and linear algebra, and any single resource can only cover so much. We also recommend the following textbooks on linear algebra. You may be able to access them through the UBC library:
 
@@ -36,5 +37,6 @@ Gilbert Strang, the author of two of the textbooks mentioned above, has also mad
 
  - [Highlights of Calculus](https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010/)
  - [Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video_galleries/video-lectures/)
+ - [Matrix Methods In Data Analysis, Signal Processing, And Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k)
 
 We will link to these resources many times, and highlight relevant sections as we go along.

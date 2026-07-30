@@ -30,7 +30,7 @@ The first step in building rules for calculating derivatives is to consider the 
 
 #### Polynomials
 
-Iteratively applying the product rule to the product $$x^n = \underbrace{x + x + \cdots + x}_{n \text{ times}}$$ tells us that the derivative of $f(x) = x^n$ with respect to $x$ is $n\cdot x^{n-1}$.
+Iteratively applying the product rule to the product $$x^n = \underbrace{x \times x \times \cdots \times x}_{n \text{ times}}$$ tells us that the derivative of $f(x) = x^n$ with respect to $x$ is $n\cdot x^{n-1}$.
 
 Remember, again, this formula is just a recipe for calculating the value of the derivative at various possible inputs. The recipe is telling us (for example) that the "sensitivity" of the function $x^5$ to its input at $x=3$ is $4*3^4 = 324$. In other words, at $x=3$ the function $x^5$ is extremely sensitive to small changes in input! If we wiggle the input a little, the output of the function will react by changing more than 300 times as much.
 
