@@ -35,7 +35,7 @@ f_A(av+bw) = af_A(v) + bf_A(w).
 $$
 Such functions map flat surfaces to flat surfaces. In the special case where $m=n$, we get a function from $n$-dimensional space to itself--- some common examples include stretching or shrinking by a constant factor in a given direction, as well as rotations and reflections. These are all examples of linear transformations, and they can all be represented as left multiplication by some well-chosen matrix.
 
-Some interactive visualizations to help you connect matrices to linear transformations can be found [here](https://www.geogebra.org/m/pDU4peV5) and [here](https://personal.math.ubc.ca/~tbjw/ila/matrix-transformations.html. Then, for the exercises for this section, you will strengthen this connection by working with a few simple examples by hand.
+Some interactive visualizations to help you connect matrices to linear transformations can be found [here](https://www.geogebra.org/m/pDU4peV5) and [here](https://personal.math.ubc.ca/~tbjw/ila/matrix-transformations.html). The exercises for this section will help you strengthen this connection by working through a few simple examples by hand.
 
 #### Matrices of Data
 
