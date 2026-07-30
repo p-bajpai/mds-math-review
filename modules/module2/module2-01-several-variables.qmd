@@ -37,6 +37,16 @@ For one-variable functions, we also saw how the derivative provided us with the 
 
 *"To deal with hyper-planes in a 14-dimensional space, visualize a 3-D space and say 'fourteen' to yourself very loudly. Everyone does it."*
 
+<br><br>
+<center>
+::: {#fig-surf}
+![](../../static/module2/surf.jpg){width=400}
+
+A function with a more complicated graph ([source](https://github.com/tomgoldstein/loss-landscape/tree/master))
+:::
+</center>
+<br><br>
+
 #### The Gradient
 
 Suppose at the input $(1,1)$ our function $f$ has output $100$, partial derivative with respect to $x$ equalling $4$, and partial derivative with respect to $y$ equalling $-1$. This means in particular that increasing the value of $x$ while keeping $y$ fixed should increase the value of the output, while increasing the value of $y$ while keeping $x$ fixed should decrease the value of the output. We can write mathematically that
@@ -47,22 +57,22 @@ $$
 
 The *gradient vector* packages these two partial derivatives into a single vector (in the above example, the vector $[4,-1]$). The first entry corresponds to $f_x$ and the second to $f_y$. The gradient vector is denoted $\nabla f$, so in this case we have $\nabla f (1,1) = [4,-1]$.
 
-Now consider the function $g(x,y)$ given by
+Now consider the function $\ell(x,y)$ given by
 $$
-g(x,y) = [4,-1] \cdot \begin{bmatrix}x\\y\end{bmatrix} + 97 = 4x - y + 97.
+\ell(x,y) = [4,-1] \cdot \begin{bmatrix}x\\y\end{bmatrix} + 97 = 4x - y + 97.
 $$
-We see it has the same output as $f$ at the input $(1,1)$, namely the output $100$, and it has the same partial derivatives at $(1,1)$ with respect to each input as well. The graph of $g$ forms a plane (since $g$ is linear)--- in fact, this graph is precisely the tangent plane to the function $f$ at $(1,1)$.
+We see it has the same output as $f$ at the input $(1,1)$, namely the output $100$, and it has the same partial derivatives at $(1,1)$ with respect to each input as well. The graph of $\ell$ forms a plane (since $\ell$ is linear)--- in fact, this graph is precisely the tangent plane to the function $f$ at $(1,1)$.
 
-Since $g$ is linear, we can quickly determine the direction in which its output increases fastest. The only change in the output of $g$ comes from the dot product
+Since $\ell$ is linear, we can quickly determine the direction in which its output increases fastest. The only change in the output of $\ell$ comes from the dot product
 $$
 [4,-1] \cdot \begin{bmatrix}x\\y\end{bmatrix}.
 $$
-For a small change $\delta x$ and $\delta y$ in inputs, the output of $g$ therefore changes by the amount
+For a small change $\Delta x$ and $\Delta y$ in inputs, the output of $\ell$ therefore changes by the amount
 $$
-[4,-1] \cdot \begin{bmatrix}\delta x\\ \delta y\end{bmatrix}.
+[4,-1] \cdot \begin{bmatrix}\Delta x\\ \Delta y\end{bmatrix}.
 $$
 
-This dot product is maximized precisely with the vector $[\delta x, \delta y]$ points in the same direction as the gradient vector $[4,-1]$. Thus the gradient vector $[4,-1]$ gives us the direction in which $g$ is most rapidly increasing. Since $g$ is the best linear approximation to $f$ near the point $(1,1)$, the same also holds true for $f$--- near the point $(1,1)$, the direction of steepest increase for $f$ is the direction given by the graditent vector $\nabla f(1,1)$.
+This dot product is maximized precisely with the vector $[\Delta x, \Delta y]$ points in the same direction as the gradient vector $[4,-1]$. Thus the gradient vector $[4,-1]$ gives us the direction in which $\ell$ is most rapidly increasing. Since $\ell$ is the best linear approximation to $f$ near the point $(1,1)$, the same also holds true for $f$--- near the point $(1,1)$, the direction of steepest increase for $f$ is the direction given by the graditent vector $\nabla f(1,1)$.
 
 ## Video 1
 
