@@ -8,65 +8,82 @@ format: html
 
 ## Understanding the Derivative
 
-The following exercises are adapted from the [CLP-1 Problem Book](https://personal.math.ubc.ca/~CLP/CLP1/)
-
-<div id='mcq1'></div> 
+<div id='s1'></div> 
 <script>
     generateQuiz(
-        'mcq1', 
-        'Select the correct option', 
-        `The function f(x) is graphed below. <br><br>
-
-        <img src="../../static/module1/func1.png" width="500">
-
+        's1', 
+        'For each of the plots below, select the function whose graph would match the plot.', 
+        `
+        <img src="../../static/module2/s1.png" width="500">
         <br><br>
-        Select the option below that describes its derivative. <br>
         `, 
         { 
-        'Constant, Always Negative': 'What is the slope of the graph?',
-        'Constant, Always Positive': '',
-        'Increasing, Always Positive': 'What is the slope of the graph?',
-        'Decreasing, Always Negative': 'What is the slope of the graph?',
-        'Sometimes Positive, Sometimes Negative': 'What is the slope of the graph?'
+        'f(x,y) = x^2+y^2 - 4': 'Does the graph curve up or down if you fix x and look only in the y direction?',
+        'f(x,y) = x -4y + 7': 'Try again!',
+        'f(x,y) = x^2 - y^2 + 3': '',
+        'f(x,y) = |x| + 3y': 'Not quite.',
+        'f(x,y) = y^2 + \sin x': 'Try again!'
         },
-        'Constant, Always Positive',
+        'f(x,y) = x^2 - y^2 + 3'
     );
 </script>
 
-<div id='mcq2'></div> 
+<div id='s2'></div> 
 <script>
     generateQuiz(
-        'mcq2',
-        'Select the correct option', 
-        `The function f(x) is graphed below. <br><br>
-
-        <img src="../../static/module1/func2.png" width="500">
-
+        's2', 
+        '', 
+        `
+        <img src="../../static/module2/s2.png" width="500">
         <br><br>
-        Select the option below that describes its derivative. <br>
         `, 
         { 
-        'Constant': 'Try again!',
-        'Increasing, always negative': 'Would increasing a negative derivative make the slope steeper or shallower?',
-        'Sometimes increasing, sometimes decreasing, always negative': '',
-        'Decreasing, always negative': 'Would decreasing a negative derivative make the slope steeper or shallowe?',
-        'Sometimes positive, sometimes negative': 'What does a positive derivative imply?'
+        'f(x,y) = x^2+y^2 - 4': 'Not quite.',
+        'f(x,y) = x -4y + 7': 'Try again!',
+        'f(x,y) = x^2 - y^2 + 3': 'Not quite',
+        'f(x,y) = |x| + 3y': '',
+        'f(x,y) = y^2 + \sin x': 'Try again!'
         },
-        'Sometimes increasing, sometimes decreasing, always negative',
+        'f(x,y) = |x| + 3y'
     );
 </script>
 
-<div id='mcq3'></div> 
+<div id='s3'></div> 
 <script>
     generateQuiz(
-        'mcq3',
-        'Interpreting the derivative',
-        `T(d) gives the temperature in Celsius of ocean water at a particular location d metres below the
-        surface. Would you expect the derivative T'(d) to be positive or negative?`,
-        {
-        'Positive': 'Would the ocean get colder or hotter as you went deeper?',
-        'Negative': ''
+        's3', 
+        '', 
+        `
+        <img src="../../static/module2/s3.png" width="500">
+        <br><br>
+        `, 
+        { 
+        'f(x,y) = x^2+y^2 - 4': '',
+        'f(x,y) = x -4y + 7': 'Try again!',
+        'f(x,y) = x^2 - y^2 + 3': 'Does the graph curve up or down if you fix x and look only in the y direction?',
+        'f(x,y) = |x| + 3y': 'Not quite.',
+        'f(x,y) = y^2 + \sin x': 'Try again!'
         },
-        'Negative',
+        'f(x,y) = x^2+y^2 - 4'
+    );
+</script>
+
+<div id='s4'></div> 
+<script>
+    generateQuiz(
+        's4', 
+        '', 
+        `
+        <img src="../../static/module2/s4.png" width="500">
+        <br><br>
+        `, 
+        { 
+        'f(x,y) = x^2+y^2 - 4': 'Not quite.',
+        'f(x,y) = x -4y + 7': 'Try again!',
+        'f(x,y) = x^2 - y^2 + 3': 'Try again!',
+        'f(x,y) = |x| + 3y': 'Not quite.',
+        'f(x,y) = y^2 + \sin x': ''
+        },
+        'f(x,y) = y^2 + \sin x'
     );
 </script>
