@@ -16,7 +16,7 @@ Some datasets are easy to represent by lists of numbers (e.g. images can be repr
 
 #### What is a Vector?
 
-Vectors are lists of numbers too, but with the added ability that we can scale a vector up or down by a constant factor: $$2\times[40,1000,500000] = [80,2000,1000000]$$ and we can add vectors together $$[1,1,1] + [2,0,0] = [3,1,1]$$: by adding their elements component-wise.
+Vectors are lists of numbers too, but with the added ability that we can scale a vector up or down by a constant factor: $$2\times[40,1000,500000] = [80,2000,1000000]$$ and we can add vectors together by adding their elements component-wise: $$[1,1,1] + [2,0,0] = [3,1,1].$$
 
 It may not seem very sensible to "add" houses together, but notice even in this very limited example we can find a use for this notion. Namely, we can say two houses in our dataset are "similar" to each other if their *difference* as vectors is small in size.
 
