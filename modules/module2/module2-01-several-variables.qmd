@@ -72,7 +72,9 @@ $$
 [4,-1] \cdot \begin{bmatrix}\Delta x\\ \Delta y\end{bmatrix}.
 $$
 
-This dot product is maximized precisely with the vector $[\Delta x, \Delta y]$ points in the same direction as the gradient vector $[4,-1]$. Thus the gradient vector $[4,-1]$ gives us the direction in which $\ell$ is most rapidly increasing. Since $\ell$ is the best linear approximation to $f$ near the point $(1,1)$, the same also holds true for $f$--- near the point $(1,1)$, the direction of steepest increase for $f$ is the direction given by the graditent vector $\nabla f(1,1)$.
+This dot product is maximized precisely with the vector $[\Delta x, \Delta y]$ points in the same direction as the gradient vector $[4,-1]$. Thus the gradient vector $[4,-1]$ gives us the direction in which $\ell$ is most rapidly increasing. Since $\ell$ is the best linear approximation to $f$ near the point $(1,1)$, the same also holds true for $f$--- near the point $(1,1)$, the direction of steepest increase for $f$ is the direction given by the gradient vector $\nabla f(1,1)$.
+
+
 
 ## Video 1
 

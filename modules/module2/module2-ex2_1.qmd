@@ -6,7 +6,7 @@ format: html
 
 # 1.1. Exercises
 
-## Understanding the Derivative
+## Functions of Several Variables
 
 <div id='s1'></div> 
 <script>
@@ -18,13 +18,13 @@ format: html
         <br><br>
         `, 
         { 
-        'f(x,y) = x^2+y^2 - 4': 'Does the graph curve up or down if you fix x and look only in the y direction?',
+        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4': 'Does the graph curve up or down if you fix x and look only in the y direction?',
         'f(x,y) = x -4y + 7': 'Try again!',
-        'f(x,y) = x^2 - y^2 + 3': '',
+        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3': '',
         'f(x,y) = |x| + 3y': 'Not quite.',
-        'f(x,y) = y^2 + \sin x': 'Try again!'
+        'f(x,y) = y<sup>2</sup> + sin x': 'Try again!'
         },
-        'f(x,y) = x^2 - y^2 + 3'
+        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3'
     );
 </script>
 
@@ -38,11 +38,11 @@ format: html
         <br><br>
         `, 
         { 
-        'f(x,y) = x^2+y^2 - 4': 'Not quite.',
+        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4': 'Not quite.',
         'f(x,y) = x -4y + 7': 'Try again!',
-        'f(x,y) = x^2 - y^2 + 3': 'Not quite',
+        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3': 'Not quite',
         'f(x,y) = |x| + 3y': '',
-        'f(x,y) = y^2 + \sin x': 'Try again!'
+        'f(x,y) = y<sup>2</sup> + sin x': 'Try again!'
         },
         'f(x,y) = |x| + 3y'
     );
@@ -58,13 +58,13 @@ format: html
         <br><br>
         `, 
         { 
-        'f(x,y) = x^2+y^2 - 4': '',
+        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4': '',
         'f(x,y) = x -4y + 7': 'Try again!',
-        'f(x,y) = x^2 - y^2 + 3': 'Does the graph curve up or down if you fix x and look only in the y direction?',
+        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3': 'Does the graph curve up or down if you fix x and look only in the y direction?',
         'f(x,y) = |x| + 3y': 'Not quite.',
-        'f(x,y) = y^2 + \sin x': 'Try again!'
+        'f(x,y) = y<sup>2</sup> + sin x': 'Try again!'
         },
-        'f(x,y) = x^2+y^2 - 4'
+        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4'
     );
 </script>
 
@@ -78,12 +78,168 @@ format: html
         <br><br>
         `, 
         { 
-        'f(x,y) = x^2+y^2 - 4': 'Not quite.',
+        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4': 'Not quite.',
         'f(x,y) = x -4y + 7': 'Try again!',
-        'f(x,y) = x^2 - y^2 + 3': 'Try again!',
+        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3': 'Try again!',
         'f(x,y) = |x| + 3y': 'Not quite.',
-        'f(x,y) = y^2 + \sin x': ''
+        'f(x,y) = y<sup>2</sup> + sin x': ''
         },
-        'f(x,y) = y^2 + \sin x'
+        'f(x,y) = y<sup>2</sup> + sin x'
     );
 </script>
+
+**Functions of two variables satisfying certain conditions**
+
+Find a continuous function $f$ of two variables $x,y$ such that:
+
+a) $f$ has a single global minimum
+
+::: {.callout-note collapse="true"}
+## Hint
+
+Do any of the functions plotted above work for this one?
+
+:::
+
+b) $f$ has a global minimum at every point with $x=0$
+
+::: {.callout-note collapse="true"}
+## Hint
+
+One possibility is to construct a function that only takes non-negative values, and make sure it is always zero when $x=0$.
+
+:::
+
+c) **Bonus:** $f$ has a global minimum at every point along the line $3x-4y = 0$.
+
+::: {.callout-note collapse="true"}
+## Hint
+
+In part b we found a function with global minima whenever $x=0$. The condition $x=0$ gives a line in the $xy$ plane. To solve part c, one option is to find a "change of coordinates" such that the line $x=0$ gets mapped to $3x-4y=0$ under this change.
+
+Or if it's easier, carry out the same process as part b from scratch--- find a function that only takes non-negative values, and make sure it is always zero when $3x-4y=0$.
+
+:::
+
+For some possible solutions, click the dropdown below.
+
+::: {.callout-note collapse="true"}
+## Solution
+
+There are many possible answers, but a few simple options are:
+
+a) $f(x,y) = x^2 + y^2 - 4$
+b) $f(x,y) = x^2$
+c) $f(x,y) = (3x-4y)^2$
+
+:::
+
+**Mean Squared Error as a Multivariate Function**
+
+You are trying to fit a least-squares regression model to the following data :
+
+| Feature | Target |
+| ------: | -----: |
+|       1 |    2.5 |
+|       2 |    4.7 |
+|       3 |   6.33 |
+|       4 |   8.09 |
+|       5 |     11 |
+
+: {tbl-colwidths="[10,20]"}
+
+The data is plotted in the figure below with "Feature" on the $x$-axis and "Target" on the $y$-axis, with an initial 'guess' for a line with slope $m$ and $y$-intercept $b$ in red. The current guess doesn't fit the data too well.
+
+![](../../static/module2/linr.png){width=600}
+
+Answer the following:
+
+a) What is the value predicted by the linear regression (red line) when $x=2$? Write your answer in terms of $m$ and $b$.
+
+::: {.callout-note collapse="true"}
+## Solution
+
+The predicted value is $2m+b$, since the $y$-value of points on the line is $mx+b$, and here we are interested in $x=2$.
+
+:::
+
+b) What is the \emph{squared} error for the data point $x=4$, i.e. the difference between predicted and actual values? Again, your answer should involve $m$ and $b$.
+
+::: {.callout-note collapse="true"}
+## Solution
+
+The data point $x=4$ has a target ($y$) value of $8.09$. So the mean squared error between predicted and actual values for this point is
+$$
+\big( \; (4m+b)  - (8.09) \; \big)^2
+$$
+
+:::
+
+c) Write a complete expression for the \emph{total squared error} between predicted and actual values for the target, i.e. the sum of individual errors for each data point.
+
+::: {.callout-note collapse="true"}
+## Solution
+
+Let $\mathcal{X}$ represent our dataset, with individual data points represented as feature-value pairs $(x_0,y_0)$. Then the total squared error is a sum over data points
+
+$$
+\sum_{(x_0,y_0)\text{in} \mathcal{X}} \big( \; (mx_0+b) - y_0 \; \big)^2 .
+$$
+
+:::
+
+d) How many "inputs" does the total squared error function accept? In other words, the total squared error is a function of how many variables?
+
+::: {.callout-note collapse="true"}
+## Solution
+
+The squared error function accepts two inputs, $m$ and $b$. The goal of linear regression is to find the values of $m$ and $b$ at which this function attains its global minimum.
+
+:::
+
+e) Find the gradient vector for the total squared error function (in terms of $m$ and $b$).
+
+::: {.callout-note collapse="true"}
+## Solution
+
+If our sum-of-squared-errors function $SSE(m,b)$ is given as described in part c, then its gradient will be
+
+$$
+\nabla SSE (m,b) \quad = \quad  \begin{bmatrix} \sum_{(x_0,y_0)\text{in} \mathcal{X}} 2x_0(mx_0 + b - y_0)  \\  \sum_{(x_0,y_0)\text{in} \mathcal{X}} 2(mx_0+b-y_0) \end{bmatrix}. 
+$$
+
+:::
+
+f) Find the explicit gradient vector at $m=b=0$.
+
+## Solution
+
+We can plug in $m=b=0$ into our gradient expression, which gives
+
+$$
+\nabla SSE (m,b) \quad = \quad  \begin{bmatrix} \sum_{(x_0,y_0)\text{in} \mathcal{X}} 2x_0(- y_0)  \\  \sum_{(x_0,y_0)\text{in} \mathcal{X}} 2(-y_0) \end{bmatrix}. 
+$$
+
+Our table contains the values for $(x_0,y_0)$ that we need to sum over. These give us
+
+$$
+\sum_{(x_0,y_0)\text{in} \mathcal{X}} 2x_0(- y_0) = -2 \big(1(2.5)+2(4.7)+3(6.33)+4(8.09)+5(11)\big)= -236.5
+$$
+
+and
+$$
+\sum_{(x_0,y_0)\text{in} \mathcal{X}} 2(- y_0) = -2 \big( 2.5+4.7+6.33+8.09+11 \big) = -65.24.
+$$
+
+So our gradient vector at $m=b=0$ is
+
+$$
+\nabla SSE (m,b) = \begin{bmatrix} -236.5 \\ -65.24 \end{bmatrix}.
+$$
+
+:::
+
+g) Find a linear function of $m$ and $b$ that has the same gradient at $m=b=0$ as your total squared error function above.
+
+h) **Bonus:** Find the linear function that best approximates your total squared error function near $m=b=1$. 
+

@@ -6,9 +6,7 @@ format: html
 
 # 1.1. Exercises
 
-## Understanding the Derivative
-
-The following exercises are adapted from the [CLP-1 Problem Book](https://personal.math.ubc.ca/~CLP/CLP1/)
+## Optimization and Convexity
 
 <div id='mcq1'></div> 
 <script>
