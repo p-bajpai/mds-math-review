@@ -8,63 +8,78 @@ format: html
 
 ## Optimization and Convexity
 
-<div id='mcq1'></div> 
+**Functions of two variables with specified minima**
+
+Find a continuous function $f$ of two variables $x,y$ such that:
+
+a) $f$ has a single global minimum
+
+::: {.callout-note collapse="true"}
+## Hint
+
+Do any of the functions plotted above work for this one?
+
+:::
+
+b) $f$ has a global minimum at every point with $x=0$
+
+::: {.callout-note collapse="true"}
+## Hint
+
+One possibility is to construct a function that only takes non-negative values, and make sure it is always zero when $x=0$.
+
+:::
+
+c) **Bonus:** $f$ has a global minimum at every point along the line $3x-4y = 0$.
+
+::: {.callout-note collapse="true"}
+## Hint
+
+In part b we found a function with global minima whenever $x=0$. The condition $x=0$ gives a line in the $xy$ plane. To solve part c, one option is to find a "change of coordinates" such that the line $x=0$ gets mapped to $3x-4y=0$ under this change.
+
+Or if it's easier, carry out the same process as part b from scratch--- find a function that only takes non-negative values, and make sure it is always zero when $3x-4y=0$.
+
+:::
+
+For some possible solutions, click the dropdown below.
+
+::: {.callout-note collapse="true"}
+## Solution
+
+There are many possible answers, but a few simple options are:
+
+a) $f(x,y) = x^2 + y^2 - 4$
+b) $f(x,y) = x^2$
+c) $f(x,y) = (3x-4y)^2$
+
+:::
+
+<div id='mcq3'></div>
 <script>
-    generateQuiz(
-        'mcq1', 
-        'Select the correct option', 
-        `The function f(x) is graphed below. <br><br>
+generateMultiQuiz(
+    'mcq3',
+    'Convex functions',
+    `Select all convex functions from the list below.`,
+    {
+        'f(x) = sin(&pi;x) + 1 - e<sup>-x<sup>2</sup></sup>': `How would the sin term affect the curvature of this function?`,
 
-        <img src="../../static/module1/func1.png" width="500">
+        'f(x) = x<sup>3</sup>': `Can you plot this function?`,
+    
+        'f(x) = |x|<sup>3</sup>': `This one happens to be convex, but it takes some work to check.`,
+    
+        'f(x) = log(1 + e<sup>x</sup>)': `We will see functions like this later on in MDS.`,
+    
+        'f(x) = x<sup>2</sup> - 3x': `This is a parabola`,
+    
+        'f(x) = |x<sup>2</sup> - 3x|': `Not quite. Can you try and graph this function?`,
+    
+        'f(x) = max{x<sup>2</sup> - 2x + 7, e<sup>&radic;x</sup>}': `This one is a bit tricky! Try plotting e<sup>&radic;x</sup> and see what happens around x=1.`
 
-        <br><br>
-        Select the option below that describes its derivative. <br>
-        `, 
-        { 
-        'Constant, Always Negative': 'What is the slope of the graph?',
-        'Constant, Always Positive': '',
-        'Increasing, Always Positive': 'What is the slope of the graph?',
-        'Decreasing, Always Negative': 'What is the slope of the graph?',
-        'Sometimes Positive, Sometimes Negative': 'What is the slope of the graph?'
-        },
-        'Constant, Always Positive',
-    );
-</script>
-
-<div id='mcq2'></div> 
-<script>
-    generateQuiz(
-        'mcq2',
-        'Select the correct option', 
-        `The function f(x) is graphed below. <br><br>
-
-        <img src="../../static/module1/func2.png" width="500">
-
-        <br><br>
-        Select the option below that describes its derivative. <br>
-        `, 
-        { 
-        'Constant': 'Try again!',
-        'Increasing, always negative': 'Would increasing a negative derivative make the slope steeper or shallower?',
-        'Sometimes increasing, sometimes decreasing, always negative': '',
-        'Decreasing, always negative': 'Would decreasing a negative derivative make the slope steeper or shallowe?',
-        'Sometimes positive, sometimes negative': 'What does a positive derivative imply?'
-        },
-        'Sometimes increasing, sometimes decreasing, always negative',
-    );
-</script>
-
-<div id='mcq3'></div> 
-<script>
-    generateQuiz(
-        'mcq3',
-        'Interpreting the derivative',
-        `T(d) gives the temperature in Celsius of ocean water at a particular location d metres below the
-        surface. Would you expect the derivative T'(d) to be positive or negative?`,
-        {
-        'Positive': 'Would the ocean get colder or hotter as you went deeper?',
-        'Negative': ''
-        },
-        'Negative',
-    );
+    },
+    [
+        'f(x) = |x|<sup>3</sup>', 
+        'f(x) = log(1 + e<sup>x</sup>)', 
+        'f(x) = x<sup>2</sup> - 3x'
+    ]
+);
 </script>

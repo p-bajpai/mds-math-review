@@ -88,52 +88,6 @@ format: html
     );
 </script>
 
-**Functions of two variables satisfying certain conditions**
-
-Find a continuous function $f$ of two variables $x,y$ such that:
-
-a) $f$ has a single global minimum
-
-::: {.callout-note collapse="true"}
-## Hint
-
-Do any of the functions plotted above work for this one?
-
-:::
-
-b) $f$ has a global minimum at every point with $x=0$
-
-::: {.callout-note collapse="true"}
-## Hint
-
-One possibility is to construct a function that only takes non-negative values, and make sure it is always zero when $x=0$.
-
-:::
-
-c) **Bonus:** $f$ has a global minimum at every point along the line $3x-4y = 0$.
-
-::: {.callout-note collapse="true"}
-## Hint
-
-In part b we found a function with global minima whenever $x=0$. The condition $x=0$ gives a line in the $xy$ plane. To solve part c, one option is to find a "change of coordinates" such that the line $x=0$ gets mapped to $3x-4y=0$ under this change.
-
-Or if it's easier, carry out the same process as part b from scratch--- find a function that only takes non-negative values, and make sure it is always zero when $3x-4y=0$.
-
-:::
-
-For some possible solutions, click the dropdown below.
-
-::: {.callout-note collapse="true"}
-## Solution
-
-There are many possible answers, but a few simple options are:
-
-a) $f(x,y) = x^2 + y^2 - 4$
-b) $f(x,y) = x^2$
-c) $f(x,y) = (3x-4y)^2$
-
-:::
-
 **Mean Squared Error as a Multivariate Function**
 
 You are trying to fit a least-squares regression model to the following data :
@@ -212,6 +166,7 @@ $$
 
 f) Find the explicit gradient vector at $m=b=0$.
 
+::: {.callout-note collapse="true"}
 ## Solution
 
 We can plug in $m=b=0$ into our gradient expression, which gives
@@ -241,5 +196,20 @@ $$
 
 g) Find a linear function of $m$ and $b$ that has the same gradient at $m=b=0$ as your total squared error function above.
 
+::: {.callout-note collapse="true"}
+## Solution
+
+The function $f(x,y) = -236.5x - 65.24y$ meets this criterion.
+
+:::
+
 h) **Bonus:** Find the linear function that best approximates your total squared error function near $m=b=1$. 
 
+
+::: {.callout-note collapse="true"}
+## Hint
+
+What would the gradient of this linear function need to be? And what must
+be its value at m = b = 1?
+
+:::
