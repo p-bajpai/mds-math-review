@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>module1-02-derivatives-common-functions – Introduction to Machine Learning</title>
+<title>module3-01-vecs – Introduction to Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../modules/module1/module1-ex1_2.html" rel="next">
-<link href="../../modules/module1/module1-ex1_1.html" rel="prev">
+<link href="../../modules/module3/module3-ex3_1.html" rel="next">
+<link href="../../modules/module2/module2-ex2_2.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -160,13 +160,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text"><strong>M1. Functions of a Single Variable</strong></span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module1/module1-01-understanding-the-derivative.html" class="sidebar-item-text sidebar-link">
@@ -181,7 +181,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-02-derivatives-common-functions.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../modules/module1/module1-02-derivatives-common-functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Derivatives of Common Functions</span></a>
   </div>
 </li>
@@ -248,16 +248,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text"><strong>M3. Matrices and Vectors</strong></span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module3/module3-01-vecs.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/module3/module3-01-vecs.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">1. Points in High-Dimensional Spaces</span></a>
   </div>
 </li>
@@ -293,73 +293,48 @@ window.Quarto = {
 
 
 
-<section id="derivatives-of-common-functions" class="level1">
-<h1>2. Derivatives of Common Functions</h1>
+<section id="points-in-high-dimensional-spaces" class="level1">
+<h1>1. Points in High-Dimensional Spaces</h1>
 <div class="tabset-margin-container"></div><div class="panel-tabset nav-pills">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Intro</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Video 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Video 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Video 3</a></li></ul>
 <div class="tab-content nav-pills">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<section id="the-calculus-of-derivatives" class="level4">
-<h4 class="anchored" data-anchor-id="the-calculus-of-derivatives">The Calculus of Derivatives</h4>
-<p>The term “calculus” is related to the word “calculate”. In calculus class, we learn rules for calculating the derivatives of many simple mathematical functions. These functions are commonly used to describe real-world phenomena, and so rules for finding their derivatives help us easily investigate phenomena in any scientific field where calculus is applied. Still, we should remember that the “rules” are not all we are interested in. The real goal is to investigate the behaviour of various mathematical functions, and the world around us wherever they appear.</p>
-<p>Generally, these rules allow us to take a starting function <span class="math inline">\(f(x)\)</span>, and produce a new function <span class="math inline">\(f'(x)\)</span>, i.e.&nbsp;a new black box. This new function <span class="math inline">\(f'\)</span> takes the same inputs as <span class="math inline">\(f\)</span>, and for any provided input <span class="math inline">\(x\)</span>, returns the value of the <em>derivative</em> of <span class="math inline">\(f\)</span> at the point <span class="math inline">\(x\)</span>. Conceptually we can still understand the derivative <span class="math inline">\(f'\)</span> as “pointwise” information– it is still giving us the sensitivity of <span class="math inline">\(f\)</span> at various points we could choose. It just so happpens that when the original function <span class="math inline">\(f\)</span> has a simple recipe (i.e.&nbsp;formula), then <span class="math inline">\(f'\)</span> often does as well.</p>
+<p>In the study of <em>data science</em>, we often visualize our data as living in some suitably high-dimensional space. As an example, say we have a dataset on housing prices that contains the age, square footage and price of various houses in a given neighbourhood. Each “data point” can then be represented as a list of three numbers: namely the list [age, sq. ft., price]. A 40-year old 1000 sq ft apartment listed for $500,000 is then represented by the list <span class="math inline">\([40,1000,500000]\)</span>. This can be visualized as a point in 3D space, and every point in this space is a <em>possible</em> house in our dataset. Of course some houses (like <span class="math inline">\([40,1000,500000]\)</span>) may be more realistic than others (say <span class="math inline">\([50000,3,74]\)</span>).</p>
+<p>Some datasets are easy to represent by lists of numbers (e.g.&nbsp;images can be represented as lists of pixel values). Others are harder to represent this way— for example, how would you represent all e-books available at the UBC library via a list of numbers?</p>
+<section id="what-is-a-vector" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-a-vector">What is a Vector?</h4>
+<p>Vectors are lists of numbers too, but with the added ability that we can scale a vector up or down by a constant factor: <span class="math display">\[2\times[40,1000,500000] = [80,2000,1000000]\]</span> and we can add vectors together by adding their elements component-wise: <span class="math display">\[[1,1,1] + [2,0,0] = [3,1,1].\]</span></p>
+<p>It may not seem very sensible to “add” houses together, but notice even in this very limited example we can find a use for this notion. Namely, we can say two houses in our dataset are “similar” to each other if their <em>difference</em> as vectors is small in size.</p>
 </section>
-<section id="sum-product-and-difference-of-functions" class="level4">
-<h4 class="anchored" data-anchor-id="sum-product-and-difference-of-functions">Sum, Product and Difference of Functions</h4>
-<p>The first step in building rules for calculating derivatives is to consider the sums, products and quotients of functions. Here are the (appropriately named) sum, product and quotient rules for derivatives. For the rules below, <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are functions that take real number inputs and produce real number outputs.</p>
-<p><em>Note: Refer to the CLP 1 textbook for more details</em></p>
-<p><strong>Sum Rule:</strong> The derivative of the function <span class="math inline">\(f(x) + g(x)\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[f'(x) + g'(x).\]</span></p>
-<p><strong>Product Rule:</strong> The derivative of <span class="math inline">\(f(x) \cdot g(x)\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[f'(x)\cdot g(x) + g'(x)\cdot f(x).\]</span></p>
-<p><strong>Quotient Rule:</strong> The derivative of <span class="math inline">\(\frac{f(x)}{g(x)}\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[\frac{f'(x)g(x) - g'(x)f(x)}{g(x)^2}.\]</span></p>
+<section id="what-is-a-vector-space" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-a-vector-space">What is a Vector Space?</h4>
+<p>In our previous example, our vectors are ordered lists of real numbers of length 3. The set of all possible length-3 lists of real numbers forms the <em>vector space</em> known as <span class="math inline">\(\mathbb{R}^3\)</span>. This space is closed under scaling and addition of vectors, meaning if I combine two vectors from this space together (or stretch/shrink either one) I still end up with a result withing the same space.</p>
+<p>An important property of this space is its <em>dimension</em>, which in this case equals 3, because we have three independently varying components within this space.</p>
 </section>
-<section id="polynomials" class="level4">
-<h4 class="anchored" data-anchor-id="polynomials">Polynomials</h4>
-<p>Iteratively applying the product rule to the product <span class="math display">\[x^n = \underbrace{x \times x \times \cdots \times x}_{n \text{ times}}\]</span> tells us that the derivative of <span class="math inline">\(f(x) = x^n\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math inline">\(n\cdot x^{n-1}\)</span>.</p>
-<p>Remember, again, this formula is just a recipe for calculating the value of the derivative at various possible inputs. The recipe is telling us (for example) that the “sensitivity” of the function <span class="math inline">\(x^5\)</span> to its input at <span class="math inline">\(x=3\)</span> is <span class="math inline">\(4*3^4 = 324\)</span>. In other words, at <span class="math inline">\(x=3\)</span> the function <span class="math inline">\(x^5\)</span> is extremely sensitive to small changes in input! If we wiggle the input a little, the output of the function will react by changing more than 300 times as much.</p>
-<p>For an arbitrayy polynomial, we now apply the sum rule to calculate its derivative. So for example if <span class="math inline">\(f(x) = x^3 + 3x^2 + 7x + 1\)</span> we get</p>
-<p><span class="math display">\[f'(x) = 3x^2 + 3\cdot2\cdot x + 7 = 3x^2 + 6x + 7.\]</span></p>
+<section id="what-is-a-subspace" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-a-subspace">What is a Subspace?</h4>
+<p>Let us move away from the specific example of housing data, and consider the “abstract” space <span class="math inline">\(\mathbb{R}^3\)</span>. You might notice that the set of all vectors whose third component is zero also forms a space that is closed under scaling and vector addition. So is the set of vectors whose first component equals the third, or the set of all vectors such that the sum of its components equals zero.</p>
+<p>These are all examples of two-dimensional subpsaces of <span class="math inline">\(\mathbb{R}^3\)</span>. They only have two independently varying components— in all cases after I specify the first and second component, I automatically know the value of the third. In high-dimensional spaces, it may not be immediately obvious when a set of vectors fills out the entire space in question, or merely a lower-dimensional subspace.</p>
 </section>
-<section id="trigonometric-functions" class="level4">
-<h4 class="anchored" data-anchor-id="trigonometric-functions">Trigonometric Functions</h4>
-<p>The key rules to remember for trigonometric functions are:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = \sin x\)</span>, then <span class="math inline">\(f'(x) = \cos(x)\)</span>.</li>
-<li>If <span class="math inline">\(f(x) = \cos x\)</span>, then <span class="math inline">\(f'(x) = -\sin(x)\)</span>.</li>
-</ul>
-<p>For the remaining trigonometric functions, we can use these two rules in conjunction with the quotient rule from before.</p>
-<p>In the design of neural networks we sometimes also encounter the <em>hyperbolic functions</em>, namely <span class="math display">\[
-\begin{aligned}
-\sinh(x) &amp;= \frac{e^x - e^{-x}}{2} = -i\sin(ix)\\
-\cosh(x) &amp;= \frac{e^x + e^{-x}}{2} = \cos(ix)\\
-\tanh(x) &amp;= \frac{e^x - e^{-x}}{e^x + e^{-x}} = \frac{\sinh(x)}{\cosh(x)}
-\end{aligned}
-\]</span> where <span class="math inline">\(i\)</span> is the imaginary unit with <span class="math inline">\(i^2=-1\)</span>. In this case:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = \sinh x\)</span>, then <span class="math inline">\(f'(x) = \cosh(x)\)</span>.</li>
-<li>If <span class="math inline">\(f(x) = \cosh x\)</span>, then <span class="math inline">\(f'(x) = \sinh(x)\)</span>.</li>
-</ul>
-<p>Notice there is no negative sign in the formula for the derivative for <span class="math inline">\(\cosh(x)\)</span>.</p>
-</section>
-<section id="exponentials-and-logarithms" class="level4">
-<h4 class="anchored" data-anchor-id="exponentials-and-logarithms">Exponentials and Logarithms</h4>
-<p>Finally, we have:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = e^x\)</span>, then <span class="math inline">\(f'(x) = e^x\)</span>, and</li>
-<li>If <span class="math inline">\(f(x) = \log x\)</span>, then <span class="math inline">\(f'(x) = \frac1x\)</span>.</li>
-</ul>
-<p>Remember that while <span class="math inline">\(e^x\)</span> takes any possible real number as input, it only outputs positive real numbers. In contrast, <span class="math inline">\(\log x\)</span> can only accept positive real numbers as input but its outputs cover all real numbers.</p>
+<section id="why-do-we-call-it-linear-algebra" class="level4">
+<h4 class="anchored" data-anchor-id="why-do-we-call-it-linear-algebra">Why do we call it “Linear” Algebra?</h4>
+<p>Consider the plots below.</p>
+<p><img src="../../static/module3/rolls.png" class="img-fluid"></p>
+<p>In both cases, we have a set of points lying along a 2D surface sitting inside 3D space. On the left, we have a surface shaped like a “swiss roll”, curling in on itself. On the right, we have a flat plane.</p>
+<p>Linear algebra studies flat surfaces like the one on the right, and transformations that stretch, squeeze or rotate this space while keeping it flat. It turns out we can get quite far in data science and machine learning dealing only with linear algebra.</p>
+<p>The swiss roll cannot be easily approximated by flat surfaces, but even here it helps to understand linear algebra well. Later on during the MDS program, you will learn techniques that take simple linear building blocks and <a href="https://math.mit.edu/%7Egs/learningfromdata/siam.pdf">piece them together</a> to model non-linear data. They can be used to flatten out the swiss-roll, and allow us to use all our favourite linear models to study it.</p>
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<iframe class="video" src="https://www.youtube.com/embed/S0_qX4VJhMQ" title="Derivative formulas through geometry - 3Blue1Brown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+<iframe class="video" src="https://www.youtube.com/embed/fNk_zzaMoSs" title="Vectors --- 3Blue1Brown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<iframe class="video" src="https://www.youtube.com/embed/FtQl1gAo12E" title="Derivative of sin x and cos x - Gilbert Strang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+<iframe class="video" src="https://www.youtube.com/embed/k7RM-ot2NWY" title="Linear combinations, span and basis --- 3Blue1Brown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<iframe class="video" src="https://www.youtube.com/embed/5ZpqI8zz1HM" title="Product Rule and Quotient Rule - Gilbert Strang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+<iframe class="video" src="https://www.youtube.com/embed/QQpvGlF_1Qo" title="Subspaces of Three Dimensional Space" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </div>
 </div>
@@ -791,13 +766,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
-      <a href="../../modules/module1/module1-ex1_1.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 1.1. Exercises">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">&nbsp;&nbsp; 1.1. Exercises</span>
+      <a href="../../modules/module2/module2-ex2_2.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 2.2. Exercises">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">&nbsp;&nbsp; 2.2. Exercises</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../modules/module1/module1-ex1_2.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 1.2. Exercises">
-        <span class="nav-page-text">&nbsp;&nbsp; 1.2. Exercises</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../modules/module3/module3-ex3_1.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 3.1. Exercises">
+        <span class="nav-page-text">&nbsp;&nbsp; 3.1. Exercises</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

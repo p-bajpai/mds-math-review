@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>module1-02-derivatives-common-functions – Introduction to Machine Learning</title>
+<title>module2-ex2_2 – Introduction to Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../modules/module1/module1-ex1_2.html" rel="next">
-<link href="../../modules/module1/module1-ex1_1.html" rel="prev">
+<link href="../../modules/module3/module3-01-vecs.html" rel="next">
+<link href="../../modules/module2/module2-02-opt-conv.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -101,7 +101,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -120,7 +120,7 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
@@ -160,13 +160,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text"><strong>M1. Functions of a Single Variable</strong></span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module1/module1-01-understanding-the-derivative.html" class="sidebar-item-text sidebar-link">
@@ -181,7 +181,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-02-derivatives-common-functions.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../modules/module1/module1-02-derivatives-common-functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Derivatives of Common Functions</span></a>
   </div>
 </li>
@@ -213,13 +213,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text"><strong>M2. Functions of Several Variables</strong></span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module2/module2-01-several-variables.html" class="sidebar-item-text sidebar-link">
@@ -240,7 +240,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module2/module2-ex2_2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/module2/module2-ex2_2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">&nbsp;&nbsp; 2.2. Exercises</span></a>
   </div>
 </li>
@@ -288,84 +288,132 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
 
-<section id="derivatives-of-common-functions" class="level1">
-<h1>2. Derivatives of Common Functions</h1>
-<div class="tabset-margin-container"></div><div class="panel-tabset nav-pills">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Intro</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Video 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Video 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Video 3</a></li></ul>
-<div class="tab-content nav-pills">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<section id="the-calculus-of-derivatives" class="level4">
-<h4 class="anchored" data-anchor-id="the-calculus-of-derivatives">The Calculus of Derivatives</h4>
-<p>The term “calculus” is related to the word “calculate”. In calculus class, we learn rules for calculating the derivatives of many simple mathematical functions. These functions are commonly used to describe real-world phenomena, and so rules for finding their derivatives help us easily investigate phenomena in any scientific field where calculus is applied. Still, we should remember that the “rules” are not all we are interested in. The real goal is to investigate the behaviour of various mathematical functions, and the world around us wherever they appear.</p>
-<p>Generally, these rules allow us to take a starting function <span class="math inline">\(f(x)\)</span>, and produce a new function <span class="math inline">\(f'(x)\)</span>, i.e.&nbsp;a new black box. This new function <span class="math inline">\(f'\)</span> takes the same inputs as <span class="math inline">\(f\)</span>, and for any provided input <span class="math inline">\(x\)</span>, returns the value of the <em>derivative</em> of <span class="math inline">\(f\)</span> at the point <span class="math inline">\(x\)</span>. Conceptually we can still understand the derivative <span class="math inline">\(f'\)</span> as “pointwise” information– it is still giving us the sensitivity of <span class="math inline">\(f\)</span> at various points we could choose. It just so happpens that when the original function <span class="math inline">\(f\)</span> has a simple recipe (i.e.&nbsp;formula), then <span class="math inline">\(f'\)</span> often does as well.</p>
+<script src="../../src/quiz.js"></script>
+<section id="exercises" class="level1">
+<h1>1.1. Exercises</h1>
+<section id="optimization-and-convexity" class="level2">
+<h2 class="anchored" data-anchor-id="optimization-and-convexity">Optimization and Convexity</h2>
+<p><strong>Functions of two variables with specified minima</strong></p>
+<p>Find a continuous function <span class="math inline">\(f\)</span> of two variables <span class="math inline">\(x,y\)</span> such that:</p>
+<ol type="a">
+<li><span class="math inline">\(f\)</span> has a single global minimum</li>
+</ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Do any of the functions plotted above work for this one?</p>
+</div>
+</div>
+</div>
+<ol start="2" type="a">
+<li><span class="math inline">\(f\)</span> has a global minimum at every point with <span class="math inline">\(x=0\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>One possibility is to construct a function that only takes non-negative values, and make sure it is always zero when <span class="math inline">\(x=0\)</span>.</p>
+</div>
+</div>
+</div>
+<ol start="3" type="a">
+<li><strong>Bonus:</strong> <span class="math inline">\(f\)</span> has a global minimum at every point along the line <span class="math inline">\(3x-4y = 0\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In part b we found a function with global minima whenever <span class="math inline">\(x=0\)</span>. The condition <span class="math inline">\(x=0\)</span> gives a line in the <span class="math inline">\(xy\)</span> plane. To solve part c, one option is to find a “change of coordinates” such that the line <span class="math inline">\(x=0\)</span> gets mapped to <span class="math inline">\(3x-4y=0\)</span> under this change.</p>
+<p>Or if it’s easier, carry out the same process as part b from scratch— find a function that only takes non-negative values, and make sure it is always zero when <span class="math inline">\(3x-4y=0\)</span>.</p>
+</div>
+</div>
+</div>
+<p>For some possible solutions, click the dropdown below.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There are many possible answers, but a few simple options are:</p>
+<ol type="a">
+<li><span class="math inline">\(f(x,y) = x^2 + y^2 - 4\)</span></li>
+<li><span class="math inline">\(f(x,y) = x^2\)</span></li>
+<li><span class="math inline">\(f(x,y) = (3x-4y)^2\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="mcq3">
+
+</div>
+<script>
+generateMultiQuiz(
+    'mcq3',
+    'Convex functions',
+    `Select all convex functions from the list below.`,
+    {
+        'f(x) = sin(&pi;x) + 1 - e<sup>-x<sup>2</sup></sup>': `How would the sin term affect the curvature of this function?`,
+
+        'f(x) = x<sup>3</sup>': `Can you plot this function?`,
+    
+        'f(x) = |x|<sup>3</sup>': `This one happens to be convex, but it takes some work to check.`,
+    
+        'f(x) = log(1 + e<sup>x</sup>)': `We will see functions like this later on in MDS.`,
+    
+        'f(x) = x<sup>2</sup> - 3x': `This is a parabola`,
+    
+        'f(x) = |x<sup>2</sup> - 3x|': `Not quite. Can you try and graph this function?`,
+    
+        'f(x) = max{x<sup>2</sup> - 2x + 7, e<sup>&radic;x</sup>}': `This one is a bit tricky! Try plotting e<sup>&radic;x</sup> and see what happens around x=1.`
+
+    },
+    [
+        'f(x) = |x|<sup>3</sup>', 
+        'f(x) = log(1 + e<sup>x</sup>)', 
+        'f(x) = x<sup>2</sup> - 3x'
+    ]
+);
+</script>
+
+
 </section>
-<section id="sum-product-and-difference-of-functions" class="level4">
-<h4 class="anchored" data-anchor-id="sum-product-and-difference-of-functions">Sum, Product and Difference of Functions</h4>
-<p>The first step in building rules for calculating derivatives is to consider the sums, products and quotients of functions. Here are the (appropriately named) sum, product and quotient rules for derivatives. For the rules below, <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are functions that take real number inputs and produce real number outputs.</p>
-<p><em>Note: Refer to the CLP 1 textbook for more details</em></p>
-<p><strong>Sum Rule:</strong> The derivative of the function <span class="math inline">\(f(x) + g(x)\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[f'(x) + g'(x).\]</span></p>
-<p><strong>Product Rule:</strong> The derivative of <span class="math inline">\(f(x) \cdot g(x)\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[f'(x)\cdot g(x) + g'(x)\cdot f(x).\]</span></p>
-<p><strong>Quotient Rule:</strong> The derivative of <span class="math inline">\(\frac{f(x)}{g(x)}\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[\frac{f'(x)g(x) - g'(x)f(x)}{g(x)^2}.\]</span></p>
-</section>
-<section id="polynomials" class="level4">
-<h4 class="anchored" data-anchor-id="polynomials">Polynomials</h4>
-<p>Iteratively applying the product rule to the product <span class="math display">\[x^n = \underbrace{x \times x \times \cdots \times x}_{n \text{ times}}\]</span> tells us that the derivative of <span class="math inline">\(f(x) = x^n\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math inline">\(n\cdot x^{n-1}\)</span>.</p>
-<p>Remember, again, this formula is just a recipe for calculating the value of the derivative at various possible inputs. The recipe is telling us (for example) that the “sensitivity” of the function <span class="math inline">\(x^5\)</span> to its input at <span class="math inline">\(x=3\)</span> is <span class="math inline">\(4*3^4 = 324\)</span>. In other words, at <span class="math inline">\(x=3\)</span> the function <span class="math inline">\(x^5\)</span> is extremely sensitive to small changes in input! If we wiggle the input a little, the output of the function will react by changing more than 300 times as much.</p>
-<p>For an arbitrayy polynomial, we now apply the sum rule to calculate its derivative. So for example if <span class="math inline">\(f(x) = x^3 + 3x^2 + 7x + 1\)</span> we get</p>
-<p><span class="math display">\[f'(x) = 3x^2 + 3\cdot2\cdot x + 7 = 3x^2 + 6x + 7.\]</span></p>
-</section>
-<section id="trigonometric-functions" class="level4">
-<h4 class="anchored" data-anchor-id="trigonometric-functions">Trigonometric Functions</h4>
-<p>The key rules to remember for trigonometric functions are:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = \sin x\)</span>, then <span class="math inline">\(f'(x) = \cos(x)\)</span>.</li>
-<li>If <span class="math inline">\(f(x) = \cos x\)</span>, then <span class="math inline">\(f'(x) = -\sin(x)\)</span>.</li>
-</ul>
-<p>For the remaining trigonometric functions, we can use these two rules in conjunction with the quotient rule from before.</p>
-<p>In the design of neural networks we sometimes also encounter the <em>hyperbolic functions</em>, namely <span class="math display">\[
-\begin{aligned}
-\sinh(x) &amp;= \frac{e^x - e^{-x}}{2} = -i\sin(ix)\\
-\cosh(x) &amp;= \frac{e^x + e^{-x}}{2} = \cos(ix)\\
-\tanh(x) &amp;= \frac{e^x - e^{-x}}{e^x + e^{-x}} = \frac{\sinh(x)}{\cosh(x)}
-\end{aligned}
-\]</span> where <span class="math inline">\(i\)</span> is the imaginary unit with <span class="math inline">\(i^2=-1\)</span>. In this case:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = \sinh x\)</span>, then <span class="math inline">\(f'(x) = \cosh(x)\)</span>.</li>
-<li>If <span class="math inline">\(f(x) = \cosh x\)</span>, then <span class="math inline">\(f'(x) = \sinh(x)\)</span>.</li>
-</ul>
-<p>Notice there is no negative sign in the formula for the derivative for <span class="math inline">\(\cosh(x)\)</span>.</p>
-</section>
-<section id="exponentials-and-logarithms" class="level4">
-<h4 class="anchored" data-anchor-id="exponentials-and-logarithms">Exponentials and Logarithms</h4>
-<p>Finally, we have:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = e^x\)</span>, then <span class="math inline">\(f'(x) = e^x\)</span>, and</li>
-<li>If <span class="math inline">\(f(x) = \log x\)</span>, then <span class="math inline">\(f'(x) = \frac1x\)</span>.</li>
-</ul>
-<p>Remember that while <span class="math inline">\(e^x\)</span> takes any possible real number as input, it only outputs positive real numbers. In contrast, <span class="math inline">\(\log x\)</span> can only accept positive real numbers as input but its outputs cover all real numbers.</p>
-</section>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<iframe class="video" src="https://www.youtube.com/embed/S0_qX4VJhMQ" title="Derivative formulas through geometry - 3Blue1Brown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<iframe class="video" src="https://www.youtube.com/embed/FtQl1gAo12E" title="Derivative of sin x and cos x - Gilbert Strang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<iframe class="video" src="https://www.youtube.com/embed/5ZpqI8zz1HM" title="Product Rule and Quotient Rule - Gilbert Strang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</div>
-</div>
-</div>
-
-
 </section>
 
 </main> <!-- /main -->
@@ -789,15 +837,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../modules/module1/module1-ex1_1.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 1.1. Exercises">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">&nbsp;&nbsp; 1.1. Exercises</span>
+      <a href="../../modules/module2/module2-02-opt-conv.html" class="pagination-link" aria-label="2. Optimization and Convexity">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2. Optimization and Convexity</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../modules/module1/module1-ex1_2.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 1.2. Exercises">
-        <span class="nav-page-text">&nbsp;&nbsp; 1.2. Exercises</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../modules/module3/module3-01-vecs.html" class="pagination-link" aria-label="1. Points in High-Dimensional Spaces">
+        <span class="nav-page-text">1. Points in High-Dimensional Spaces</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

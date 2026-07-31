@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>module1-02-derivatives-common-functions – Introduction to Machine Learning</title>
+<title>module3-02-mats – Introduction to Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../modules/module1/module1-ex1_2.html" rel="next">
-<link href="../../modules/module1/module1-ex1_1.html" rel="prev">
+<link href="../../modules/module3/module3-ex3_2.html" rel="next">
+<link href="../../modules/module3/module3-ex3_1.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -160,13 +160,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text"><strong>M1. Functions of a Single Variable</strong></span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module1/module1-01-understanding-the-derivative.html" class="sidebar-item-text sidebar-link">
@@ -181,7 +181,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-02-derivatives-common-functions.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../modules/module1/module1-02-derivatives-common-functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Derivatives of Common Functions</span></a>
   </div>
 </li>
@@ -248,13 +248,13 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text"><strong>M3. Matrices and Vectors</strong></span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../modules/module3/module3-01-vecs.html" class="sidebar-item-text sidebar-link">
@@ -269,7 +269,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module3/module3-02-mats.html" class="sidebar-item-text sidebar-link">
+  <a href="../../modules/module3/module3-02-mats.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">2. What is a Matrix for?</span></a>
   </div>
 </li>
@@ -293,73 +293,49 @@ window.Quarto = {
 
 
 
-<section id="derivatives-of-common-functions" class="level1">
-<h1>2. Derivatives of Common Functions</h1>
+<section id="what-is-a-matrix-for" class="level1">
+<h1>2. What is a Matrix for?</h1>
 <div class="tabset-margin-container"></div><div class="panel-tabset nav-pills">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Intro</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Video 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Video 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Video 3</a></li></ul>
 <div class="tab-content nav-pills">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<section id="the-calculus-of-derivatives" class="level4">
-<h4 class="anchored" data-anchor-id="the-calculus-of-derivatives">The Calculus of Derivatives</h4>
-<p>The term “calculus” is related to the word “calculate”. In calculus class, we learn rules for calculating the derivatives of many simple mathematical functions. These functions are commonly used to describe real-world phenomena, and so rules for finding their derivatives help us easily investigate phenomena in any scientific field where calculus is applied. Still, we should remember that the “rules” are not all we are interested in. The real goal is to investigate the behaviour of various mathematical functions, and the world around us wherever they appear.</p>
-<p>Generally, these rules allow us to take a starting function <span class="math inline">\(f(x)\)</span>, and produce a new function <span class="math inline">\(f'(x)\)</span>, i.e.&nbsp;a new black box. This new function <span class="math inline">\(f'\)</span> takes the same inputs as <span class="math inline">\(f\)</span>, and for any provided input <span class="math inline">\(x\)</span>, returns the value of the <em>derivative</em> of <span class="math inline">\(f\)</span> at the point <span class="math inline">\(x\)</span>. Conceptually we can still understand the derivative <span class="math inline">\(f'\)</span> as “pointwise” information– it is still giving us the sensitivity of <span class="math inline">\(f\)</span> at various points we could choose. It just so happpens that when the original function <span class="math inline">\(f\)</span> has a simple recipe (i.e.&nbsp;formula), then <span class="math inline">\(f'\)</span> often does as well.</p>
+<section id="multiplying-a-matrix-and-a-vector" class="level4">
+<h4 class="anchored" data-anchor-id="multiplying-a-matrix-and-a-vector">Multiplying a Matrix and a Vector</h4>
+<p>A matrix is a square array of numbers, i.e.&nbsp;a table containing individual entries arranged into rows and columns. A matrix with <span class="math inline">\(m\)</span> rows and <span class="math inline">\(n\)</span> columns would have <span class="math inline">\(m\cdot n\)</span> total entries, <span class="math inline">\(n\)</span> in each row and <span class="math inline">\(m\)</span> in each column. For example, if <span class="math inline">\(m=2\)</span> and <span class="math inline">\(n=3\)</span> we may have the matrix <span class="math display">\[
+\begin{bmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\end{bmatrix} \quad\text{where}\quad a,b,c,d,e,f \text{ are real numbers.}
+\]</span> If we have an <span class="math inline">\(m\times n\)</span> matrix <span class="math inline">\(A\)</span> and an <span class="math inline">\(n\)</span>-dimensional vector <span class="math inline">\(v\)</span>, then there is a rule that allows us to produce the <em>matrix-vector product</em> <span class="math inline">\(A\cdot v\)</span>. The result of this product is also a vector. Its first entry is given by the dot-product of the first row of <span class="math inline">\(A\)</span> with the vector <span class="math inline">\(v\)</span>, the second entry by the dot-product of the second row of <span class="math inline">\(A\)</span> with the vector <span class="math inline">\(v\)</span>, and so on. In the case <span class="math inline">\(m=2,\, n=3\)</span> this would look something like: <span class="math display">\[
+\begin{bmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\end{bmatrix}\cdot \begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}ax+by+cz\\dx+ey+fz\end{bmatrix}.
+\]</span></p>
+<p>Notice immediately that the number of columns of <span class="math inline">\(A\)</span> must agree with the dimension (no. of entries) of the vector <span class="math inline">\(v\)</span>— otherwise the rule cannot be applied. Note also that just because <span class="math inline">\(Av\)</span> can be computed doesn’t mean the product <span class="math inline">\(vA\)</span> is even defined (and it certainly doesn’t have to equal <span class="math inline">\(Av\)</span> if it is).</p>
 </section>
-<section id="sum-product-and-difference-of-functions" class="level4">
-<h4 class="anchored" data-anchor-id="sum-product-and-difference-of-functions">Sum, Product and Difference of Functions</h4>
-<p>The first step in building rules for calculating derivatives is to consider the sums, products and quotients of functions. Here are the (appropriately named) sum, product and quotient rules for derivatives. For the rules below, <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are functions that take real number inputs and produce real number outputs.</p>
-<p><em>Note: Refer to the CLP 1 textbook for more details</em></p>
-<p><strong>Sum Rule:</strong> The derivative of the function <span class="math inline">\(f(x) + g(x)\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[f'(x) + g'(x).\]</span></p>
-<p><strong>Product Rule:</strong> The derivative of <span class="math inline">\(f(x) \cdot g(x)\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[f'(x)\cdot g(x) + g'(x)\cdot f(x).\]</span></p>
-<p><strong>Quotient Rule:</strong> The derivative of <span class="math inline">\(\frac{f(x)}{g(x)}\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math display">\[\frac{f'(x)g(x) - g'(x)f(x)}{g(x)^2}.\]</span></p>
+<section id="matrices-as-maps-between-vector-spaces" class="level4">
+<h4 class="anchored" data-anchor-id="matrices-as-maps-between-vector-spaces">Matrices as Maps Between Vector Spaces</h4>
+<p>In the previous section, we have seen that multiplying an <span class="math inline">\(m\times n\)</span> matrix <span class="math inline">\(A\)</span> by an <span class="math inline">\(n\)</span>-dimensional vector <span class="math inline">\(v\)</span> in the order <span class="math inline">\(A\cdot v\)</span> produces an <span class="math inline">\(m\)</span>-dimensional vector. Thus for each matrix <span class="math inline">\(A\)</span> we have an associated function <span class="math inline">\(f_A\)</span> given by this “left-multiplication”: <span class="math display">\[
+f_A(w) = A\cdot w \quad \text{for any $n$-dimensional vector } w.
+\]</span> This is a function from <span class="math inline">\(n\)</span>-dimensional space to <span class="math inline">\(m\)</span>-dimensional space. As it turns out, this function is “linear”, which simply means that for <span class="math inline">\(n\)</span>-dimensional vectors <span class="math inline">\(v\)</span> and <span class="math inline">\(w\)</span> and constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> we have <span class="math display">\[
+f_A(av+bw) = af_A(v) + bf_A(w).
+\]</span> Such functions map flat surfaces to flat surfaces. In the special case where <span class="math inline">\(m=n\)</span>, we get a function from <span class="math inline">\(n\)</span>-dimensional space to itself— some common examples include stretching or shrinking by a constant factor in a given direction, as well as rotations and reflections. These are all examples of linear transformations, and they can all be represented as left multiplication by some well-chosen matrix.</p>
+<p>Some interactive visualizations to help you connect matrices to linear transformations can be found <a href="https://www.geogebra.org/m/pDU4peV5">here</a> and <a href="https://personal.math.ubc.ca/~tbjw/ila/matrix-transformations.html">here</a>. The exercises for this section will help you strengthen this connection by working through a few simple examples by hand.</p>
 </section>
-<section id="polynomials" class="level4">
-<h4 class="anchored" data-anchor-id="polynomials">Polynomials</h4>
-<p>Iteratively applying the product rule to the product <span class="math display">\[x^n = \underbrace{x \times x \times \cdots \times x}_{n \text{ times}}\]</span> tells us that the derivative of <span class="math inline">\(f(x) = x^n\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math inline">\(n\cdot x^{n-1}\)</span>.</p>
-<p>Remember, again, this formula is just a recipe for calculating the value of the derivative at various possible inputs. The recipe is telling us (for example) that the “sensitivity” of the function <span class="math inline">\(x^5\)</span> to its input at <span class="math inline">\(x=3\)</span> is <span class="math inline">\(4*3^4 = 324\)</span>. In other words, at <span class="math inline">\(x=3\)</span> the function <span class="math inline">\(x^5\)</span> is extremely sensitive to small changes in input! If we wiggle the input a little, the output of the function will react by changing more than 300 times as much.</p>
-<p>For an arbitrayy polynomial, we now apply the sum rule to calculate its derivative. So for example if <span class="math inline">\(f(x) = x^3 + 3x^2 + 7x + 1\)</span> we get</p>
-<p><span class="math display">\[f'(x) = 3x^2 + 3\cdot2\cdot x + 7 = 3x^2 + 6x + 7.\]</span></p>
-</section>
-<section id="trigonometric-functions" class="level4">
-<h4 class="anchored" data-anchor-id="trigonometric-functions">Trigonometric Functions</h4>
-<p>The key rules to remember for trigonometric functions are:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = \sin x\)</span>, then <span class="math inline">\(f'(x) = \cos(x)\)</span>.</li>
-<li>If <span class="math inline">\(f(x) = \cos x\)</span>, then <span class="math inline">\(f'(x) = -\sin(x)\)</span>.</li>
-</ul>
-<p>For the remaining trigonometric functions, we can use these two rules in conjunction with the quotient rule from before.</p>
-<p>In the design of neural networks we sometimes also encounter the <em>hyperbolic functions</em>, namely <span class="math display">\[
-\begin{aligned}
-\sinh(x) &amp;= \frac{e^x - e^{-x}}{2} = -i\sin(ix)\\
-\cosh(x) &amp;= \frac{e^x + e^{-x}}{2} = \cos(ix)\\
-\tanh(x) &amp;= \frac{e^x - e^{-x}}{e^x + e^{-x}} = \frac{\sinh(x)}{\cosh(x)}
-\end{aligned}
-\]</span> where <span class="math inline">\(i\)</span> is the imaginary unit with <span class="math inline">\(i^2=-1\)</span>. In this case:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = \sinh x\)</span>, then <span class="math inline">\(f'(x) = \cosh(x)\)</span>.</li>
-<li>If <span class="math inline">\(f(x) = \cosh x\)</span>, then <span class="math inline">\(f'(x) = \sinh(x)\)</span>.</li>
-</ul>
-<p>Notice there is no negative sign in the formula for the derivative for <span class="math inline">\(\cosh(x)\)</span>.</p>
-</section>
-<section id="exponentials-and-logarithms" class="level4">
-<h4 class="anchored" data-anchor-id="exponentials-and-logarithms">Exponentials and Logarithms</h4>
-<p>Finally, we have:</p>
-<ul>
-<li>If <span class="math inline">\(f(x) = e^x\)</span>, then <span class="math inline">\(f'(x) = e^x\)</span>, and</li>
-<li>If <span class="math inline">\(f(x) = \log x\)</span>, then <span class="math inline">\(f'(x) = \frac1x\)</span>.</li>
-</ul>
-<p>Remember that while <span class="math inline">\(e^x\)</span> takes any possible real number as input, it only outputs positive real numbers. In contrast, <span class="math inline">\(\log x\)</span> can only accept positive real numbers as input but its outputs cover all real numbers.</p>
+<section id="matrices-of-data" class="level4">
+<h4 class="anchored" data-anchor-id="matrices-of-data">Matrices of Data</h4>
+<p>We have seen that it is common to interpret data points as vectors in some suitable high-dimensional space— our entire dataset then becomes a <em>list</em> of vectors. Writing each vector as an independent row a square array, we get a matrix of data. If the data points are <span class="math inline">\(n\)</span>-dimensional, and we have <span class="math inline">\(m\)</span> total points, we end up with an <span class="math inline">\(m\times n\)</span> matrix representing our dataset.</p>
+<p>It turns out that matrices are central objects in linear algebra, and they will appear in many guises throughout your coursework at MDS. The theory of matrices— in particular the study of their eigenvalues, singular values and various decompositions— has proven extremely fruitful in data science and machine learning.</p>
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<iframe class="video" src="https://www.youtube.com/embed/S0_qX4VJhMQ" title="Derivative formulas through geometry - 3Blue1Brown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+<iframe class="video" src="https://www.youtube.com/embed/kYB8IZa5AuE" title="Linear Transformations and matrices" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<iframe class="video" src="https://www.youtube.com/embed/FtQl1gAo12E" title="Derivative of sin x and cos x - Gilbert Strang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+<iframe class="video" src="https://www.youtube.com/embed/uQhTuRlWMxw" title="Inverse matrices, column space and null space" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<iframe class="video" src="https://www.youtube.com/embed/5ZpqI8zz1HM" title="Product Rule and Quotient Rule - Gilbert Strang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+<iframe class="video" src="https://www.youtube.com/embed/jY-Mu6XQ3NU" title="The Four Fundamental Subspaces and Least Squares" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<p>Alternatively, if you want a slightly longer lecture recording on the same topic by the same speaker, you can see this video:</p>
+<iframe class="video" src="https://www.youtube.com/embed/nHlE7EgJFds" title="The Four Fundamental Subspaces" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </div>
 </div>
@@ -791,13 +767,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
-      <a href="../../modules/module1/module1-ex1_1.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 1.1. Exercises">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">&nbsp;&nbsp; 1.1. Exercises</span>
+      <a href="../../modules/module3/module3-ex3_1.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 3.1. Exercises">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">&nbsp;&nbsp; 3.1. Exercises</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../modules/module1/module1-ex1_2.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 1.2. Exercises">
-        <span class="nav-page-text">&nbsp;&nbsp; 1.2. Exercises</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../modules/module3/module3-ex3_2.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 3.2. Exercises">
+        <span class="nav-page-text">&nbsp;&nbsp; 3.2. Exercises</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
