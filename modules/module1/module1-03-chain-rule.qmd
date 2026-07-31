@@ -51,7 +51,7 @@ As before, the videos linked through the tabs above will provide some more detai
 
 <iframe
     class="video"
-    src="https://www.youtube.com/embed/QrKXo89nHA" 
+    src="https://www.youtube.com/embed/yQrKXo89nHA" 
     title="Chains f(g(x)) and the Chain Rule - Gilbert Strang"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

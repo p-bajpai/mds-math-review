@@ -64,7 +64,7 @@ Use the tabs at the top of this page to view the two supplemental videos--- they
 
 <iframe
     class="video"
-    src="https://www.youtube.com/embed/UcWsDwg1XwM&t=13s" 
+    src="https://www.youtube.com/embed/UcWsDwg1XwM" 
     title="Big Picture of Calculus - Gilbert Strang"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
