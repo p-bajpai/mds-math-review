@@ -295,7 +295,7 @@ window.Quarto = {
 
 <script src="../../src/quiz.js"></script>
 <section id="exercises" class="level1">
-<h1>1.1. Exercises</h1>
+<h1>2.2. Exercises</h1>
 <section id="optimization-and-convexity" class="level2">
 <h2 class="anchored" data-anchor-id="optimization-and-convexity">Optimization and Convexity</h2>
 <p><strong>Functions of two variables with specified minima</strong></p>
@@ -411,6 +411,154 @@ generateMultiQuiz(
     ]
 );
 </script>
+<p><strong>Determining convexity for a two-variable function</strong></p>
+<p>In the questions below, we will consider the function <span class="math inline">\(f(x,y) = xy\)</span>. First, we look at the behaviour of the function when we fix a value for <span class="math inline">\(y\)</span>.</p>
+<div id="con1">
+
+</div>
+<script>
+generateQuiz(
+    'con1',
+    '',
+    `Set y=3 and consider the function g(x) = f(x,3) = 3x. The graph of g is given by the intersection of the graph of f and the plane y=3. Is g a convex function of x?`,
+    {
+        'Yes': ``,
+
+        'No': `What does the graph of g look like?`,
+    
+        'Can\'t say': `What does the graph of g look like?`
+
+    },
+    'Yes'
+);
+</script>
+<p>Next, we fix a value for <span class="math inline">\(x\)</span> and see how <span class="math inline">\(f\)</span> behaves as a function of <span class="math inline">\(y\)</span>.</p>
+<div id="con2">
+
+</div>
+<script>
+generateQuiz(
+    'con2',
+    '',
+    `Set x=-1 and consider the function h(y) = f(-1,y) = -y. The graph of h is given by the intersection of the graph of f and the plane x=-1. Is h a convex function of y?`,
+    {
+        'Yes': ``,
+
+        'No': `What does the graph of h look like?`,
+    
+        'Can\'t say': `What does the graph of h look like?`
+
+    },
+    'Yes'
+);
+</script>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The graph of a linear function in one variable looks like a line, and the area above a line is a half-plane. This is a convex region, regardless of the orientation of the line!</p>
+</div>
+</div>
+</div>
+<div id="con3">
+
+</div>
+<script>
+generateMultiQuiz(
+    'con3',
+    '',
+    `Select all true statements about f.`,
+    {
+        'Let y_0 be fixed. The function g(x) = f(x,y_0) is convex in x if y_0>0, but non-convex otherwise': `What is g when y_0 = -1? What does its graph look like?`,
+
+        'For every fixed y_0, the function g(x) = f(x,y_0) is convex in x': ``,
+
+        'Let x_0 be fixed. The function h(y) = f(x_0,y) is convex in y if x_0>0, but non-convex otherwise': `Revisit the previous question, and check its hint if you are unsure.`,
+    
+        'For every fixed x_0, the function h(y) = f(x_0,y) is convex in y': ``,
+    
+        'Neither g nor h is convex': `Revisit your answers to the previous question.`
+
+    },
+    [
+        'For every fixed y_0, the function g(x) = f(x,y_0) is convex in x', 
+        'For every fixed x_0, the function h(y) = f(x_0,y) is convex in y'
+    ]
+);
+</script>
+<p>Finally, consider the line <span class="math inline">\(x=-y\)</span>. Define <span class="math inline">\(k(u) = f(u,-u) = -u^2\)</span>. The graph of <span class="math inline">\(k\)</span> is given by the intersection of the graph of <span class="math inline">\(f\)</span> and the plane <span class="math inline">\(x+y=0\)</span>.</p>
+<div id="con4">
+
+</div>
+<script>
+generateQuiz(
+    'con4',
+    '',
+    `Is k a convex function?`,
+    {
+        'Yes': `Can you plot the graph of -u<sup>2<\sup> as a function of u? Does the graph curve up or down?`,
+
+        'No': ``,
+    
+        'Can\'t say': `What does the graph of k look like?`
+
+    },
+    'Yes'
+);
+</script>
+<div id="con5">
+
+</div>
+<script>
+generateQuiz(
+    'con5',
+    '',
+    `Based on the previous questions, which statement best describes f(x,y)=xy?`,
+    {
+        'It is a convex function of two variables, because it is convex in each variable separately.': `It would be nice if this were true, but a function need not be jointly convex just because it is convex in each variable separately.`,
+
+        'It is convex in each variable separately (holding the other fixed), but it is not convex as a function of two variables simultaneously.': ``,
+    
+        'It is neither separately convex in each variable nor jointly convex for both simultaneously.': `Is f convex in x if we keep y fixed?`
+
+    },
+    'It is convex in each variable separately (holding the other fixed), but it is not convex as a function of two variables simultaneously.'
+);
+</script>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Plotting the graph of f
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+Here’s what the graph of <span class="math inline">\(f\)</span> looks like: <br><br>
+<center>
+<img src="../../static/module2/xy.png" class="img-fluid" style="width:30.0%">
+</center>
+<p><br><br></p>
+<p>You can see the “saddle” shape clearly here, showing that we have convexity in <em>some</em> directions (like the <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> axis directions) but not in others (like the line <span class="math inline">\(x+y=0\)</span>). This is the same saddle that we see in the function <span class="math inline">\(x^2-y^2\)</span>. In fact, these two functions are equivalent under the change of coordinates <span class="math display">\[
+\begin{align*}
+x &amp;\mapsto x+y \\ \; y &amp;\mapsto x-y.
+\end{align*}
+\]</span></p>
+<p>The saddle shape of <span class="math inline">\(f\)</span> is closely connected to why matrix factorization problems (like PCA) have non-convex loss landscapes.</p>
+</div>
+</div>
+</div>
 
 
 </section>

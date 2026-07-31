@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -272,15 +301,27 @@ ul.task-list li input[type="checkbox"] {
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <section id="gradient-descent" class="level4">
 <h4 class="anchored" data-anchor-id="gradient-descent">Gradient Descent</h4>
-<p>Coming soon</p>
+<p>In the previous section, we discussed how the gradient vector to a function shows the direction in which a function increases most rapidly. A natural corollary to this statement is the fact that functions attain local maxima and minima at points where their gradient vectors vanish (similar to how one-variable functions attain maxima and minima where their derivative vanishes). This gives rise to the method of gradient descent for minimizing functions— you start with an arbitrary guess for a minimum, then walk in the direction of the <em>negative</em> gradient. Continue this way, gradually lowering your function value, until the gradient vanishes. At this point you have nowhere left to turn, but since the gradient has vanished you hope you have reached at least a local minimum.</p>
+<p>We can apply gradient descent to any differentiable function we want to minimize, and it is generally possible to find local minima this way. The challenge comes in determining whether this local minimum is actually the global minimum of the function.</p>
 </section>
 <section id="convexity" class="level4">
 <h4 class="anchored" data-anchor-id="convexity">Convexity</h4>
-<p>Coming soon</p>
-</section>
-<section id="convex-optimization" class="level4">
-<h4 class="anchored" data-anchor-id="convex-optimization">Convex Optimization</h4>
-<p>Coming soon</p>
+<p>We define a convex region as follows: for any two points that lie within the region, the entire line segment connecting these two points must also lie within the region. In <a href="#fig-polygs" class="quarto-xref">Figure&nbsp;1</a> we see an example of a convex region on the left and a non-convex region on the right. The region on the right fails convexity because the line segment joining the top two vertices exits the region itself.</p>
+<p>If the area above the graph of a function forms a convex region, that function is called a convex function. So, for example, the function <span class="math inline">\(f(x)=x^2\)</span> is convex, but <span class="math inline">\(f(x) = \sin (x)\)</span> is not. For convex functions all local minima are necessarily global minima, and so if we are able to follow gradient descent to a local minimum, we know we have actually found a global minimum for the function. The study of optimization for convex functions is called (unsurprisingly) convex optimization. It is an old and well-established field of study, and it has numerous applications to real-world problems.</p>
+<br><br>
+<center>
+<div id="fig-polygs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-polygs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../static/module2/polyg.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polygs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Convex and non-convex regions.
+</figcaption>
+</figure>
+</div>
+</center>
+<p><br><br></p>
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
