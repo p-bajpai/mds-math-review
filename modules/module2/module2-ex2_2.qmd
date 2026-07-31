@@ -202,16 +202,15 @@ generateQuiz(
 Here's what the graph of $f$ looks like:
 <br><br>
 <center>
-::: {#fig-func-def}
 ![](../../static/module2/xy.png){width="30%"}
-
-:::
 </center>
 <br><br>
 
 You can see the "saddle" shape clearly here, showing that we have convexity in *some* directions (like the $x$ or $y$ axis directions) but not in others (like the line $x+y=0$). This is the same saddle that we see in the function $x^2-y^2$. In fact, these two functions are equivalent under the change of coordinates
 $$
-x \mapsto x+y \; , \; y \mapsto x-y. 
+\begin{align*}
+x &\mapsto x+y \\ \; y &\mapsto x-y.
+\end{align*}
 $$
 
 The saddle shape of $f$ is closely connected to why matrix factorization problems (like PCA) have non-convex loss landscapes.
