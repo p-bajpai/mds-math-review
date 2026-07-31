@@ -1,4 +1,4 @@
-# Introduction to Machine Learning
+# Math Review for MDS
 
-A course built using Quarto for UBC Extended Learnings' [Key Capabilities in Data Science program](https://extendedlearning.ubc.ca/programs-credentials/key-capabilities-data-science-certificate).
+This repo contains materials for a self-paced math review for the Master of Data Science Program at the University of British Columbia. The site is under active development and may be incomplete or contain errors.
 
