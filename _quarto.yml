@@ -66,6 +66,8 @@ website:
           - href: modules/module3/module3-02-mats.qmd
           - text: '&nbsp;&nbsp; 3.2. Exercises'
             href: modules/module3/module3-ex3_2.qmd
+          - text: '&nbsp;&nbsp; 3.3 A Bonus Question'
+            href: modules/module3/module3-ex3_3.qmd
       #- section: "**M4. More with Linear Algebra**"
       #  contents:
       #    - href: modules/module4/module4-01-building_a_picture.qmd

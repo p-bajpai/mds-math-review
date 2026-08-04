@@ -235,7 +235,7 @@ satisfies the requirements of the question, as does any non-zero constant multip
 
 <br><br>
 
-**Bonus**<br>
+**Q7. Transposes and Dot Products**<br>
 Consider the matrix $A$ and vectors $v$ and $w$ given by
 
 $$

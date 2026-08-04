@@ -1,0 +1,66 @@
+---
+format: html
+---
+
+<script src='../../src/quiz.js'></script>  
+
+# 3.3. A Bonus Question
+
+In the question below, we will use our knowledge of matrices to build a 2-dimensional analogue of the familiar 'bell curve'. Part I of the question only requires basic knowledge of matrix-vector multiplication. For completing part Part II, it helps to have familiarity with the notion of eigenvalues and eigenvectors. This is a challenging exercise.
+
+## Part I
+
+Let $A$ be the matrix given by
+$$
+A = \begin{bmatrix}
+    4 & 0 \\
+    0 & \tfrac12
+\end{bmatrix}.
+$$
+
+For a 2D vector $\bar{\mathbf x} = [x_1, x_2]^T$, define
+$$
+f(\bar{\mathbf x}) \; = \quad e^{- \bar{\mathbf x}^T A \bar{\mathbf x}}.
+$$
+
+Answer the following questions.
+
+a) Set $x_2 = 0$ and draw a graph of the resulting (univariate) function with repsect to $x_1$.
+b) Draw a similar graph with respect to $x_2$ after setting $x_1 = 0$.
+c) Is $f([x_1, 0]^T)$ bigger or smaller than $f[x_1, 10]^T)$? Where does the function $f$ attain its maximum value?
+d) Draw a graph of the overall function $f$ as a function of 2 variables.
+
+## Part II
+
+Now set 
+$$
+B \; = \;
+\begin{bmatrix}
+    9 & 7 \\
+    7 & 9
+\end{bmatrix} \qquad \text{and} \qquad \mu = \begin{bmatrix} 10 \\ 10 \end{bmatrix}
+$$
+
+and define
+
+$$
+g(\bar{\mathbf x}) \; = \quad e^{   - (\bar{\mathbf x} - \mu)^T B (\bar{\mathbf x} - \mu)   }.
+$$
+
+a) For each vector $v \in \{[0,1],[1,0],[1,1],[1,-1]\}$, calculate the value of the product $Bv$.
+b) How does the matrix $B$ transform 2-dimensional space when multiplying on the left? In other words, which linear transformation does left-multiplication by $B$ give rise to?
+c) For each choice of $x_2 = 9, 9.5, 10, 10.5, 11$, simplify $g$ and write it as a function of the single variable $x_1$. Then, plot each of the resulting functions as functions of $x_1$ using your favourite graphing software. What do you notice about the resulting graphs?
+e) What does the graph of $g(\bar x)$ look like in this case? Is it similar to or different from the graph of $f$?
+
+*The functions you graphed for this exercise are closely related to multivariate Gaussians, which are like normal distributions in higher-dimensional space. The matrices* $A$ *and* $B$ *control the shape and orientation of the `bell', and the vector* $\mu$ *controls its location.*
+
+<br><br>
+<center>
+::: {#fig-gm}
+![](../../static/module3/gm.png){width="40%"}
+
+A collection of 500 data points randomly sampled from a two-variable Gaussian with mean and covariance corresponding to $\mu$ and  $B$ from Part II.
+:::
+</center>
+<br><br>
+
