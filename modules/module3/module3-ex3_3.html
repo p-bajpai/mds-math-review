@@ -311,13 +311,14 @@ A = \begin{bmatrix}
 \end{bmatrix}.
 \]</span></p>
 <p>For a 2D vector <span class="math inline">\(\bar{\mathbf x} = [x_1, x_2]^T\)</span>, define <span class="math display">\[
-f(\bar{\mathbf x}) \; = \quad e^{- \bar{\mathbf x}^T A \bar{\mathbf x}}.
+f(\bar{\mathbf x}) \; = \quad e^{-\frac12 \bar{\mathbf x}^T A \bar{\mathbf x}}.
 \]</span></p>
 <p>Answer the following questions.</p>
 <ol type="a">
 <li>Set <span class="math inline">\(x_2 = 0\)</span> and draw a graph of the resulting (univariate) function with repsect to <span class="math inline">\(x_1\)</span>.</li>
 <li>Draw a similar graph with respect to <span class="math inline">\(x_2\)</span> after setting <span class="math inline">\(x_1 = 0\)</span>.</li>
-<li>Is <span class="math inline">\(f([x_1, 0]^T)\)</span> bigger or smaller than <span class="math inline">\(f[x_1, 10]^T)\)</span>? Where does the function <span class="math inline">\(f\)</span> attain its maximum value?</li>
+<li>Is <span class="math inline">\(f([x_1, 0]^T)\)</span> bigger or smaller than <span class="math inline">\(f([x_1, 10]^T)\)</span>? Where does the function <span class="math inline">\(f\)</span> attain its maximum value?</li>
+<li>For each choice of <span class="math inline">\(x_2 = -1, -0.5, 0, 0.5, 1\)</span>, simplify <span class="math inline">\(f\)</span> into a function of the single variable <span class="math inline">\(x_1\)</span>. Then, plot each of the resulting functions using your favourite graphing software. What do you notice about the graphs?</li>
 <li>Draw a graph of the overall function <span class="math inline">\(f\)</span> as a function of 2 variables.</li>
 </ol>
 </section>
@@ -328,17 +329,18 @@ B \; = \;
 \begin{bmatrix}
     9 &amp; 7 \\
     7 &amp; 9
-\end{bmatrix} \qquad \text{and} \qquad \mu = \begin{bmatrix} 10 \\ 10 \end{bmatrix}
+\end{bmatrix} \qquad \text{and}
 \]</span></p>
 <p>and define</p>
 <p><span class="math display">\[
-g(\bar{\mathbf x}) \; = \quad e^{   - (\bar{\mathbf x} - \mu)^T B (\bar{\mathbf x} - \mu)   }.
+g(\bar{\mathbf x}) \; = \quad e^{   - \frac12 \bar{\mathbf x}^T B \bar{\mathbf x}   }.
 \]</span></p>
 <ol type="a">
 <li>For each vector <span class="math inline">\(v \in \{[0,1],[1,0],[1,1],[1,-1]\}\)</span>, calculate the value of the product <span class="math inline">\(Bv\)</span>.</li>
 <li>How does the matrix <span class="math inline">\(B\)</span> transform 2-dimensional space when multiplying on the left? In other words, which linear transformation does left-multiplication by <span class="math inline">\(B\)</span> give rise to?</li>
-<li>For each choice of <span class="math inline">\(x_2 = 9, 9.5, 10, 10.5, 11\)</span>, simplify <span class="math inline">\(g\)</span> and write it as a function of the single variable <span class="math inline">\(x_1\)</span>. Then, plot each of the resulting functions as functions of <span class="math inline">\(x_1\)</span> using your favourite graphing software. What do you notice about the resulting graphs?</li>
-<li>What does the graph of <span class="math inline">\(g(\bar x)\)</span> look like in this case? Is it similar to or different from the graph of <span class="math inline">\(f\)</span>?</li>
+<li>For each choice of <span class="math inline">\(x_2 = -1, -0.5, 0, 0.5, 1\)</span>, simplify <span class="math inline">\(g\)</span> into a function of the single variable <span class="math inline">\(x_1\)</span>. Then, plot each of the resulting functions using your favourite graphing software. What do you notice about the resulting graphs? Is the sequence similar to what we saw in Part I, or are there any differences?</li>
+<li>Now, set <span class="math inline">\(u = x_1+x_2\)</span> and draw the same sequence of plots for <span class="math inline">\(u = -1, -0.5, 0, 0.5, 1\)</span>. What do you notice this time?</li>
+<li>What does the graph of <span class="math inline">\(g(\bar x)\)</span> look like? Is it similar to or different from the graph of <span class="math inline">\(f\)</span>?</li>
 </ol>
 <p><em>The functions you graphed for this exercise are closely related to multivariate Gaussians, which are like normal distributions in higher-dimensional space. The matrices</em> <span class="math inline">\(A\)</span> <em>and</em> <span class="math inline">\(B\)</span> <em>control the shape and orientation of the `bell’, and the vector</em> <span class="math inline">\(\mu\)</span> <em>controls its location.</em></p>
 <br><br>
@@ -346,10 +348,10 @@ g(\bar{\mathbf x}) \; = \quad e^{   - (\bar{\mathbf x} - \mu)^T B (\bar{\mathbf 
 <div id="fig-gm" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../static/module3/gm.png" class="img-fluid figure-img" style="width:40.0%">
+<img src="../../static/module3/2dg.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: A collection of 500 data points randomly sampled from a two-variable Gaussian with mean and covariance corresponding to <span class="math inline">\(\mu\)</span> and <span class="math inline">\(B\)</span> from Part II.
+Figure&nbsp;1: Points randomly sampled from a two-variable Gaussian with mean <span class="math inline">\([0,0]\)</span> and covariance matrix given by <span class="math inline">\(B^{-1}\)</span>.
 </figcaption>
 </figure>
 </div>
