@@ -54,7 +54,7 @@ c) For each choice of $x_2 = -1, -0.5, 0, 0.5, 1$, simplify $g$ into a function 
 d) Now, set $u = x_1+x_2$ and draw the same sequence of plots for $u = -1, -0.5, 0, 0.5, 1$. What do you notice this time?
 e) What does the graph of $g(\bar x)$ look like? Is it similar to or different from the graph of $f$?
 
-*The functions you graphed for this exercise are closely related to multivariate Gaussians, which are like normal distributions in higher-dimensional space. The matrices* $A$ *and* $B$ *control the shape and orientation of the `bell', and the vector* $\mu$ *controls its location.*
+*The functions you graphed for this exercise are closely related to multivariate Gaussians, which are like normal distributions in higher-dimensional space. The matrices* $A$ *and* $B$ *control the shape and orientation of the 'bell'.*
 
 <br><br>
 <center>
