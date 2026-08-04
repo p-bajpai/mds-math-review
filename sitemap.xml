@@ -1,63 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module4/module4-01-building_a_picture.html</loc>
-    <lastmod>2026-07-31T01:51:12.552Z</lastmod>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-ex3_3.html</loc>
+    <lastmod>2026-08-04T20:48:16.213Z</lastmod>
   </url>
   <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-ex3_2.html</loc>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-ex3_1.html</loc>
     <lastmod>2026-07-31T01:51:12.551Z</lastmod>
   </url>
   <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-02-mats.html</loc>
-    <lastmod>2026-07-31T01:51:12.551Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module2/module2-ex2_2.html</loc>
-    <lastmod>2026-07-31T20:46:07.016Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module2/module2-02-opt-conv.html</loc>
-    <lastmod>2026-07-31T21:13:59.075Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-ex1_3.html</loc>
-    <lastmod>2026-07-31T01:51:12.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-ex1_1.html</loc>
-    <lastmod>2026-07-31T01:51:12.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-03-chain-rule.html</loc>
-    <lastmod>2026-07-31T19:03:27.195Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-01-understanding-the-derivative.html</loc>
-    <lastmod>2026-07-31T18:59:50.601Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/index.html</loc>
-    <lastmod>2026-08-04T17:50:25.666Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module0/module0-01-reference_material.html</loc>
-    <lastmod>2026-07-31T01:51:12.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-02-derivatives-common-functions.html</loc>
-    <lastmod>2026-08-04T17:17:15.046Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-04-max-min.html</loc>
-    <lastmod>2026-07-31T01:51:12.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-ex1_2.html</loc>
-    <lastmod>2026-07-31T01:51:12.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module2/module2-01-several-variables.html</loc>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-01-vecs.html</loc>
     <lastmod>2026-07-31T01:51:12.551Z</lastmod>
   </url>
   <url>
@@ -65,15 +17,59 @@
     <lastmod>2026-07-31T19:28:51.609Z</lastmod>
   </url>
   <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-01-vecs.html</loc>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module2/module2-01-several-variables.html</loc>
     <lastmod>2026-07-31T01:51:12.551Z</lastmod>
   </url>
   <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-ex3_1.html</loc>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-ex1_2.html</loc>
+    <lastmod>2026-07-31T01:51:12.550Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-04-max-min.html</loc>
+    <lastmod>2026-07-31T01:51:12.550Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-02-derivatives-common-functions.html</loc>
+    <lastmod>2026-08-04T17:17:15.046Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module0/module0-01-reference_material.html</loc>
+    <lastmod>2026-07-31T01:51:12.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/index.html</loc>
+    <lastmod>2026-08-04T17:50:25.666Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-01-understanding-the-derivative.html</loc>
+    <lastmod>2026-07-31T18:59:50.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-03-chain-rule.html</loc>
+    <lastmod>2026-07-31T19:03:27.195Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-ex1_1.html</loc>
+    <lastmod>2026-07-31T01:51:12.550Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module1/module1-ex1_3.html</loc>
+    <lastmod>2026-07-31T01:51:12.550Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module2/module2-02-opt-conv.html</loc>
+    <lastmod>2026-07-31T21:13:59.075Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module2/module2-ex2_2.html</loc>
+    <lastmod>2026-07-31T20:46:07.016Z</lastmod>
+  </url>
+  <url>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-02-mats.html</loc>
     <lastmod>2026-07-31T01:51:12.551Z</lastmod>
   </url>
   <url>
-    <loc>https://p-bajpai.github.io/mds-math-review/modules/module4/module1-ex4_1.html</loc>
-    <lastmod>2026-07-31T01:51:12.552Z</lastmod>
+    <loc>https://p-bajpai.github.io/mds-math-review/modules/module3/module3-ex3_2.html</loc>
+    <lastmod>2026-08-04T17:59:57.777Z</lastmod>
   </url>
 </urlset>
