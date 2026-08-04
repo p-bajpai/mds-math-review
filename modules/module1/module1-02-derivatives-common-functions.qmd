@@ -34,7 +34,7 @@ Iteratively applying the product rule to the product $$x^n = \underbrace{x \time
 
 Remember, again, this formula is just a recipe for calculating the value of the derivative at various possible inputs. The recipe is telling us (for example) that the "sensitivity" of the function $x^5$ to its input at $x=3$ is $4*3^4 = 324$. In other words, at $x=3$ the function $x^5$ is extremely sensitive to small changes in input! If we wiggle the input a little, the output of the function will react by changing more than 300 times as much.
 
-For an arbitrayy polynomial, we now apply the sum rule to calculate its derivative. So for example if $f(x) = x^3 + 3x^2 + 7x + 1$ we get
+For an arbitrary polynomial, we now apply the sum rule to calculate its derivative. So for example if $f(x) = x^3 + 3x^2 + 7x + 1$ we get
 
 $$f'(x) = 3x^2 + 3\cdot2\cdot x + 7 = 3x^2 + 6x + 7.$$
 
