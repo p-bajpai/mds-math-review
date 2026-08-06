@@ -12,7 +12,7 @@ format:
 
 ### Composing functions
 
-We have seen how to combine functions by taking sums, products and quotients. One more common method of combining functions is to *compose* them together, i.e. to take the output of one function and feed it in as input to another. For example, in @fig-chain we see that the output of the first function $f$ becomes the input to the second function $g$. My overall transformation is then represented as $g(f(x))$.
+We have seen how to combine functions by taking sums, products and quotients. One more common method of combining functions is to *compose* them together, i.e. to take the output of one function and feed it in as input to another. For example, in @fig-chain we see that the output of the first function $f$ becomes the input to the second function $g$. The overall transformation is then represented as $g(f(x))$.
 
 <br><br>
 <center>
