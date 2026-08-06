@@ -137,7 +137,7 @@ c) Write a complete expression for the \emph{total squared error} between predic
 Let $\mathcal{X}$ represent our dataset, with individual data points represented as feature-value pairs $(x_0,y_0)$. Then the total squared error is a sum over data points
 
 $$
-\sum_{(x_0,y_0)\text{in} \mathcal{X}} \big( \; (mx_0+b) - y_0 \; \big)^2 .
+\sum_{\text{all }(x_0,y_0)\text{ in } \mathcal{X}} \big( \; (mx_0+b) - y_0 \; \big)^2 .
 $$
 
 :::
@@ -159,7 +159,7 @@ e) Find the gradient vector for the total squared error function (in terms of $m
 If our sum-of-squared-errors function $SSE(m,b)$ is given as described in part c, then its gradient will be
 
 $$
-\nabla SSE (m,b) \quad = \quad  \begin{bmatrix} \sum_{(x_0,y_0)\text{in} \mathcal{X}} 2x_0(mx_0 + b - y_0)  \\  \sum_{(x_0,y_0)\text{in} \mathcal{X}} 2(mx_0+b-y_0) \end{bmatrix}. 
+\nabla SSE (m,b) \quad = \quad  \begin{bmatrix} \displaystyle\sum_{\text{all }(x_0,y_0)\text{ in } \mathcal{X}} 2x_0(mx_0 + b - y_0)  \\  \displaystyle\sum_{\text{all }(x_0,y_0)\text{ in } \mathcal{X}} 2(mx_0+b-y_0) \end{bmatrix}. 
 $$
 
 :::
@@ -172,18 +172,18 @@ f) Find the explicit gradient vector at $m=b=0$.
 We can plug in $m=b=0$ into our gradient expression, which gives
 
 $$
-\nabla SSE (m,b) \quad = \quad  \begin{bmatrix} \sum_{(x_0,y_0)\text{in} \mathcal{X}} 2x_0(- y_0)  \\  \sum_{(x_0,y_0)\text{in} \mathcal{X}} 2(-y_0) \end{bmatrix}. 
+\nabla SSE (m,b) \quad = \quad  \begin{bmatrix} \displaystyle\sum_{(x_0,y_0)\in \mathcal{X}} 2x_0(- y_0)  \\  \displaystyle\sum_{(x_0,y_0)\in \mathcal{X}} 2(-y_0) \end{bmatrix}. 
 $$
 
 Our table contains the values for $(x_0,y_0)$ that we need to sum over. These give us
 
 $$
-\sum_{(x_0,y_0)\text{in} \mathcal{X}} 2x_0(- y_0) = -2 \big(1(2.5)+2(4.7)+3(6.33)+4(8.09)+5(11)\big)= -236.5
+\sum_{(x_0,y_0)\in \mathcal{X}} 2x_0(- y_0) = -2 \big(1(2.5)+2(4.7)+3(6.33)+4(8.09)+5(11)\big)= -236.5
 $$
 
 and
 $$
-\sum_{(x_0,y_0)\text{in} \mathcal{X}} 2(- y_0) = -2 \big( 2.5+4.7+6.33+8.09+11 \big) = -65.24.
+\sum_{(x_0,y_0)\in \mathcal{X}} 2(- y_0) = -2 \big( 2.5+4.7+6.33+8.09+11 \big) = -65.24.
 $$
 
 So our gradient vector at $m=b=0$ is
