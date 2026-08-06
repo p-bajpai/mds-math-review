@@ -56,7 +56,7 @@ For any fixed value of $x_2$, we get a function of $x_1$ that looks like a usual
 $f$ attains its maximum value at the origin, when $x_1=x_2=0$.
 :::
 
-d) For each choice of $x_2 = -1, -0.5, 0, 0.5, 1$, simplify $f$ into a function of the single variable $x_1$. Then, plot each of the resulting functions using your favourite graphing software. What do you notice about the graphs?
+d) For each choice of $x_2 = -2, -1, 0, 1, 2$, simplify $f$ into a function of the single variable $x_1$. Then, plot each of the resulting functions using your favourite graphing software. What do you notice about the graphs?
 e) Draw a graph of the overall function $f$ as a function of 2 variables.
 
 ::: {.callout-note collapse="true"}
@@ -74,7 +74,9 @@ A sequence of slices.
 </center>
 <br><br>
 
-The graph of $f$ looks like a "hill" with a peak at the origin, and smooth exponential decay in all directions. The decay is faster in the $x_1$ direction (corresponding to the larger value $4$ in $A$) than in the $x_2$ direction (which corresponds to the smaller value $1/2$). In other words, the hill is narrow in the $x_1$ direction and wide in the $x_2$ direction.
+We could repeat this process fixing instead $x_1 = -2, -1, 0, 1, 2$ in turn, and plotting the resulting function of $x_2$. This results in a similar picture, except the graph changes more dramatically across different values of $x_1$.
+
+The graph of $f$, as a function of 2 variables, looks like a "hill" with a peak at the origin; from this peak the graph shows smooth exponential decay in all directions. The decay is faster in the $x_1$ direction (corresponding to the larger value $4$ in $A$) than in the $x_2$ direction (which corresponds to the smaller value $1/2$). In other words, the hill is narrow in the $x_1$ direction and wide in the $x_2$ direction.
 
 <br><br>
 <center>
