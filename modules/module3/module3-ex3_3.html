@@ -302,6 +302,20 @@ window.Quarto = {
 <section id="a-bonus-question" class="level1">
 <h1>3.3. A Bonus Question</h1>
 <p>In the question below, we will use our knowledge of matrices to build a 2-dimensional analogue of the familiar ‘bell curve’. Part I of the question only requires basic knowledge of matrix-vector multiplication. For completing part Part II, it helps to have familiarity with the notion of eigenvalues and eigenvectors. This is a challenging exercise.</p>
+<br><br>
+<center>
+<div id="fig-exs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../static/module3/manyg.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Some examples of synthetic data sampled from multivariate Gaussians of different shapes and orientations.
+</figcaption>
+</figure>
+</div>
+</center>
+<p><br><br></p>
 <section id="part-i" class="level2">
 <h2 class="anchored" data-anchor-id="part-i">Part I</h2>
 <p>Let <span class="math inline">\(A\)</span> be the matrix given by <span class="math display">\[
@@ -318,9 +332,77 @@ f(\bar{\mathbf x}) \; = \quad e^{-\frac12 \bar{\mathbf x}^T A \bar{\mathbf x}}.
 <li>Set <span class="math inline">\(x_2 = 0\)</span> and draw a graph of the resulting (univariate) function with repsect to <span class="math inline">\(x_1\)</span>.</li>
 <li>Draw a similar graph with respect to <span class="math inline">\(x_2\)</span> after setting <span class="math inline">\(x_1 = 0\)</span>.</li>
 <li>Is <span class="math inline">\(f([x_1, 0]^T)\)</span> bigger or smaller than <span class="math inline">\(f([x_1, 10]^T)\)</span>? Where does the function <span class="math inline">\(f\)</span> attain its maximum value?</li>
+</ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We can write <span class="math inline">\(f\)</span> as a function of <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> by carrying out the matrix multiplication in the exponent: <span class="math display">\[
+f([x_1,x_2]^T) = e^{-(4x_1^2 + \frac12 x_2^2)}.
+\]</span></p>
+<p>Note the absence of any “cross” term, i.e.&nbsp;any term of the form <span class="math inline">\(x_1x_2\)</span>. This results from <span class="math inline">\(A\)</span> being a diagonal matrix.</p>
+<p>For any fixed value of <span class="math inline">\(x_2\)</span>, we get a function of <span class="math inline">\(x_1\)</span> that looks like a usual one-variable bell-curve centered at zero. The height of the bell depends on the choice of <span class="math inline">\(x_2\)</span>, with the tallest curve being the one for <span class="math inline">\(x_2=0\)</span>. The same picture emerges fixing a value for <span class="math inline">\(x_1\)</span> and graphing the function with respect to <span class="math inline">\(x_2\)</span>, except the exponentials are more “spread out” i.e.&nbsp;less concentrated around the origin.</p>
+<p><span class="math inline">\(f\)</span> attains its maximum value at the origin, when <span class="math inline">\(x_1=x_2=0\)</span>.</p>
+</div>
+</div>
+</div>
+<ol start="4" type="a">
 <li>For each choice of <span class="math inline">\(x_2 = -1, -0.5, 0, 0.5, 1\)</span>, simplify <span class="math inline">\(f\)</span> into a function of the single variable <span class="math inline">\(x_1\)</span>. Then, plot each of the resulting functions using your favourite graphing software. What do you notice about the graphs?</li>
 <li>Draw a graph of the overall function <span class="math inline">\(f\)</span> as a function of 2 variables.</li>
 </ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>As we step through each of the values for <span class="math inline">\(x_2\)</span>, we see a sequence of bell-shaped curves rising in height until <span class="math inline">\(x_2=0\)</span>, then dropping back down. All the curves are centered at zero.</p>
+<br><br>
+<center>
+<div id="fig-A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../static/module3/fiveA.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A sequence of slices.
+</figcaption>
+</figure>
+</div>
+</center>
+<p><br><br></p>
+<p>The graph of <span class="math inline">\(f\)</span> looks like a “hill” with a peak at the origin, and smooth exponential decay in all directions. The decay is faster in the <span class="math inline">\(x_1\)</span> direction (corresponding to the larger value <span class="math inline">\(4\)</span> in <span class="math inline">\(A\)</span>) than in the <span class="math inline">\(x_2\)</span> direction (which corresponds to the smaller value <span class="math inline">\(1/2\)</span>). In other words, the hill is narrow in the <span class="math inline">\(x_1\)</span> direction and wide in the <span class="math inline">\(x_2\)</span> direction.</p>
+<br><br>
+<center>
+<div id="fig-A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../static/module3/diag.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: The graph of <span class="math inline">\(f\)</span>.
+</figcaption>
+</figure>
+</div>
+</center>
+<p><br><br></p>
+</div>
+</div>
+</div>
 </section>
 <section id="part-ii" class="level2">
 <h2 class="anchored" data-anchor-id="part-ii">Part II</h2>
@@ -338,20 +420,104 @@ g(\bar{\mathbf x}) \; = \quad e^{   - \frac12 \bar{\mathbf x}^T B \bar{\mathbf x
 <ol type="a">
 <li>For each vector <span class="math inline">\(v \in \{[0,1],[1,0],[1,1],[1,-1]\}\)</span>, calculate the value of the product <span class="math inline">\(Bv\)</span>.</li>
 <li>How does the matrix <span class="math inline">\(B\)</span> transform 2-dimensional space when multiplying on the left? In other words, which linear transformation does left-multiplication by <span class="math inline">\(B\)</span> give rise to?</li>
+</ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In Part I, we dealt with the diagonal matrix <span class="math inline">\(A\)</span>. Diagonal matrices stretch the space along the coordinate axes. By contrast, <span class="math inline">\(B\)</span> is non-diagonal. However, its eigenvectors <span class="math inline">\([1,1]\)</span> and <span class="math inline">\([1,-1]\)</span> (with eigenvalues <span class="math inline">\(16\)</span> and <span class="math inline">\(2\)</span> respectively) are still orthogonal to each other. They are just rotated from the coordinate axes by 45 degrees!</p>
+<p>So <span class="math inline">\(B\)</span> stretches the plane by a factor of <span class="math inline">\(16\)</span> in the <span class="math inline">\(x_1=x_2\)</span> direction, and by a factor of <span class="math inline">\(2\)</span> in the <span class="math inline">\(x_1 = -x_2\)</span> direction.</p>
+</div>
+</div>
+</div>
+<ol start="3" type="a">
 <li>For each choice of <span class="math inline">\(x_2 = -1, -0.5, 0, 0.5, 1\)</span>, simplify <span class="math inline">\(g\)</span> into a function of the single variable <span class="math inline">\(x_1\)</span>. Then, plot each of the resulting functions using your favourite graphing software. What do you notice about the resulting graphs? Is the sequence similar to what we saw in Part I, or are there any differences?</li>
+</ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We can write <span class="math inline">\(g\)</span> as <span class="math display">\[
+g([x_1,x_2]^T) = e^{-\frac12(9x_1^2 + 14x_1x_2 + 9x_2^2)}.
+\]</span></p>
+<p>Notice we now have the term <span class="math inline">\(14x_1x_2\)</span> in the middle. This “non-diagonal” term means that as we take slices for fixed <span class="math inline">\(x_2\)</span> (i.e.&nbsp;set <span class="math inline">\(x_2 = -1, 0.5, 0 \ldots\)</span> and so on) the peak of the resulting curve in <span class="math inline">\(x_1\)</span> shifts from right to left. So the graph of <span class="math inline">\(g\)</span> as a 2D function is not aligned with the coordinate axes in the nice way that we saw in Part I.</p>
+<br><br>
+<center>
+<div id="fig-A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../static/module3/fiveB.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: A sequence of slices.
+</figcaption>
+</figure>
+</div>
+</center>
+<p><br><br></p>
+</div>
+</div>
+</div>
+<ol start="4" type="a">
 <li>Now, set <span class="math inline">\(u = x_1+x_2\)</span> and draw the same sequence of plots for <span class="math inline">\(u = -1, -0.5, 0, 0.5, 1\)</span>. What do you notice this time?</li>
 <li>What does the graph of <span class="math inline">\(g(\bar x)\)</span> look like? Is it similar to or different from the graph of <span class="math inline">\(f\)</span>?</li>
 </ol>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The graph of <span class="math inline">\(g\)</span> is aligned along the direction given by the <em>eigenvectors of</em> <span class="math inline">\(B\)</span>. It is narrow in the <span class="math inline">\([1,1]\)</span> direction (corresponding to the larger eigenvalue <span class="math inline">\(16\)</span>) and wider in the <span class="math inline">\([1,-1]\)</span> direction (corresponding to the smaller eigenvalue <span class="math inline">\(2\)</span>). The behaviour is quite similar to the function <span class="math inline">\(f\)</span>, we just need to “rotate” our point of view a little into a new coordinate basis given by the eigenvectors of <span class="math inline">\(B\)</span>.</p>
+<br><br>
+<center>
+<div id="fig-A" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../static/module3/nondiag.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-A-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: The graph of <span class="math inline">\(g\)</span>.
+</figcaption>
+</figure>
+</div>
+</center>
+<p><br><br></p>
+</div>
+</div>
+</div>
 <p><em>The functions you graphed for this exercise are closely related to multivariate Gaussians, which are like normal distributions in higher-dimensional space. The matrices</em> <span class="math inline">\(A\)</span> <em>and</em> <span class="math inline">\(B\)</span> <em>control the shape and orientation of the ‘bell’.</em></p>
 <br><br>
 <center>
 <div id="fig-gm" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../static/module3/2dg.png" class="img-fluid figure-img" style="width:50.0%">
+<img src="../../static/module3/Bsamp.png" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Points randomly sampled from a two-variable Gaussian with mean <span class="math inline">\([0,0]\)</span> and covariance matrix given by <span class="math inline">\(B^{-1}\)</span>.
+Figure&nbsp;6: Points randomly sampled from a two-variable Gaussian with mean <span class="math inline">\([0,0]\)</span> and covariance matrix given by <span class="math inline">\(B^{-1}\)</span>.
 </figcaption>
 </figure>
 </div>
