@@ -1,0 +1,8 @@
+---
+format: html
+pagetitle: Feedback
+---
+
+# Feedback
+
+If you found this math review helpful, please leave some feedback [here](https://forms.gle/u9uxMbJupVcVNXjH8). This helps us understand how students are using the site. To report typos, mistakes or bugs, you can open an issue on the [site repo](https://github.com/p-bajpai/mds-math-review).
