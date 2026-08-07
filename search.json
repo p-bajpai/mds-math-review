@@ -165,6 +165,17 @@
     ]
   },
   {
+    "objectID": "modules/last.html",
+    "href": "modules/last.html",
+    "title": "Feedback",
+    "section": "",
+    "text": "Feedback\nIf you found this math review helpful, please leave some feedback here. This helps us understand how students are using the site. To report typos, mistakes or bugs, you can open an issue on the site repo.",
+    "crumbs": [
+      "**Feedback**",
+      "Feedback"
+    ]
+  },
+  {
     "objectID": "modules/module1/module1-01-understanding-the-derivative.html",
     "href": "modules/module1/module1-01-understanding-the-derivative.html",
     "title": "1. Understanding the Derivative",

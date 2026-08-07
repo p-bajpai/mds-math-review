@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>module2-ex2_1 – Introduction to Machine Learning</title>
+<title>Feedback – Introduction to Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../modules/module2/module2-02-opt-conv.html" rel="next">
-<link href="../../modules/module2/module2-01-several-variables.html" rel="prev">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../modules/module3/module3-ex3_3.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -124,8 +94,8 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../static/mds-hex-sticker.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../static/mds-hex-sticker.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -146,13 +116,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">0. Welcome!</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module0/module0-01-reference_material.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module0/module0-01-reference_material.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reference Material</span></a>
   </div>
 </li>
@@ -169,43 +139,43 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-01-understanding-the-derivative.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module1/module1-01-understanding-the-derivative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Understanding the Derivative</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-ex1_1.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module1/module1-ex1_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">&nbsp;&nbsp; 1.1. Exercises</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-02-derivatives-common-functions.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module1/module1-02-derivatives-common-functions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Derivatives of Common Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-ex1_2.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module1/module1-ex1_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">&nbsp;&nbsp; 1.2. Exercises</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-03-chain-rule.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module1/module1-03-chain-rule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3. The Chain Rule</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-ex1_3.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module1/module1-ex1_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">&nbsp;&nbsp; 1.3. Exercises</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module1/module1-04-max-min.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module1/module1-04-max-min.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4. Max, Min, Second Derivative</span></a>
   </div>
 </li>
@@ -213,34 +183,34 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text"><strong>M2. Functions of Several Variables</strong></span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module2/module2-01-several-variables.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module2/module2-01-several-variables.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Partial Derivatives and Gradients</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module2/module2-ex2_1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../modules/module2/module2-ex2_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">&nbsp;&nbsp; 2.1. Exercises</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module2/module2-02-opt-conv.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module2/module2-02-opt-conv.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Optimization and Convexity</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module2/module2-ex2_2.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module2/module2-ex2_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">&nbsp;&nbsp; 2.2. Exercises</span></a>
   </div>
 </li>
@@ -257,31 +227,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module3/module3-01-vecs.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module3/module3-01-vecs.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Points in High-Dimensional Spaces</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module3/module3-ex3_1.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module3/module3-ex3_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">&nbsp;&nbsp; 3.1. Exercises</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module3/module3-02-mats.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module3/module3-02-mats.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. What is a Matrix for?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module3/module3-ex3_2.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module3/module3-ex3_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">&nbsp;&nbsp; 3.2. Exercises</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/module3/module3-ex3_3.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/module3/module3-ex3_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">&nbsp;&nbsp; 3.3 A Bonus Question</span></a>
   </div>
 </li>
@@ -289,16 +259,16 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text"><strong>Feedback</strong></span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../modules/last.html" class="sidebar-item-text sidebar-link">
+  <a href="../modules/last.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Feedback</span></a>
   </div>
 </li>
@@ -316,311 +286,11 @@ window.Quarto = {
 
 
 
-<script src="../../src/quiz.js"></script>
-<section id="exercises" class="level1">
-<h1>2.1. Exercises</h1>
-<section id="functions-of-several-variables" class="level2">
-<h2 class="anchored" data-anchor-id="functions-of-several-variables">Functions of Several Variables</h2>
-<div id="s1">
-
-</div>
-<script>
-    generateQuiz(
-        's1', 
-        'For each of the plots below, select the function whose graph would match the plot.', 
-        `
-        <img src="../../static/module2/s1.png" width="500">
-        <br><br>
-        `, 
-        { 
-        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4': 'Does the graph curve up or down if you fix x and look only in the y direction?',
-        'f(x,y) = x -4y + 7': 'Try again!',
-        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3': '',
-        'f(x,y) = |x| + 3y': 'Not quite.',
-        'f(x,y) = y<sup>2</sup> + sin x': 'Try again!'
-        },
-        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3'
-    );
-</script>
-<div id="s2">
-
-</div>
-<script>
-    generateQuiz(
-        's2', 
-        '', 
-        `
-        <img src="../../static/module2/s2.png" width="500">
-        <br><br>
-        `, 
-        { 
-        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4': 'Not quite.',
-        'f(x,y) = x -4y + 7': 'Try again!',
-        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3': 'Not quite',
-        'f(x,y) = |x| + 3y': '',
-        'f(x,y) = y<sup>2</sup> + sin x': 'Try again!'
-        },
-        'f(x,y) = |x| + 3y'
-    );
-</script>
-<div id="s3">
-
-</div>
-<script>
-    generateQuiz(
-        's3', 
-        '', 
-        `
-        <img src="../../static/module2/s3.png" width="500">
-        <br><br>
-        `, 
-        { 
-        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4': '',
-        'f(x,y) = x -4y + 7': 'Try again!',
-        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3': 'Does the graph curve up or down if you fix x and look only in the y direction?',
-        'f(x,y) = |x| + 3y': 'Not quite.',
-        'f(x,y) = y<sup>2</sup> + sin x': 'Try again!'
-        },
-        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4'
-    );
-</script>
-<div id="s4">
-
-</div>
-<script>
-    generateQuiz(
-        's4', 
-        '', 
-        `
-        <img src="../../static/module2/s4.png" width="500">
-        <br><br>
-        `, 
-        { 
-        'f(x,y) = x<sup>2</sup>+y<sup>2</sup> - 4': 'Not quite.',
-        'f(x,y) = x -4y + 7': 'Try again!',
-        'f(x,y) = x<sup>2</sup> - y<sup>2</sup> + 3': 'Try again!',
-        'f(x,y) = |x| + 3y': 'Not quite.',
-        'f(x,y) = y<sup>2</sup> + sin x': ''
-        },
-        'f(x,y) = y<sup>2</sup> + sin x'
-    );
-</script>
-<p><strong>Mean Squared Error as a Multivariate Function</strong></p>
-<p>You are trying to fit a least-squares regression model to the following data :</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 10%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Feature</th>
-<th style="text-align: right;">Target</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2.5</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">4.7</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">6.33</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">8.09</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">11</td>
-</tr>
-</tbody>
-</table>
-<p>The data is plotted in the figure below with “Feature” on the <span class="math inline">\(x\)</span>-axis and “Target” on the <span class="math inline">\(y\)</span>-axis, with an initial ‘guess’ for a line with slope <span class="math inline">\(m\)</span> and <span class="math inline">\(y\)</span>-intercept <span class="math inline">\(b\)</span> in red. The current guess doesn’t fit the data too well.</p>
-<p><img src="../../static/module2/linr.png" class="img-fluid" width="600"></p>
-<p>Answer the following:</p>
-<ol type="a">
-<li>What is the value predicted by the linear regression (red line) when <span class="math inline">\(x=2\)</span>? Write your answer in terms of <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span>.</li>
-</ol>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The predicted value is <span class="math inline">\(2m+b\)</span>, since the <span class="math inline">\(y\)</span>-value of points on the line is <span class="math inline">\(mx+b\)</span>, and here we are interested in <span class="math inline">\(x=2\)</span>.</p>
-</div>
-</div>
-</div>
-<ol start="2" type="a">
-<li>What is the error for the data point <span class="math inline">\(x=4\)</span>, i.e.&nbsp;the difference between predicted and actual values? Again, your answer should involve <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span>.</li>
-</ol>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The data point <span class="math inline">\(x=4\)</span> has a target (<span class="math inline">\(y\)</span>) value of <span class="math inline">\(8.09\)</span>. So the mean squared error between predicted and actual values for this point is <span class="math display">\[
-\big( \; (4m+b)  - (8.09) \; \big)^2
-\]</span></p>
-</div>
-</div>
-</div>
-<ol start="3" type="a">
-<li>Write a complete expression for the between predicted and actual values for the target, i.e.&nbsp;the sum of individual errors for each data point.</li>
-</ol>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Let <span class="math inline">\(\mathcal{X}\)</span> represent our dataset, with individual data points represented as feature-value pairs <span class="math inline">\((x_0,y_0)\)</span>. Then the total squared error is a sum over data points</p>
-<p><span class="math display">\[
-\sum_{\text{all }(x_0,y_0)\text{ in } \mathcal{X}} \big( \; (mx_0+b) - y_0 \; \big)^2 .
-\]</span></p>
-</div>
-</div>
-</div>
-<ol start="4" type="a">
-<li>How many “inputs” does the total squared error function accept? In other words, the total squared error is a function of how many variables?</li>
-</ol>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The squared error function accepts two inputs, <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span>. The goal of linear regression is to find the values of <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span> at which this function attains its global minimum.</p>
-</div>
-</div>
-</div>
-<ol start="5" type="a">
-<li>Find the gradient vector for the total squared error function (in terms of <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span>).</li>
-</ol>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>If our sum-of-squared-errors function <span class="math inline">\(SSE(m,b)\)</span> is given as described in part c, then its gradient will be</p>
-<p><span class="math display">\[
-\nabla SSE (m,b) \quad = \quad  \begin{bmatrix} \displaystyle\sum_{\text{all }(x_0,y_0)\text{ in } \mathcal{X}} 2x_0(mx_0 + b - y_0)  \\  \displaystyle\sum_{\text{all }(x_0,y_0)\text{ in } \mathcal{X}} 2(mx_0+b-y_0) \end{bmatrix}.
-\]</span></p>
-</div>
-</div>
-</div>
-<ol start="6" type="a">
-<li>Find the explicit gradient vector at <span class="math inline">\(m=b=0\)</span>.</li>
-</ol>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>We can plug in <span class="math inline">\(m=b=0\)</span> into our gradient expression, which gives</p>
-<p><span class="math display">\[
-\nabla SSE (m,b) \quad = \quad  \begin{bmatrix} \displaystyle\sum_{(x_0,y_0)\in \mathcal{X}} 2x_0(- y_0)  \\  \displaystyle\sum_{(x_0,y_0)\in \mathcal{X}} 2(-y_0) \end{bmatrix}.
-\]</span></p>
-<p>Our table contains the values for <span class="math inline">\((x_0,y_0)\)</span> that we need to sum over. These give us</p>
-<p><span class="math display">\[
-\sum_{(x_0,y_0)\in \mathcal{X}} 2x_0(- y_0) = -2 \big(1(2.5)+2(4.7)+3(6.33)+4(8.09)+5(11)\big)= -236.5
-\]</span></p>
-<p>and <span class="math display">\[
-\sum_{(x_0,y_0)\in \mathcal{X}} 2(- y_0) = -2 \big( 2.5+4.7+6.33+8.09+11 \big) = -65.24.
-\]</span></p>
-<p>So our gradient vector at <span class="math inline">\(m=b=0\)</span> is</p>
-<p><span class="math display">\[
-\nabla SSE (m,b) = \begin{bmatrix} -236.5 \\ -65.24 \end{bmatrix}.
-\]</span></p>
-</div>
-</div>
-</div>
-<ol start="7" type="a">
-<li>Find a linear function of <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span> that has the same gradient at <span class="math inline">\(m=b=0\)</span> as your total squared error function above.</li>
-</ol>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The function <span class="math inline">\(f(x,y) = -236.5x - 65.24y\)</span> meets this criterion.</p>
-</div>
-</div>
-</div>
-<ol start="8" type="a">
-<li><strong>Bonus:</strong> Find the linear function that best approximates your total squared error function near <span class="math inline">\(m=b=1\)</span>.</li>
-</ol>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hint
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>What would the gradient of this linear function need to be? And what must be its value at m = b = 1?</p>
-</div>
-</div>
-</div>
+<section id="feedback" class="level1">
+<h1>Feedback</h1>
+<p>If you found this math review helpful, please leave some feedback <a href="https://forms.gle/u9uxMbJupVcVNXjH8">here</a>. This helps us understand how students are using the site. To report typos, mistakes or bugs, you can open an issue on the <a href="https://github.com/p-bajpai/mds-math-review">site repo</a>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1046,14 +716,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../modules/module2/module2-01-several-variables.html" class="pagination-link" aria-label="1. Partial Derivatives and Gradients">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1. Partial Derivatives and Gradients</span>
+      <a href="../modules/module3/module3-ex3_3.html" class="pagination-link" aria-label="&amp;nbsp;&amp;nbsp; 3.3 A Bonus Question">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">&nbsp;&nbsp; 3.3 A Bonus Question</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../modules/module2/module2-02-opt-conv.html" class="pagination-link" aria-label="2. Optimization and Convexity">
-        <span class="nav-page-text">2. Optimization and Convexity</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
