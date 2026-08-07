@@ -24,7 +24,6 @@ pyodide:
     - data
 
 website:
-  google-analytics: "G-YRT020YHZS"
   page-navigation: true
   bread-crumbs: false
   sidebar:
