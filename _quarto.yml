@@ -1,6 +1,6 @@
 project:
   type: website
-  title: "Introduction to Machine Learning"
+  title: "Math Review for MDS"
   # Setting the execution dir allows us to use `data/`
   # instead of relative paths in regular code cells
   execute-dir: project
