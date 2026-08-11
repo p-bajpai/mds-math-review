@@ -213,7 +213,7 @@ function generateMultiQuiz(containerId, title, question, options, correctAnswers
 
             messageBody.innerHTML =
                 `<strong style="color:#0BB5D4 !important; font-size:16px">
-                    Correct! &nbsp;${emoji}
+                    All correct! &nbsp;${emoji}
                 </strong><br>` +
                 feedback;
 
@@ -223,7 +223,7 @@ function generateMultiQuiz(containerId, title, question, options, correctAnswers
 
             messageBody.innerHTML =
                 `<strong style="color:#283791 !important; font-size:16px">
-                    Incorrect
+                    At least one selection is incorrect.
                 </strong><br>` +
                 feedback;
 
