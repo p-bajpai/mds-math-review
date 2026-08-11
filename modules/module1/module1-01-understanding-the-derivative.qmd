@@ -29,7 +29,7 @@ Formulas like $\sin(x)$, $e^x$ and $x^2+1$ are recipes for constructing function
 
 #### Inputs, Outputs and Sensitivity
 
-As we mentioned before, there are many ways to interpret the derivative (for some examples, see pages 3 and 4 of [this](https://www.math.toronto.edu/mccann/199/thurston.pdf) essay). Each interpretation gives different insight, even if they are all formally equivalent in the end.
+There are many ways to interpret the notion of "the derivative of a function" (for some examples, see pages 3 and 4 of [this](https://www.math.toronto.edu/mccann/199/thurston.pdf) essay). Each interpretation gives different insight, even if they are all formally equivalent in the end.
 
 Most commonly, the derivative of a function at a point is described as the "instantaneous rate of change" of the function at that point. Stated another way, it measures the "sensitivity" of the function to its input. If I wiggle the input knob on my black box, how rapidly does the output needle swing? If the derivative is large, my function is like a bike in high gear-- even a slight push on the pedals (input) gives a large rotation of the wheel (output). Alternatively, for a function with a small (but still positive) derivative, a large change in the input may only cause a small change in output.
 <br><br>

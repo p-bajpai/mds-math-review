@@ -140,6 +140,7 @@ $$
 \sum_{\text{all }(x_0,y_0)\text{ in } \mathcal{X}} \big( \; (mx_0+b) - y_0 \; \big)^2 .
 $$
 
+The symbol $\sum$ denotes a sum, and the text below the symbol tells us which values we are summing over. In this case, we sum the individual contributions coming from each point in our dataset.
 :::
 
 d) How many "inputs" does the total squared error function accept? In other words, the total squared error is a function of how many variables?
@@ -192,6 +193,8 @@ $$
 \nabla SSE (m,b) = \begin{bmatrix} -236.5 \\ -65.24 \end{bmatrix}.
 $$
 
+
+
 :::
 
 g) Find a linear function of $m$ and $b$ that has the same gradient at $m=b=0$ as your total squared error function above.
@@ -199,8 +202,9 @@ g) Find a linear function of $m$ and $b$ that has the same gradient at $m=b=0$ a
 ::: {.callout-note collapse="true"}
 ## Solution
 
-The function $f(x,y) = -236.5x - 65.24y$ meets this criterion.
+The function $f(m,b) = -236.5m - 65.24b$ meets this criterion.
 
+**Note:** This function is not actually needed for solving the least squares problem.
 :::
 
 h) **Bonus:** Find the linear function that best approximates your total squared error function near $m=b=1$. 
@@ -211,5 +215,7 @@ h) **Bonus:** Find the linear function that best approximates your total squared
 
 What would the gradient of this linear function need to be? And what must
 be its value at m = b = 1?
+
+**Note:** Again, this function is not needed for solving the least squares problem. It is the two-variable equivalent to the "tangent line to the graph" that you likely saw in a typical one-variable calculus class.
 
 :::

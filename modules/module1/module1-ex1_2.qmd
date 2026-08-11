@@ -36,7 +36,7 @@ generateQuiz(
     `,
     {
         "Both functions are differentiable everywhere": "Can you plot the functions? What happens near zero?",
-        "|x| is not differentiable at zero, but |x|&sup2 is differentiable everywhere": "", 
+        "|x| is not differentiable at zero, but |x|&sup2 is differentiable everywhere": "The function |x|&sup2 is exactly identical to x&sup2, which is everywhere differentiable", 
         "|x|&sup2 is not differentiable at zero, but |x| is differentiable everywhere": "Can you plot the functions? What happens near zero?", 
         "Neither function is differentiable at zero": "Can you plot the functions? What happens near zero?" }, 
         "|x| is not differentiable at zero, but |x|&sup2 is differentiable everywhere" 
@@ -69,7 +69,7 @@ generateMultiQuiz(
 
 <div id='mcq4'></div>
 <script>
-generateMultiQuiz(
+generateQuiz(
     'mcq4',
     'Sine and cosine',
     `Graph sine and cosine on the same axes from x = -2π to x = 2π. At which points does sin(x) have a tangent line with maximum positive slope, and what do these points correspond to on the graph of cosine?`,
@@ -83,7 +83,7 @@ generateMultiQuiz(
         'All points where sin(x) = 1': `Since sin(x) attains its maximum value here, what must be its derivative?`
     },
     [
-        'Multiples of 2π'
+        'All multiples of 2π'
     ]
 );
 </script>
