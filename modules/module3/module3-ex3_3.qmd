@@ -172,7 +172,7 @@ The graph of $g$.
 ::: {#fig-gm}
 ![](../../static/module3/Bsamp.png){width="50%"}
 
-Points randomly sampled from a two-variable Gaussian with mean $[0,0]$ and covariance matrix given by $B^{-1}$.
+Points randomly sampled from a two-variable Gaussian with mean $[0,0]$ and covariance matrix given by $B^{-1}$. The probability density function of the sampling distribution is proportional to the function $g(\bar x)$ from above.
 :::
 </center>
 <br><br>
