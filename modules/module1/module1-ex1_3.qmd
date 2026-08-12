@@ -15,8 +15,8 @@ generateQuiz(
     'Chain rule inputs',
     `Suppose two functions f(x) and g(x) are both increasing at x=1. Can we say whether f(g(x)) is increasing, decreasing or flat at x=1?`,
     {
-        'Increasing': 'What is the input to g?',
-        'Decreasing': 'What is the input to g?',
+        'Increasing': 'What is the input to f?',
+        'Decreasing': 'What is the input to f?',
         'Flat': 'What is the input to g?',
         'Cannot tell with the information provided': ''
     },
