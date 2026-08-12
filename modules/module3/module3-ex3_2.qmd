@@ -111,7 +111,7 @@ Once you have found the five numbers for Hint 1, return to your observation from
 ::: {.callout-note collapse="true"}
 ## Solution
 
-The vector $v=[0,0,0,0,1]^T$ accomplishes this (if you don't see why, try multplying it with some $5\times5$ matrix).
+The vector $v=[0,0,0,0,1]^T$ accomplishes this (if you don't see why, try multiplying it with some $5\times5$ matrix).
 
 :::
 
@@ -190,7 +190,7 @@ The image of the unit vector along the $x$-axis (which is the vector $[1,0]^T$) 
 
 :::
 
-(c) Can you visualize what the function $f$ is doing in the $xy$ plane by visualizing its action on the coordinate axes? Does it appear to 'stretch' or 'shrink' vectors in the $xy$ plane? Does it rotate them?
+(d) Can you visualize what the function $f$ is doing in the $xy$ plane by visualizing its action on the coordinate axes? Does it appear to 'stretch' or 'shrink' vectors in the $xy$ plane? Does it rotate them?
 
 ::: {.callout-note collapse="true"}
 ## Hint
@@ -202,14 +202,14 @@ Plot the coordinate vectors in the 2D plane before and after applying this trans
 ::: {.callout-note collapse="true"}
 ## Solution
 
-Both coordinate vectors seemed to get stretched out, since they end up longer than they started. There also seems to be a "clockwise" rotation. However, it is important to notice that while the vectors along the $x$ and $y$ axes start out perpendicular to each other, they are no longer perpendicular after being transformed by $f$ (i.e. after multplication by $A$).
+Both coordinate vectors seemed to get stretched out, since they end up longer than they started. There also seems to be a "counterclockwise" rotation. However, it is important to notice that while the vectors along the $x$ and $y$ axes start out perpendicular to each other, they are no longer perpendicular after being transformed by $f$ (i.e. after multplication by $A$).
 
 :::
 
 <br><br>
 
 **Q6. Matrix Vector Products Round III**<br>
-Find a $3\times 3$ matrix $A$ such that for any $3\times 1$ vector $v$, the product $Av$ returns a vector that points along the direction $\begin{bmatrix}1\\1\\1\end{bmatrix}$.
+Find a $3\times 3$ matrix $A$ such that for any $3\times 1$ vector $v$, the product $Av$ returns a vector that is parallel to the direction $\begin{bmatrix}1\\1\\1\end{bmatrix}$ (i.e. it is a constant multiple of $\begin{bmatrix}1\\1\\1\end{bmatrix}$).
 
 ::: {.callout-note collapse="true"}
 ## Hint
