@@ -364,7 +364,7 @@ Solution
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>We can write <span class="math inline">\(f\)</span> as a function of <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> by carrying out the matrix multiplication in the exponent: <span class="math display">\[
-f([x_1,x_2]^T) = e^{-(4x_1^2 + \frac12 x_2^2)}.
+f([x_1,x_2]^T) = e^{-\frac12(4x_1^2 + \frac12 x_2^2)}.
 \]</span></p>
 <p>Note the absence of any “cross” term, i.e.&nbsp;any term of the form <span class="math inline">\(x_1x_2\)</span>. This results from <span class="math inline">\(A\)</span> being a diagonal matrix.</p>
 <p>For any fixed value of <span class="math inline">\(x_2\)</span>, we get a function of <span class="math inline">\(x_1\)</span> that looks like a usual one-variable bell-curve centered at zero. The height of the bell depends on the choice of <span class="math inline">\(x_2\)</span>, with the tallest curve being the one for <span class="math inline">\(x_2=0\)</span>. The same picture emerges fixing a value for <span class="math inline">\(x_1\)</span> and graphing the function with respect to <span class="math inline">\(x_2\)</span>, except the exponentials are more “spread out” i.e.&nbsp;less concentrated around the origin.</p>
@@ -475,7 +475,7 @@ Solution
 <p>We can write <span class="math inline">\(g\)</span> as <span class="math display">\[
 g([x_1,x_2]^T) = e^{-\frac12(9x_1^2 + 14x_1x_2 + 9x_2^2)}.
 \]</span></p>
-<p>Notice we now have the term <span class="math inline">\(14x_1x_2\)</span> in the middle. This “non-diagonal” term means that as we take slices for fixed <span class="math inline">\(x_2\)</span> (i.e.&nbsp;set <span class="math inline">\(x_2 = -1, 0.5, 0 \ldots\)</span> and so on) the peak of the resulting curve in <span class="math inline">\(x_1\)</span> shifts from right to left. So the graph of <span class="math inline">\(g\)</span> as a 2D function is not aligned with the coordinate axes in the nice way that we saw in Part I.</p>
+<p>Notice we now have the term <span class="math inline">\(14x_1x_2\)</span> in the middle. This “non-diagonal” term means that as we take slices for fixed <span class="math inline">\(x_2\)</span> (i.e.&nbsp;set <span class="math inline">\(x_2 = -1, -0.5, 0 \ldots\)</span> and so on) the peak of the resulting curve in <span class="math inline">\(x_1\)</span> shifts from right to left. So the graph of <span class="math inline">\(g\)</span> as a 2D function is not aligned with the coordinate axes in the nice way that we saw in Part I.</p>
 <br><br>
 <center>
 <div id="fig-A" class="quarto-float quarto-figure quarto-figure-center anchored">
