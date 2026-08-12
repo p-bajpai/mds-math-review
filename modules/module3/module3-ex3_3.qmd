@@ -46,7 +46,7 @@ c) Is $f([x_1, 0]^T)$ bigger or smaller than $f([x_1, 10]^T)$? Where does the fu
 
 We can write $f$ as a function of $x_1$ and $x_2$ by carrying out the matrix multiplication in the exponent:
 $$
-f([x_1,x_2]^T) = e^{-(4x_1^2 + \frac12 x_2^2)}.
+f([x_1,x_2]^T) = e^{-\frac12(4x_1^2 + \frac12 x_2^2)}.
 $$
 
 Note the absence of any "cross" term, i.e. any term of the form $x_1x_2$. This results from $A$ being a diagonal matrix.
@@ -131,7 +131,7 @@ $$
 g([x_1,x_2]^T) = e^{-\frac12(9x_1^2 + 14x_1x_2 + 9x_2^2)}.
 $$
 
-Notice we now have the term $14x_1x_2$ in the middle. This "non-diagonal" term means that as we take slices for fixed $x_2$ (i.e. set $x_2 = -1, 0.5, 0 \ldots$ and so on) the peak of the resulting curve in $x_1$ shifts from right to left. So the graph of $g$ as a 2D function is not aligned with the coordinate axes in the nice way that we saw in Part I.
+Notice we now have the term $14x_1x_2$ in the middle. This "non-diagonal" term means that as we take slices for fixed $x_2$ (i.e. set $x_2 = -1, -0.5, 0 \ldots$ and so on) the peak of the resulting curve in $x_1$ shifts from right to left. So the graph of $g$ as a 2D function is not aligned with the coordinate axes in the nice way that we saw in Part I.
 
 <br><br>
 <center>
