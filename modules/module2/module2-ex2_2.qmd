@@ -26,7 +26,7 @@ b) $f$ has a global minimum at every point with $x=0$
 ::: {.callout-note collapse="true"}
 ## Hint
 
-One possibility is to construct a function that only takes non-negative values, and make sure it is always zero when $x=0$.
+One possibility is to construct a function that only outputs non-negative values, and make sure it is always zero when $x=0$.
 
 :::
 
